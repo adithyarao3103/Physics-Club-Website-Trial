@@ -1,5 +1,6 @@
 var a = 10;
 
+console.log("js is working");
 
 function close(){
 	console.log("close");
