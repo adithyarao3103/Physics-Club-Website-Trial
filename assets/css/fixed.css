@@ -24,11 +24,15 @@ body{
 	text-align: center;
 }
 
-#menuholder > p {
+#menuholder> p > a {
 	font-size: calc(4px + 2vw);
 	font-family: BioRhyme;
-	letter-spacing: 1.5;
-	line-height: 1.75;
+	letter-spacing: 4px;
+	line-height: 1.5;
 	color: white;
 	text-decoration: none;
+}
+
+#menuholder> p> div{
+	background-color: rgba(255, 255, 255, 0.7);
 }
