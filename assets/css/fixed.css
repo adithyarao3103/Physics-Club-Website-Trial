@@ -25,19 +25,18 @@ body{
 }
 
 #menuholder> button{
-	font-size: calc(4px + 1.35vw);
+	width: 200px;
+	font-size: calc(6px + 1vw);
 	font-family: BioRhyme;
 	letter-spacing: 5px;
 	line-height: 1.5;
 	color: black;
 	background-color: transparent;
-	border: 2px solid white;
 	transition: all 0.5s;
 }
 
 #menuholder >button:hover{
-	border-right: 2px solid black;
-	border-bottom: 2px solid black;
+	background-image: lineargradient(-45deg, white, black);
 }
 
 .close{
@@ -47,7 +46,6 @@ body{
 }
 
 .closehover{
-	border-right: 2px solid black;
-	border-bottom: 2px solid black;
+	background-image: lineargradient(-45deg, white, black);
 }
 
