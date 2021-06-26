@@ -61,16 +61,12 @@ body{
 }
 
 @keyframes rotatex{
-	0%{
+	from{
 		transform: rotate(0deg);
 		transform-origin: center center;
 	}
-	50%{
+	to{
 		transform: rotate(90deg);
-		transform-origin: center center;
-	}
-	100%{
-		transform: rotate(180deg);
 		transform-origin: center center;
 	}
 }
