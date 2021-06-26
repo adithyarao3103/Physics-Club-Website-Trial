@@ -6,15 +6,6 @@ body{
 	font-size: calc(6px + 2vw);	
 }
 
-#navbar{
-	display: flex;
-	justify-content: flex-end;
-	width: 120vw;
-	height: calc(50px + 2vh);
-	position: fixed;
-	top: 0;
-	left: 0;
-}
 
 #home{
 	font-family: BioRhyme, Open Sans;
@@ -25,6 +16,17 @@ body{
 	margin-top: -25px;
 	text-decoration: none;
 	color: black;
+}
+
+
+#navbar{
+	display: flex;
+	justify-content: flex-end;
+	width: 120vw;
+	height: calc(50px + 2vh);
+	position: fixed;
+	top: 0;
+	right: 0;
 }
 
 
