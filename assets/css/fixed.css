@@ -31,21 +31,23 @@ body{
 	letter-spacing: 5px;
 	line-height: 1.5;
 	color: black;
+	border: 0px;
 	background-color: transparent;
 	transition: all 0.5s;
 }
 
 #menuholder >button:hover{
-	background-image: lineargradient(-45deg, white, black);
+	background-image: linear-gradient(-45deg, white, black);
 }
 
 .close{
 	border-radius: 50%;
+	border: 0px;
 	border: 2px solid white;
 	transition: all 0.5s;
 }
 
 .closehover{
-	background-image: lineargradient(-45deg, white, black);
+	background-image: linear-gradient(-45deg, white, black);
 }
 
