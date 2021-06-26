@@ -46,13 +46,12 @@ body{
 
 .close{
 	font-size: 25px;
-	font-weight: bold;
 	width: 45px;
 	height: 45px;
 	border-radius: 50%;
 	border: 2px solid black;
 	background: transparent;
-	border: 2px solid black;
+	border: 2px solid white;
 	text-decoration: none;
 	color: black;
 }
