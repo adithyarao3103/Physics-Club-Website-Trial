@@ -57,7 +57,7 @@ body{
 }
 
 .close:hover{
-	animation: rotatex 1s linear;
+	animation: rotatex 0.5s linear;
 }
 
 @keyframes rotatex{
