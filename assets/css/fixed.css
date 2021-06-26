@@ -70,3 +70,57 @@ body{
 		transform-origin: center center;
 	}
 }
+
+#navbar{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	height: 60px;
+	width: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #f5f5f5;
+	z-index: 100;
+}
+
+#logos{
+	height: inherit;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	background-color: transparent;
+}
+
+#logos> img{
+	height: 50px;
+	width: 50px;
+	margin: 5px;
+}
+
+#title{
+	font-family: Montserrat;
+	font-size: calc(10px + 1.5vw);
+	color: black;
+	height: inherit;
+	background-color: transparent;
+}
+
+#hamcont{
+	display: flex;
+	justify-content: flex-end;
+	height: inherit;
+	background-color: transparent;
+}
+
+#ham{
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	margin: 5px;
+}
+
+[id*=bar]{
+	width: 40px;
+	height: 10px;
+	background-color: black;
+	position: relative;
+}
