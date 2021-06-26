@@ -43,6 +43,8 @@ body{
 }
 
 .close{
+	font-size: 20px;
+	font-weight: bold;
 	width: 35px;
 	height: 35px;
 	border-radius: 50%;
