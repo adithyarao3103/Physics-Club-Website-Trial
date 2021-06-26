@@ -56,3 +56,7 @@ body{
 	transition: all 1s;
 }
 
+.close:active{
+	background: black;
+}
+
