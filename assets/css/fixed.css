@@ -24,7 +24,7 @@ body{
 	text-align: center;
 }
 
-#menuholder> button{
+.mb{
 	width: 200px;
 	font-size: 25px;
 	font-family: Montserrat;
@@ -37,7 +37,7 @@ body{
 	transition: background 1s;
 }
 
-#menuholder >button:hover{
+.mb:hover{
 	background: rgb(255,255,255);
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 16%, rgba(83,83,82,1) 100%);
 }
