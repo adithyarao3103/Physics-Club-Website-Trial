@@ -26,14 +26,14 @@ body{
 }
 
 #menuholder> button{
-	font-size: calc(4px + 1vw);
+	font-size: calc(4px + 1.5vw);
 	font-family: BioRhyme;
 	letter-spacing: 3px;
 	line-height: 1.5;
 	color: black;
 	background-color: transparent;
-	box-shadow: none;
-	border: none;
+	border: 2px solid white;
+	box-shadow: 2px 2px 4px white;
 	transition: all 0.5s;
 }
 
