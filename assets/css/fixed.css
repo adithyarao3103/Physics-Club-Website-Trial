@@ -92,13 +92,13 @@ body{
 	background-color: transparent;
 }
 
-#logos> img{
+.svnit{
 	height: 80px;
 	width: 80px;
 	margin: 5px;
 }
 
-#logos:nth-child(2){
+.pc{
 	height: 70px;
 	width: 70px;
 	margin: 10px;
@@ -111,8 +111,7 @@ body{
 	height: inherit;
 	background-color: transparent;
 	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 20px
 }
 
 #hamcont{
@@ -121,9 +120,8 @@ body{
 	height: inherit;
 	background-color: transparent;
 	position: relative;
-	right: 20px;
-	top: 50%;
-	transform: translateY(-50%);
+	right: 40px;
+	top: 10px;
 }
 
 #ham{
