@@ -40,3 +40,17 @@ body{
 	border-right: 2px solid black;
 	border-bottom: 2px solid black;
 }
+
+.close{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 2px solid white;
+	transition: all 0.5s;
+}
+
+.closehover{
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
