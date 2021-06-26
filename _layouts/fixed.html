@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>{{ page.title }}</title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/fixed.css">
+</head>
+<body>
+    <nav id="navbar">
+    	<img scr="/images/logo.png">
+    	<a href="/index.html">Physics Club NIT Surat</a>
+    	<button onclick= "location.href='/events.html';">Events</button>
+    	<button onclick= "location.href='/team.html';">Team</button>
+    	<button onclick= "location.href='/contact.html';">Contact</button>
+    </nav>
+
+    {{ content }}
+
+    <div id="footer">
+    	<ul>
+    		<li>Home</li>
+    		<li>Events</li>
+    		<li>Contact</li>
+    		<a href="">Physics Club <br> NIT Surat</a>
+    	</ul>
+    </div>
+
+</body>
+<script type="text/javascript" src="/assets/js/fixed.js"></script>
+</html>
