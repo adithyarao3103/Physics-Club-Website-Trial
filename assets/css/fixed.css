@@ -91,6 +91,8 @@ body{
 	justify-content: flex-start;
 	background-color: transparent;
 	width: 200px;
+	position: relative;
+	left: 30px;
 }
 
 .svnit{
@@ -124,7 +126,6 @@ body{
 	background-color: transparent;
 	position: relative;
 	right: 40px;
-	top: 15px;
 }
 
 #hamcont> button{
