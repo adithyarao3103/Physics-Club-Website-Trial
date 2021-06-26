@@ -13,6 +13,8 @@ body{
 	background-color: rgba(255, 255, 255, 0.95);
 	width: 100vw;
 	height: 100vh;
+	opacity: 1;
+	transition: opacity 0.5s;
 }
 
 #menuholder{
@@ -50,8 +52,7 @@ body{
 	border-radius: 50%;
 	border: 2px solid black;
 	background: transparent;
-	border: 2px solid white;
+	border: 2px solid black;
 	text-decoration: none;
 	color: black;
-	transition: all 1s;
 }
