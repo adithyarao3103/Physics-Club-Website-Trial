@@ -43,21 +43,15 @@ body{
 }
 
 .close{
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: bold;
-	width: 35px;
-	height: 35px;
+	width: 45px;
+	height: 45px;
 	border-radius: 50%;
-	border: 0px;
+	border: 2px solid black;
 	background: transparent;
 	border: 2px solid white;
 	text-decoration: none;
 	color: black;
 	transition: all 1s;
-	z-index: 1000;
 }
-
-.close:active{
-	background: black;
-}
-
