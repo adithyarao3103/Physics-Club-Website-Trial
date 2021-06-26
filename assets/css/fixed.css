@@ -74,8 +74,8 @@ body{
 #navbar{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	height: 60px;
-	width: 100vh;
+	height: 90px;
+	width: 100vw;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -91,8 +91,8 @@ body{
 }
 
 #logos> img{
-	height: 50px;
-	width: 50px;
+	height: 80px;
+	width: 80px;
 	margin: 5px;
 }
 
@@ -116,11 +116,12 @@ body{
 	height: 50px;
 	background-color: transparent;
 	margin: 5px;
+	display: inline-block;
 }
 
 [id*=bar]{
 	width: 40px;
 	height: 10px;
+	margin: 8px;
 	background-color: black;
-	position: relative;
 }
