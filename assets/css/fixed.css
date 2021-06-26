@@ -6,12 +6,12 @@ body{
 	font-size: calc(6px + 2vw);	
 }
 
-#menu {
+#fullscreen {
 	width: 0;
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: rgba(0, 0, 0, 0.9);
+	background-color: rgba(255, 255, 255, 0.9);
 	width: 100vw;
 	height: 100vh;
 }
@@ -25,16 +25,19 @@ body{
 	text-align: center;
 }
 
-#menuholder> p > a {
-	font-size: calc(4px + 2vw);
+#menuholder> button{
+	font-size: calc(4px + 1vw);
 	font-family: BioRhyme;
-	letter-spacing: 4px;
+	letter-spacing: 3px;
 	line-height: 1.5;
-	color: white;
-	text-decoration: none;
+	color: black;
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+	transition: all 0.5s;
 }
 
-.drivein{
-	width: 100px;
-	background-color: rgba(255, 255, 255, 0.7);
+#menuholder >button:hover{
+	border: 2px solid black;
+	box-shadow: 2px 2px 4px black;
 }
