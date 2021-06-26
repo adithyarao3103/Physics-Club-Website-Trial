@@ -95,12 +95,6 @@ body{
 	left: 30px;
 }
 
-.svnit{
-	height: 70px;
-	width: 70px;
-	margin: 5px;
-}
-
 .pc{
 	position: relative;
 	top: -5px;
@@ -130,6 +124,7 @@ body{
 
 #hamcont> button{
 	border: 0px;
+	background-color: transparent;
 }
 
 #ham{
