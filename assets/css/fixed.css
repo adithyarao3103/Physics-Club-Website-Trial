@@ -33,7 +33,7 @@ body{
 	color: black;
 	border: 0px;
 	background: transparent;
-	transition: all 0.5s;
+	transition: all 1s;
 	mix-blend-mode: difference;
 	font-weight: bold;
 }
@@ -50,7 +50,7 @@ body{
 	border: 0px;
 	background: transparent;
 	border: 2px solid white;
-	transition: all 0.5s;
+	transition: all 1s;
 	text-decoration: none;
 	color: black;
 }
