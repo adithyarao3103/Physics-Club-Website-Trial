@@ -8,7 +8,7 @@ function closemenu(){
     setTimeout(function(){removemenu();}, 500);
 }
 
-function openmenu(){
+function menu(){
 	document.getElementById('bar1').style.transform = 'translateX(100px)';
 	document.getElementById('bar2').style.transform = 'translateX(100px)';
 	document.getElementById('bar2').style.transform = 'translateX(100px)';
