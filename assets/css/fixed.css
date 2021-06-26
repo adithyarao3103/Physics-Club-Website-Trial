@@ -33,11 +33,10 @@ body{
 	color: black;
 	background-color: transparent;
 	border: 2px solid white;
-	box-shadow: 2px 2px 4px white;
 	transition: all 0.5s;
 }
 
 #menuholder >button:hover{
-	border: 2px solid black;
-	box-shadow: 2px 2px 4px black;
+	border-right: 2px solid black;
+	border-top: 2px solid black;
 }
