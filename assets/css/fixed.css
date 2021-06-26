@@ -57,7 +57,7 @@ body{
 }
 
 .close:hover{
-	animation: rotatex 0.5s linear;
+	animation: rotatex 0.1s linear;
 }
 
 @keyframes rotatex{
@@ -66,7 +66,7 @@ body{
 		transform-origin: center center;
 	}
 	to{
-		transform: rotate(90deg);
+		transform: rotate(90deg) translateY(-2px);
 		transform-origin: center center;
 	}
 }
