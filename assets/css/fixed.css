@@ -26,9 +26,9 @@ body{
 }
 
 #menuholder> button{
-	font-size: calc(4px + 1.5vw);
+	font-size: calc(4px + 1.35vw);
 	font-family: BioRhyme;
-	letter-spacing: 3px;
+	letter-spacing: 5px;
 	line-height: 1.5;
 	color: black;
 	background-color: transparent;
@@ -37,6 +37,6 @@ body{
 }
 
 #menuholder >button:hover{
-	border-right: 2px solid black;
-	border-top: 2px solid black;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
 }
