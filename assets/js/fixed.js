@@ -5,6 +5,6 @@ function close(){
     document.getElementById("fullscreen").style.visibility = "hidden";
 }
 
-function click(){
+function runclick(){
 	window.alert("clicked!!!!");
 }
