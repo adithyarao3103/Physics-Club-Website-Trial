@@ -3,12 +3,12 @@
 body{
 	background-color: #f5f5f5;
 	font-family: Montserrat, Open Sans;
-	font-size: calc(6px + 0.25vw);	
+	font-size: calc(6px + 2vw);	
 }
 
 #navbar{
 	font-family: BioRhyme, Open Sans;
-	font-size: calc(4px + 0.25vw);
+	font-size: calc(3px + 2vw);
 	display: flex;
 	justify-content: flex-end;
 	width: 100vw;
@@ -23,6 +23,8 @@ body{
 	left: 5px;
 	top: 25px;
 	margin-top: -25px;
+	text-decoration: none;
+	color: black;
 }
 
 
