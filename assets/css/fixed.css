@@ -16,9 +16,13 @@ body{
 #navbar > a{
 	font-family: BioRhyme, Open Sans;
 	font-size: calc(1px + 1vw);
+	position: absolute;
+	left: 0;
 }
 
 #navbar > button{
+	font-family: BioRhyme, Open Sans;
+	font-size: calc(1px + 1vw);
 	height: 26px;
 	width: 60px;
 	margin: 2px;
