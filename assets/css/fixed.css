@@ -90,6 +90,7 @@ body{
 	display: flex;
 	justify-content: flex-start;
 	background-color: transparent;
+	width: 200px;
 }
 
 .svnit{
