@@ -3,14 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<title>{{ page.title }}</title>
-	<link rel="stylesheet" type="text/css" href="/css/fixed.css">
+	<link rel="stylesheet" type="text/css" href="/_layouts/css/fixed.css">
 </head>
 <body>
     <nav id="navbar">
     	<img scr="/images/logo.png">
     	<a href="/index.html">Physics Club NIT Surat</a>
-    	<button onclick= "location.href='events.html';" >Events</button>
-    	<button onclick= "location.href='contact.html';">Contact</button>
+    	<button onclick= "location.href='/events.html';">Events</button>
+    	<button onclick= "location.href='/team.html';">Team</button>
+    	<button onclick= "location.href='/contact.html';">Contact</button>
     </nav>
 
     {{ content }}
@@ -25,5 +26,5 @@
     </div>
 
 </body>
-<script type="text/javascript" src="/js/fixed.js"></script>
+<script type="text/javascript" src="/_layouts/js/fixed.js"></script>
 </html>
