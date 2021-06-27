@@ -140,9 +140,8 @@ body{
 [id*=bar]{
 	width: 30px;
 	height: 4px;
-	margin: 2px;
+	margin: 4px;
 	background-color: black;
-	border: 2px solid white;
 }
 
 #bar1{
