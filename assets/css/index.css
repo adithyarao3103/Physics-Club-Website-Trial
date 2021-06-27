@@ -85,9 +85,9 @@
 	background: grey;
 }
 
-#upcoming> img{
+#pclogo{
 	width: 100px;
 	height: 100px;
 	position: relative;
-	top: -300px;
+	top: 300px;
 }
