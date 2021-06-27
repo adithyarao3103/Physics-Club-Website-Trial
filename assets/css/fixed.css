@@ -116,7 +116,7 @@ body{
 	background-color: transparent;
 	position: relative;
 	left: 15%;
-	padding: 1.5%;
+	padding: 3%;
 }
 
 .pc{
@@ -150,7 +150,8 @@ body{
 	border: 0px;
 	background-color: transparent;
 	position: relative;
-	right: 20%;
+	right: 30%;
+	top: 7%;
 	cursor: pointer;
 }
 
