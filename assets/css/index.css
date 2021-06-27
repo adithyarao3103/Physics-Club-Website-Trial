@@ -62,7 +62,6 @@
 
 #content{
 	width: inherit;
-	height: 60vh;
 	background: white;
 	margin-left: 10%;
 	padding-left: 2%;
@@ -78,6 +77,26 @@
 	border-left: 3px solid grey;
 	transform: translateY(50px);
 	transition: all 1s;
+}
+
+.custom-shape-divider-top-1624802707 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1624802707 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1624802707 .shape-fill {
+    fill: #FFFFFF;
 }
 
 #upcoming{
