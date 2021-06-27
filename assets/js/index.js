@@ -36,6 +36,7 @@ document.addEventListener('scroll', (event) => {
 		inner = beg + val + end;
 		document.getElementById('tit').style.transform = inner;
 		document.getElementById("of").style.opacity = (current_height - req_height)/(initial_height - req_height) ;
+		document.getElementById("we").style.opacity = (current_height - req_height)/(initial_height - req_height) ;
 		val = (current_height - req_height)/(initial_height - req_height);
 		inner = beg + val + end;
 		document.getElementById("of").style.transform = inner;

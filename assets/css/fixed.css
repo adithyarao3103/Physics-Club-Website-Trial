@@ -241,6 +241,7 @@ body{
 
 #title{
 	font-family: BioRhyme;
+	font-weight: bold;
 	font-size: calc(10px + 4.5vw);
 	white-space: nowrap;
 	transform: scale(0.35);
