@@ -63,11 +63,13 @@
 #content{
 	width: inherit;
 	background: white;
-	padding-left: 10%;
+	margin-left: 10%;
+	padding-left: 2%;
 	padding-right: 10%;
 	font-size: calc(6px + 1.25vw);	
 	letter-spacing: 3px;
 	line-height: 2;
+	border-left: 3px solid grey;
 }
 
 [id*=line]{
