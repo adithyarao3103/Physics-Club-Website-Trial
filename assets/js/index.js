@@ -13,6 +13,7 @@ document.addEventListener('scroll', (event) => {
 		document.getElementById('navbar').style.background = "white";
 		document.getElementById('bar1').style.background = "black";
 		document.getElementById('bar2').style.background = "black";
+		document.getElementById('title').style.color = "black";
 		document.getElementById('bar3').style.background = "black";
 
 	}
@@ -21,6 +22,7 @@ document.addEventListener('scroll', (event) => {
 		document.getElementById('bar1').style.background = "white";
 		document.getElementById('bar2').style.background = "white";
 		document.getElementById('bar3').style.background = "white";
+		document.getElementById('title').style.color = "transparent";
 	}
 
 	if (scroly < 260) {
@@ -31,10 +33,8 @@ document.addEventListener('scroll', (event) => {
 		console.log(inner);
 		document.getElementById('tit').style.transform = inner;
 		document.getElementById("of").style.opacity = 1 - scroly/260;
-		document.getElementById('title').style.color = "transparent";
-	}
-	else{
-		document.getElementById('title').style.color = "black";
+		document.getElementById("of").style.transform = inner;
+
 	}
 
 });
