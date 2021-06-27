@@ -11,6 +11,19 @@
 	transform: scale(1.15);
 }
 
+#darken{
+	background: rgba(0, 0, 0, 0.75);
+}
+
+#titleholder{
+	font-size: 20px;
+}
+
+.tit{
+	font-size: 50px;
+	font-family: BioRhyme;
+}
+
 
 .custom-shape-divider-bottom-1624772211 {
     position: absolute;
