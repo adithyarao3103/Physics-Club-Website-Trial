@@ -91,15 +91,14 @@ body{
 	display: flex;
 	justify-content: flex-start;
 	background-color: transparent;
-	width: 33%;
 	position: relative;
 	left: 30px;
 }
 
 .pc{
 	position: relative;
-	height: 70%;
-	width: 70%;
+	height: 50px;
+	width: 50px;
 	margin: 15%;
 }
 
@@ -118,7 +117,6 @@ body{
 	justify-content: flex-end;
 	height: inherit;
 	background-color: transparent;
-	width: 33%;
 }
 
 #hamcont> button{
@@ -129,17 +127,17 @@ body{
 }
 
 #ham{
-	width: 50%;
-	height: 50%;
+	width: 35px;
+	height: 35px;
 	background-color: transparent;
 	margin: 25%;
 	display: inline-block;
 }
 
 [id*=bar]{
-	width: 90%;
-	height: 10%;
-	margin: 15%;
+	width: 30px;
+	height: 4px;
+	margin: 6px;
 	background-color: black;
 }
 
