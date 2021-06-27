@@ -21,6 +21,8 @@
 	font-size: calc(10px + 4.5vw);
 	font-family: BioRhyme;
 	transform-origin: center center;
+	position: sticky;
+	top: calc(5px + 0.2vh);
 }
 
 .tit>font{

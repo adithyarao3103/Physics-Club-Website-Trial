@@ -3,12 +3,6 @@ var bg = '/assets/images/bg.jpg';
 var initial_height = document.getElementById("tit").getBoundingClientRect().top;
 var req_height = document.getElementById("title").getBoundingClientRect().top;
 
-
-document.getElementById('tit').style.position = "sticky";
-document.getElementById('tit').style.top = req_height + "px";
-
-
-
 let image = document.createElement('img');
 image.src = bg;
 
