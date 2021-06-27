@@ -27,7 +27,7 @@ document.addEventListener('scroll', (event) => {
 
 	
 
-	if (current_height > req_height) {
+	if (current_height > req_height) {	
 		document.getElementById('tit').style.color = "white";
 		document.getElementById('title').style.color = "transparent";
 		var beg = "scale(";
@@ -47,6 +47,7 @@ document.addEventListener('scroll', (event) => {
 		document.getElementById('bar1').style.background = "black";
 		document.getElementById('bar2').style.background = "black";
 		document.getElementById('bar3').style.background = "black";
+		document.getElementById('title').style.color = "black";
 		document.getElementById('navbar').setAttribute('class', 'hover');
 	}
 	else{
