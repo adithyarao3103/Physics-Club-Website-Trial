@@ -1,5 +1,9 @@
 var bg = '/assets/images/bg.jpg';
 
+var initial_height = document.getElementById("tit").getBoundingClientRect().top;
+var req_height = document.getElementById("title").getBoundingClientRect().top;
+
+
 let image = document.createElement('img');
 image.src = bg;
 
@@ -25,14 +29,18 @@ document.addEventListener('scroll', (event) => {
 		document.getElementById('title').style.color = "transparent";
 	}
 
-	if (scroly < 260) {
+	var current_height = document.getElementById("tit").getBoundingClientRect().top;
+
+	if (current_height > req_height) {
 		var beg = "scale(";
-		var val = 1 - 0.65*scroly/260;
+		var val = 0.32 + 0.68*(current_height - req_height)/(initial_height - req_height);
 		var end = ")"
 		inner = beg + val + end;
 		console.log(inner);
 		document.getElementById('tit').style.transform = inner;
-		document.getElementById("of").style.opacity = 1 - scroly/260;
+		document.getElementById("of").style.opacity = (current_height - req_height)/(initial_height - req_height) ;
+		val = (current_height - req_height)/(initial_height - req_height);
+		inner = beg + val + end;
 		document.getElementById("of").style.transform = inner;
 
 	}
