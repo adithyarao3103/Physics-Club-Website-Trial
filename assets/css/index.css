@@ -70,19 +70,21 @@
 	font-size: calc(6px + 1.25vw);	
 	letter-spacing: 3px;
 	line-height: 2;
-	margin-bottom: 50px;
 }
 
 #line{
 	opacity: 0;
 	padding-left: 75px;
 	border-left: 3px solid grey;
-	transform: translateY(75px);
+	transform: translateY(50px);
 	transition: all 1s;
 }
 
 #upcoming{
 	background: grey;
+	width: 100.1vw;
+	position: absolute;
+	left: -0.1vw;
 }
 
 #pclogo{
