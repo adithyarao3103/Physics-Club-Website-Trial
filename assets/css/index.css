@@ -70,6 +70,7 @@
 	letter-spacing: 3px;
 	line-height: 2;
 	border-left: 3px solid grey;
+	padding-bottom: 50px;
 }
 
 #line{
@@ -77,3 +78,4 @@
 	transform: translateY(75px);
 	transition: all 1s;
 }
+
