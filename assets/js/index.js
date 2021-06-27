@@ -57,8 +57,8 @@ document.addEventListener('scroll', (event) => {
 }
 
 
-var line_height = document.getElementById("line1").getBoundingClientRect().top;
-if (line_height < initial_height) {
+var line_height = document.getElementById("line1").getBoundingClientRect().bottom;
+if (line_height < 70) {
 	bringout(1);
 }
 
