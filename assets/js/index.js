@@ -3,6 +3,16 @@ var bg = '/assets/images/bg.jpg';
 var initial_height = document.getElementById("tit").getBoundingClientRect().top;
 var req_height = document.getElementById("title").getBoundingClientRect().top;
 
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
 function bringout(i){
 	if (i==4) {return}
 	document.getElementById('line' + i).style.opacity = 1;
@@ -57,8 +67,7 @@ document.addEventListener('scroll', (event) => {
 }
 
 
-var line_height = document.getElementById("line1").getBoundingClientRect().top;
-if (line_height < initial_height) {
+if (isInViewport(document.getElementById("content"))) {
 	bringout(1);
 }
 
