@@ -22,6 +22,20 @@ document.addEventListener('scroll', (event) => {
 		document.getElementById('bar2').style.background = "white";
 		document.getElementById('bar3').style.background = "white";
 	}
+
+	if (scroly < 250) {
+		var beg = "scale(";
+		var val = 1 - 0.63*scroly/250;
+		var end = ");"
+		document.getElementById('tit').style.transform = bag + val + end;
+		beg = "opacity(";
+		val = 1-scroly/250;
+		document.getElementById("of").opacity = bag+val+end;
+	}
+	else{
+		document.getElementById('tit').style.position = "fixed";
+	}
+
 });
 
 
