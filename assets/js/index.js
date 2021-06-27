@@ -9,7 +9,7 @@ image.addEventListener('load', (event)=> {
 
 document.addEventListener('scroll', (event) => {
 	scroly = this.scrollY;
-	if (scroly > 75) {
+	if (scroly > 350) {
 		document.getElementById('navbar').style.background = "white";
 		document.getElementById('bar1').style.background = "black";
 		document.getElementById('bar2').style.background = "black";
