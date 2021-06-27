@@ -9,7 +9,7 @@ image.addEventListener('load', (event)=> {
 
 document.addEventListener('scroll', (event) => {
 	scroly = this.scrollY;
-	if (scroly > 250) {
+	if (scroly > 300) {
 		document.getElementById('navbar').style.background = "white";
 		document.getElementById('bar1').style.background = "black";
 		document.getElementById('bar2').style.background = "black";
@@ -23,14 +23,14 @@ document.addEventListener('scroll', (event) => {
 		document.getElementById('bar3').style.background = "white";
 	}
 
-	if (scroly < 250) {
+	if (scroly < 260) {
 		var beg = "scale(";
-		var val = 1 - 0.6*scroly/250;
-		var end = ");"
+		var val = 1 - 0.65*scroly/260;
+		var end = ")"
 		inner = beg + val + end;
 		console.log(inner);
 		document.getElementById('tit').style.transform = inner;
-		document.getElementById("of").opacity = val = 1-scroly/250;
+		document.getElementById("of").style.opacity = 1 - scroly/260;
 		document.getElementById('title').style.color = "transparent";
 	}
 	else{
