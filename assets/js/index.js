@@ -27,10 +27,10 @@ document.addEventListener('scroll', (event) => {
 		var beg = "scale(";
 		var val = 1 - 0.63*scroly/250;
 		var end = ");"
-		document.getElementById('tit').style.transform = bag + val + end;
+		document.getElementById('tit').style.transform = beg + val + end;
 		beg = "opacity(";
 		val = 1-scroly/250;
-		document.getElementById("of").opacity = bag+val+end;
+		document.getElementById("of").opacity = beg+val+end;
 	}
 	else{
 		document.getElementById('tit').style.position = "fixed";
