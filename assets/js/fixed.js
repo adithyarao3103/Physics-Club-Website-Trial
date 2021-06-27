@@ -22,6 +22,6 @@ function showmenu(){
 	document.getElementById('bar2').style.transform = 'translateX(100px)';
 	document.getElementById('bar3').style.transform = 'translateX(100px)';
 	document.getElementById('fullscreen').style.display = "block";
-	setTimeout(function(){addmenu();}, 500);
+	setTimeout(function(){addmenu();}, 250);
 	document.getElementById('fullscreen').style.pointerEvents = 'auto';
 }
