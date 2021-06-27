@@ -81,16 +81,20 @@
 }
 
 #upcoming{
-	background: grey;
+	background: #292929;
 	width: 100.1vw;
 	height: 60vh;
-	position: absolute;
-	left: -0.1vw;
+	position:relative;
+	border-top: 5px solid black;
+	left: -1vw;
 }
 
 #pclogo{
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 200px;
 	position: relative;
-	top: 300px;
+	top: 90px;
+    border-radius: 50%;
+    border: 2px solid white;
+	z-index:1;
 }
