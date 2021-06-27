@@ -301,8 +301,10 @@ body{
 
 #footer{
 	width: inherit;
-	height: 30vh;
+	height: 40vh;
+	width: 104vw;
 	background: black;
+	border-top:  10px solid black;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 }
@@ -310,6 +312,11 @@ body{
 #social{
 	background-color: black;
 	border-right: 2px solid gray;
+}
+
+.fa{
+	margin: 20px;
+	text-decoration: none;
 }
 
 .fa:hover {
