@@ -62,8 +62,8 @@
 #content{
 	width: inherit;
 	background: white;
-	padding: 50px;
+	padding-left: 50px;
 	font-size: calc(6px + 1.25vw);	
-	letter-spacing: 5px;
-	line-height: 1.5;
+	letter-spacing: 3px;
+	line-height: 2;
 }
