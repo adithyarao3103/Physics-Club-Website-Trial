@@ -109,7 +109,7 @@ body{
 	font-family: BioRhyme;
 	font-size: calc(10px + 4.5vw);
 	white-space: nowrap;
-	transform: scale(0.32);
+	transform: scale(0.35);
 	color: black;
 	height: inherit;
 	background-color: transparent;
