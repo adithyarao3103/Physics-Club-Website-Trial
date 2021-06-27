@@ -25,3 +25,10 @@ function showmenu(){
 	setTimeout(function(){addmenu();}, 250);
 	document.getElementById('fullscreen').style.pointerEvents = 'auto';
 }
+
+
+window.addEventListener('load',() =>{
+    document.getElementById('loading').style.display = "none";
+    document.getElementById('loading').style.pointerEvents = "none";
+    document.body.style.overflowY= "auto";
+});
