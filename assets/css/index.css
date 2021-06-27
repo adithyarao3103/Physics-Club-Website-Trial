@@ -74,6 +74,6 @@
 
 [id*=line]{
 	opacity: 0;
-	transform: translateY(-50px);
+	transform: translateY(-300px);
 	transition: all 1s;
 }
