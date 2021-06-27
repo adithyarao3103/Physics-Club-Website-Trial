@@ -13,13 +13,6 @@ function isInViewport(element) {
     );
 }
 
-function bringout(i){
-	if (i==4) {return}
-	document.getElementById('line' + i).style.opacity = 1;
-	document.getElementById('line' + i).style.transform = 'translateY(0px)';
-	setTimeout(function(){bringout(i+1);}, 500);
-}
-
 let image = document.createElement('img');
 image.src = bg;
 
@@ -68,7 +61,8 @@ document.addEventListener('scroll', (event) => {
 
 
 if (isInViewport(document.getElementById("content"))) {
-	bringout(1);
+document.getElementById('line').style.opacity = 1;
+document.getElementById('line' + i).style.transform = 'translateY(0px)';
 }
 
 
