@@ -26,7 +26,7 @@ function showmenu(){
 	document.getElementById('fullscreen').style.pointerEvents = 'auto';
 }
 
-
+/*
 window.addEventListener('load',() =>{
     document.getElementById('loading').style.display = "none";
     document.getElementById('loading').style.pointerEvents = "none";
