@@ -70,12 +70,13 @@
 	font-size: calc(6px + 1.25vw);	
 	letter-spacing: 3px;
 	line-height: 2;
-	border-left: 3px solid grey;
 	margin-bottom: 50px;
 }
 
 #line{
 	opacity: 0;
+	padding-left: 75px;
+	border-left: 3px solid grey;
 	transform: translateY(75px);
 	transition: all 1s;
 }
@@ -85,8 +86,8 @@
 }
 
 #upcoming> img{
-	width: 300px;
-	height: 300px;
+	width: 100px;
+	height: 100px;
 	position: relative;
 	top: -300px;
 }
