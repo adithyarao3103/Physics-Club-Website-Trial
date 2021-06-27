@@ -47,7 +47,7 @@ document.addEventListener('scroll', (event) => {
 		document.getElementById('bar1').style.background = "black";
 		document.getElementById('bar2').style.background = "black";
 		document.getElementById('bar3').style.background = "black";
-		document.getElementById('title').style.color = "black";
+		document.getElementById('title').setAttribute('class', 'hover');
 	}
 	else{
 		document.getElementById('navbar').style.background = "transparent";
@@ -56,6 +56,7 @@ document.addEventListener('scroll', (event) => {
 		document.getElementById('bar3').style.background = "white";
 		document.getElementById('title').style.color = "white";
 		document.getElementById('tit').style.color = "transparent";
+		document.getElementById('title').setAttribute('class', '');
 	}
 }
 
