@@ -83,7 +83,6 @@ body{
 	position: fixed;
 	top: -7px;
 	left: -7px;
-	background-color: #f5f5f5;
 	background-color: transparent;
 	z-index: 100;
 }
@@ -95,7 +94,7 @@ body{
 	background-color: transparent;
 	position: relative;
 	left: 15%;
-	padding: 2%;
+	padding: 1.5%;
 }
 
 .pc{
@@ -141,7 +140,7 @@ body{
 [id*=bar]{
 	width: 30px;
 	height: 4px;
-	margin: 6px;
+	margin: 2px;
 	background-color: black;
 	border: 2px solid white;
 }
