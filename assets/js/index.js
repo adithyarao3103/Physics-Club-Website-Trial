@@ -4,6 +4,7 @@ var initial_height = document.getElementById("tit").getBoundingClientRect().top;
 var req_height = document.getElementById("title").getBoundingClientRect().top;
 
 
+
 let image = document.createElement('img');
 image.src = bg;
 
@@ -13,7 +14,10 @@ image.addEventListener('load', (event)=> {
 
 document.addEventListener('scroll', (event) => {
 	scroly = this.scrollY;
-	if (scroly > 300) {
+
+	var current_height = document.getElementById("tit").getBoundingClientRect().top;
+
+	if (current_height < req_height) {
 		document.getElementById('navbar').style.background = "white";
 		document.getElementById('bar1').style.background = "black";
 		document.getElementById('bar2').style.background = "black";
@@ -29,7 +33,6 @@ document.addEventListener('scroll', (event) => {
 		document.getElementById('title').style.color = "transparent";
 	}
 
-	var current_height = document.getElementById("tit").getBoundingClientRect().top;
 
 	if (current_height > req_height) {
 		var beg = "scale(";
