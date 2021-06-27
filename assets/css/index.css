@@ -1,7 +1,10 @@
 #topcontent{
+	position: absolute;
+	top: -5px;
+	left: -5px;
 	height: 100vh;
-	width: 100vw;
-	border-radius: ;
+	width: 101vw;
+	background: url('/assets/images/bgblur.jpg');
 }
 
 
@@ -25,4 +28,12 @@
 
 .custom-shape-divider-bottom-1624772211 .shape-fill {
     fill: #FFFFFF;
+}
+
+#titleholder{
+	color: white;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 30%;
 }
