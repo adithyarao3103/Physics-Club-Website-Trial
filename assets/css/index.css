@@ -62,7 +62,7 @@
 
 #content{
 	width: inherit;
-	height: 75vh;
+	height: 60vh;
 	background: white;
 	margin-left: 10%;
 	padding-left: 2%;
@@ -83,6 +83,7 @@
 #upcoming{
 	background: grey;
 	width: 100.1vw;
+	height: 60vh;
 	position: absolute;
 	left: -0.1vw;
 }
