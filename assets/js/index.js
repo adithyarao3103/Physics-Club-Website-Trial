@@ -62,7 +62,7 @@ document.addEventListener('scroll', (event) => {
 
 if (isInViewport(document.getElementById("content"))) {
 document.getElementById('line').style.opacity = 1;
-document.getElementById('line' + i).style.transform = 'translateY(0px)';
+document.getElementById('line').style.transform = 'translateY(0px)';
 }
 
 
