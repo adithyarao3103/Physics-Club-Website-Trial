@@ -70,7 +70,7 @@
 	letter-spacing: 3px;
 	line-height: 2;
 	border-left: 3px solid grey;
-	padding-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 #line{
@@ -79,3 +79,13 @@
 	transition: all 1s;
 }
 
+#upcoming{
+	background: black;
+}
+
+#upcoming> img{
+	width: 300px;
+	height: 300px;
+	position: relative;
+	top: -150px;
+}
