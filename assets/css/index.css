@@ -12,16 +12,18 @@
 }
 
 #darken{
-	background: rgba(0, 0, 0, 0.75);
-}
-
-#titleholder{
-	font-size: 20px;
+	background: rgba(0, 0, 0, 0.6);
+	width: inherit;
+	height: inherit;
 }
 
 .tit{
-	font-size: 50px;
+	font-size: calc(10px + 4.5vw);
 	font-family: BioRhyme;
+}
+
+.tit>font{
+	font-size: calc(5px + 1vw)!important;
 }
 
 
@@ -50,6 +52,7 @@
 #titleholder{
 	color: white;
 	position: relative;
-	top: 30vh;
-	left: 30%;
+	top: 35vh;
+	left: 10%;
+	font-size: calc(5px + 1vw);
 }
