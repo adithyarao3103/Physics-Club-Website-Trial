@@ -30,11 +30,7 @@ document.addEventListener('scroll', (event) => {
 		inner = beg + val + end;
 		console.log(inner);
 		document.getElementById('tit').style.transform = inner;
-		beg = "opacity(";
-		val = 1-scroly/250;
-		inner = beg + val + end;
-		console.log(inner);
-		document.getElementById("of").opacity = inner;
+		document.getElementById("of").opacity = val = 1-scroly/250;
 	}
 	else{
 		document.getElementById('tit').style.position = "fixed";
