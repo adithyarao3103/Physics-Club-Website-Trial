@@ -32,7 +32,7 @@ document.addEventListener('scroll', (event) => {
 
 	}
 	else{
-		if (current_height < req_height-70) {
+		if (current_height < req_height-120) {
 		document.getElementById('navbar').style.background = "white";
 		document.getElementById('bar1').style.background = "black";
 		document.getElementById('bar2').style.background = "black";
