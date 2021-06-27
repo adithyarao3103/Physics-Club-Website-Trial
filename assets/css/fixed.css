@@ -92,7 +92,8 @@ body{
 	justify-content: flex-start;
 	background-color: transparent;
 	position: relative;
-	left: 30px;
+	left: 60px;
+	padding: 10%;
 }
 
 .pc{
