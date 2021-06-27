@@ -77,7 +77,7 @@ body{
 #navbar{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	height: 80px;
+	height: calc(50px + 2vh);
 	width: 100vw;
 	position: fixed;
 	top: 0;
@@ -91,27 +91,26 @@ body{
 	display: flex;
 	justify-content: flex-start;
 	background-color: transparent;
-	width: 200px;
+	width: 33%;
 	position: relative;
 	left: 30px;
 }
 
 .pc{
 	position: relative;
-	top: -5px;
-	height: 60px;
-	width: 60px;
-	margin: 10px;
+	height: 70%;
+	width: 70%;
+	margin: 15%;
 }
 
 #title{
-	font-family: Montserrat;
-	font-size: calc(10px + 1.5vw);
+	font-family: BioRhyme;
+	font-size: calc(8px + 1.25vw);
 	color: black;
 	height: inherit;
 	background-color: transparent;
 	position: relative;
-	top: 15px
+	top: 10%;
 }
 
 #hamcont{
@@ -119,41 +118,42 @@ body{
 	justify-content: flex-end;
 	height: inherit;
 	background-color: transparent;
-	position: relative;
-	right: 40px;
+	width: 33%;
 }
 
 #hamcont> button{
 	border: 0px;
 	background-color: transparent;
+	position: relative;
+	right: 20%;
 }
 
 #ham{
-	width: 40px;
-	height: 40px;
+	width: 50%;
+	height: 50%;
 	background-color: transparent;
-	margin: 5px;
+	margin: 25%;
 	display: inline-block;
 }
 
 [id*=bar]{
-	width: 35px;
-	height: 4px;
-	margin: 6px;
+	width: 90%;
+	height: 10%;
+	margin: 15%;
 	background-color: black;
 }
 
 #bar1{
-	transform: translateX(0);
+	transform: translateX(0px);
 	transition: all 0.1s;
 }
 
 #bar2{
-	transform: translateX(0);
+	transform: translateX(0px);
 	transition: all 0.5s;
 }
 
 #bar3{
-	transform: translateX(0);
+	transform: translateX(0px);
 	transition: all 1s;
 }

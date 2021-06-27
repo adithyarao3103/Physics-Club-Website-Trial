@@ -6,9 +6,9 @@ function closemenu(){
 	console.log("close");
     document.getElementById("fullscreen").style.opacity = 0;
 	document.getElementById('fullscreen').style.pointerEvents = 'none';
-	document.getElementById('bar1').style.transform = 'translateX(0)';
-	document.getElementById('bar2').style.transform = 'translateX(0)';
-	document.getElementById('bar3').style.transform = 'translateX(0)';
+	document.getElementById('bar1').style.transform = 'translateX(0px)';
+	document.getElementById('bar2').style.transform = 'translateX(0px)';
+	document.getElementById('bar3').style.transform = 'translateX(0px)';
     setTimeout(function(){removemenu();}, 500);
 }
 
