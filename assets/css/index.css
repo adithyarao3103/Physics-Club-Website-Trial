@@ -58,3 +58,12 @@
 	top: 45vh;
 	font-size: calc(5px + 1vw);
 }
+
+#content{
+	width: inherit;
+	background: white;
+	padding: 50px;
+	font-size: calc(6px + 1.25vw);	
+	letter-spacing: 5px;
+	line-height: 1.5;
+}
