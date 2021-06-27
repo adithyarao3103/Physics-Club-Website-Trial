@@ -4,4 +4,5 @@ let image = document.createElement('img');
 img.src = bg;
 
 image.addEventListener('load', (event)=> {
-  document.getElementById('topcontent').style.backgroundImage = `url(${bg})`;});
+  document.getElementById('topcontent').style.backgroundImage = `url(${bg})`;
+console.log("loaded")});

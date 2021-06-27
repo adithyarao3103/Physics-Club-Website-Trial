@@ -5,6 +5,9 @@
 	height: 100vh;
 	width: 101vw;
 	background: url('/assets/images/bgblur.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 
