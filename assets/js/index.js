@@ -4,6 +4,10 @@ var initial_height = document.getElementById("tit").getBoundingClientRect().top;
 var req_height = document.getElementById("title").getBoundingClientRect().top;
 
 
+document.getElementById('tit').style.position = "sticky";
+document.getElementById('tit').style.top = req_height + "px";
+
+
 
 let image = document.createElement('img');
 image.src = bg;
@@ -17,7 +21,7 @@ document.addEventListener('scroll', (event) => {
 
 	var current_height = document.getElementById("tit").getBoundingClientRect().top;
 
-	if (current_height < req_height) {
+	if (current_height < req_height-10) {
 		document.getElementById('navbar').style.background = "white";
 		document.getElementById('bar1').style.background = "black";
 		document.getElementById('bar2').style.background = "black";
@@ -39,7 +43,6 @@ document.addEventListener('scroll', (event) => {
 		var val = 0.32 + 0.68*(current_height - req_height)/(initial_height - req_height);
 		var end = ")"
 		inner = beg + val + end;
-		console.log(inner);
 		document.getElementById('tit').style.transform = inner;
 		document.getElementById("of").style.opacity = (current_height - req_height)/(initial_height - req_height) ;
 		val = (current_height - req_height)/(initial_height - req_height);
@@ -47,7 +50,6 @@ document.addEventListener('scroll', (event) => {
 		document.getElementById("of").style.transform = inner;
 
 	}
-
 });
 
 
