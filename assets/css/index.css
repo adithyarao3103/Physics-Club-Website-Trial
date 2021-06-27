@@ -53,6 +53,7 @@
 }
 
 #titleholder{
+	font-family: BioRhyme;
 	color: white;
 	position: relative;
 	top: 45vh;
@@ -62,8 +63,15 @@
 #content{
 	width: inherit;
 	background: white;
-	padding-left: 50px;
+	padding-left: 10%;
+	padding-right: 10%;
 	font-size: calc(6px + 1.25vw);	
 	letter-spacing: 3px;
 	line-height: 2;
+}
+
+[id*=line]{
+	opacity: 0;
+	transform: translateY(-50px);
+	transition: all 1s;
 }

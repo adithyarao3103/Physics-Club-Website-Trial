@@ -3,6 +3,13 @@ var bg = '/assets/images/bg.jpg';
 var initial_height = document.getElementById("tit").getBoundingClientRect().top;
 var req_height = document.getElementById("title").getBoundingClientRect().top;
 
+function bringout(i){
+	if (i==4) {return}
+	document.getElementById('line' + i).style.opacity = 1;
+	document.getElementById('line' + i).style.transform = 'translateY(0)';
+	setTimeout(function(){bringout(i+1);}, 500);
+}
+
 let image = document.createElement('img');
 image.src = bg;
 
@@ -48,6 +55,16 @@ document.addEventListener('scroll', (event) => {
 		document.getElementById('tit').style.color = "transparent";
 	}
 }
+
+
+var line_height = document.getElementById("line1").getBoundingClientRect().top;
+if (line_height < initial_height) {
+	bringout(1);
+}
+
+
+
+
 });
 
 
