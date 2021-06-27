@@ -23,3 +23,8 @@ document.addEventListener('scroll', (event) => {
 		document.getElementById('bar3').style.background = "white";
 	}
 });
+
+
+document.getElementById('bar1').style.background = "white";
+document.getElementById('bar2').style.background = "white";
+document.getElementById('bar3').style.background = "white";
