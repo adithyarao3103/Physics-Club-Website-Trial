@@ -75,5 +75,5 @@ document.getElementById('bar1').style.background = "white";
 document.getElementById('bar2').style.background = "white";
 document.getElementById('bar3').style.background = "white";
 document.getElementById('title').style.color = "transparent";
-document.getElementById('navbar').style.color = "transparent";
+document.getElementById('navbar').style.background = "transparent";
 
