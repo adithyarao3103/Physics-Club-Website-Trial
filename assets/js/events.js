@@ -1,4 +1,11 @@
-xml = document.all('events.xml').XMLDocument;
+const fs = require('fs');
+
+
+fs.readFile('/assets/xml/events.xml', (err, data) => {
+    if (err) throw err;
+  
+    xml = data.toString();
+})
 
 var inner= '';
 
