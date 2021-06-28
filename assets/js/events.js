@@ -9,7 +9,7 @@
     function reportStatus() {
         if (oXHR.readyState == 4) {		// Check if request is complete.
             eventsdata = this.responseText;
-            eventsdata = JSON.parse(eventsdata);
+            events = JSON.parse(eventsdata).events;
             writepage()
         }
     }
