@@ -12,10 +12,6 @@
         }
     }
 
-    
-
-eventsdata = JSON.parse(events);
-
 var inner = '';
 
 for (var i = 0; i < eventsdata.length; i++) {
