@@ -307,14 +307,14 @@ body{
 	border-top:  10px solid black;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	position: absolute;
-	bottom: 0;
-	left: 0;
+	position: relative;
+	left: -10px;
 }
 
 #social{
 	background-color: black;
 	border-right: 2px solid gray;
+	height: inherit;
 }
 
 .fa{
