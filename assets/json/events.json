@@ -1,0 +1,18 @@
+{
+	"events":[
+		
+		{"name":"Research Opportunities in Physics", 
+		"date":"19 June 2021", "poster":"150621", 
+		"descr":"It's that time of the year when we sit back and start planning for the upcoming academic year. Internship through portals or emailing professors? When and where to apply? CV? Writing a good SOP? We know it's very easy to get caught up in these questions and that's exactly why we encourage you to attend the webinar on 'Research Opportunities in Physics'.<br>Suraj Singh, Nidhi Mehandiratta and Devanshu Sharma will help you navigate through various opportunities available for Physics students. ", 
+		"reglink":" ", 
+		"youtube": " "},
+
+		{"name":"N-Body Simulation", 
+		"date":"27-28 March 2021", 
+		"poster":"270321", 
+		"descr":"We are back with another workshop! This time, a 2 day certified workshop on N-body simulation.An N-body simulation approximates the motion of particles, often specifically particles that interact with one another through some type of physical forces. The types of particles that can be simulated using N-body methods range from celestial bodies to individual atoms in a gas cloud. Exciting, isn't it?!Join us on 27th March (3pm) and 28th March(9am) with Dr. Prakash Sarkar.<br>Prior knowledge of programming in C and familiarity with Numerical Methods will certainly help.", 
+		"reglink":" ", 
+		"youtube":" "}
+
+	]
+}
