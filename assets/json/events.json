@@ -61,6 +61,56 @@
 		"poster":"080220",
 		"descr":"MINDBEND 2020 in association with the Applied Physics Department and Physics Club SVNIT presenting you with ENTANGLED CHESS - 'Playing chess with a touch of quantum instinct'. Register for the event and get a new experience of playing chess in Physicists way.",
 		"reglink":" ",
+		"youtube":" "},
+
+		{"name":"Pratyaksha",
+		"date":"24-25 January 2020",
+		"poster":"240120",
+		"descr":"The physics club have come up with some  exciting events that will bring out the scientist in you. Physics club is organizing its first ever annual fest "PRATYAKSHA" on 25th January, 2020 at the Applied Physics department. Hurry up folks to register for the events and enjoy the actual beauty of science.",
+		"reglink":" ",
+		"youtube":" "},
+
+		{"name":"Piercing the invisible cosmos | Detecting the undetectable",
+		"date":"8 October 2019",
+		"poster":"181019",
+		"descr":"Detecting the undetectable will be an Introduction to experimental high energy physics. How do we test and validate the theories? Experimental High energy physics is a way to study the nature and behaviour of the elementary particles of the universe and an attempt to solve some of the unsolved mysteries of the universe.<br>Piercing the Invisible cosmos will cover up Radio astronomy  With radio astronomy, we study astronomical phenomena that are often invisible or hidden in other portions of the electromagnetic spectrum. From detecting the black hole image to predicting the gravitational wave events, radio astronomy is key behind such groundbreaking discoveries.",
+		"reglink":" ",
+		"youtube":" "},
+
+		{"name":"An approach to the Theory Of Everything",
+		"date":"17 October 2019",
+		"poster":"171019",
+		"descr":"Our history of understanding physical laws has been a history of unification. The first example is probably Newton's gravitational law which says that the equation used for describing the force that a planet exerts on another planet is the same for for that on an apple. Then came up unified fields like the Quantumelectrodynamics ... and so on and so forth. So gear up for the talk by Tiyasa Kar on 17 October 2019 where you will be taken for a ride to 'Theory of Everything'.",
+		"reglink":" ",
+		"youtube":" "},
+
+		{"name":"The birth of mass",
+		"date":"16 October 2019",
+		"poster":"161019",
+		"descr":"On July 4, 2012 the world was gathered for two power point presentations at CERN,Geneva. The world witnessed the presence of GOD PARTICLE that was detected at the Large Hadron Colliders. Gear up fellas! for the talk on The Birth of Mass by Ramkumar Radhakrishnan in which he would discuss the emergence of God particle and how the fate of the universe is decided by it.",
+		"reglink":" ",
+		"youtube":" "},
+
+		{"name":"Flexible electronics and their applications",
+		"date":"14 October 2019",
+		"poster":"141019",
+		"descr":">What if Electronics is flexible ? What if you had flexible display screens, flexible solar cells, flexible health care devices and many more devices which we encounter in daily life were made flexible. You guys getting shocked?",
+		"reglink":" ",
+		"youtube":" "},
+
+		{"name":"Rocket science and orbital mechanics",
+		"date":"11 October 2019",
+		"poster":"111019",
+		"descr":"Werhner von Braun designed the most powerful rocket ever that sent humanity on Lunar surafce. Starting from Wright Brothers to Apollo missions, humanity learnt how to extend atmospheric flights to interplanetary missions. Join us to learn formulations governing rockets, propulsion systems on a rocket and a little bit of spacecraft dynamics.",
+		"reglink":" ",
+		"youtube":" "},
+
+		{"name":"General Relativity",
+		"date":"10 October 2019",
+		"poster":"101019",
+		"descr":"Einstein shook the pillars of physics with the formulation of his field equations. This talk will explore how these equations are formulated, interpreted, and applied to understand the contents of our universe.",
+		"reglink":" ",
 		"youtube":" "}
+
 	]
 }
