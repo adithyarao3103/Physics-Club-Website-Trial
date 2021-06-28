@@ -1,26 +1,41 @@
+body{
+  background: #292929;
+}
+
+
+.main-holder{
+  height: 70vh;
+  position: absolute;
+  left: 0;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+  z-index: 9000;
+}
+
 .horizontalScroll {
-  width: 100vh;
+  width: 70vh;
   height: 100vw;
+  background: transparent;
   overflow-y: auto;
   overflow-x: hidden;
-  background: #2E2E2E;
-  padding: 30px;
   -webkit-transform-origin: right top;
           transform-origin: right top;
-  -webkit-transform: rotate(-90deg) translate3d(0, -100vh, 0);
-          transform: rotate(-90deg) translate3d(0, -100vh, 0);
+  -webkit-transform: rotate(-90deg) translate3d(0, -70vh, 0);
+          transform: rotate(-90deg) translate3d(0, -70vh, 0);
 }
 .horizontalScroll > * {
   -webkit-transform-origin: left top;
           transform-origin: left top;
-  -webkit-transform: rotate(90deg) translate3d(0, calc(-100vh + 60px), 0);
-          transform: rotate(90deg) translate3d(0, calc(-100vh + 60px), 0);
+  -webkit-transform: rotate(90deg) translate3d(0, -70vh, 0);
+          transform: rotate(90deg) translate3d(0, -70vh, 0);
 }
 
 .item {
-  width: calc(100vh - 60px);
-  height: calc(100vh - 60px);
-  background: #FDFFFC;
+  width: calc(70vh - 60px);
+  height: calc(70vh - 60px);
+  background: transparent;
   position: relative;
 }
 .item:not(:first-child) {
@@ -34,6 +49,5 @@
   bottom: 0;
   left: 0;
   background: no-repeat center center / cover;
-  opacity: .8;
-  background-blend-mode: luminosity;
+  opacity: 1;
 }
