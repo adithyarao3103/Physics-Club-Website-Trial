@@ -1,11 +1,4 @@
-const fs = require('fs');
-
-
-fs.readFile('/assets/xml/events.xml', (err, data) => {
-    if (err) throw err;
-  
-    xml = data.toString();
-})
+xml = document.getElementById('xml');
 
 var inner= '';
 
