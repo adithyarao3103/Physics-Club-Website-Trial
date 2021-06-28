@@ -12,49 +12,49 @@
 		"poster":"270321", 
 		"descr":"We are back with another workshop! This time, a 2 day certified workshop on N-body simulation.An N-body simulation approximates the motion of particles, often specifically particles that interact with one another through some type of physical forces. The types of particles that can be simulated using N-body methods range from celestial bodies to individual atoms in a gas cloud. Exciting, isn't it?!Join us on 27th March (3pm) and 28th March(9am) with Dr. Prakash Sarkar.<br>Prior knowledge of programming in C and familiarity with Numerical Methods will certainly help.", 
 		"reglink":" ", 
-		"youtube":" "}
+		"youtube":" "},
 
 		{"name":"Pratyaksha",
 		"date":"13-14 March 2021",
 		"poster":"130321",
 		"descr":"Its time to put on your thinking hats and grab a painting brush cuz we are back with the second edition of our annual Physics fest PRATYAKSHA! Join us on 13th and 14th February for a weekend filled with fun physics-y events that are sure to not let your FOMO take over.",
 		"reglink":" ",
-		"youtube":" "}
+		"youtube":" "},
 
 		{"name":"A logico-linguistic inquiry into the foundations of physics",
 		"date":"7 January 2021",
 		"poster":"070121",
 		"descr":"Are physical dimension and number distinct concepts? If yes, then on what logical grounds, does the physicist perform dimensional analysis by considering physical dimensions as numbers? If no, then why does the physicist use the words like mass, length, etc. instead of writing just numbers? If this question made you question the foundation of physics, be sure to join our first Science Sabha talk of 2021.Dr. Abhishek Majhi of Indian Statistical Institute, Kolkata will take up such questions in his talk on ' A logico-linguistic inquiry into the foundations of physics'.",
 		"reglink":" ",
-		"youtube":" "}
+		"youtube":" "},
 
 		{"name":"How to be a bad experimentalist!",
 		"date":"23 December 2020",
 		"poster":"231220",
 		"descr":"We've all either seen or done the baking soda volcano project in school science fairs. Let's take that experimental spirit and notch it up to next level. Being an experimental physicist that is. This Wednesday evening, join us with Dr. Akashrup Banerjee where he'll talk about developing an experimental acumen and preparing oneself to be an experimentalist.",
 		"reglink": " ",
-		"youtube": " "}
+		"youtube": " "},
 
 		{"name":"A talk on Radioastronomy and Astrophysics",
 		"date":"7 November 2020",
 		"poster":"071120",
 		"descr":" We are back with another Science Sabha talk! This Saturday evening , join us with Charitarth Vyas where he'll take up the topic of Radio Astronomy and Astrophysics.Charitarth Vyas is an alumnus of the Applied Physics Department, NIT Surat. He is also a DAAD Scholar working as a PhD student at the University of Bonn, Germany.",
 		"reglink":" ",
-		"youtube":" "}
+		"youtube":" "},
 
 		{"name":"Researchathon",
 		"date":"12,13,20 September 2020",
 		"poster":"120920",
 		"descr":"Get ready to put your physics skills to the test! Physics Club NIT Surat presents to you the first 'Online Researchathon,' an event that will test your physics knowledge, problem-solving skills, and culminate with a 30 hour final round to test your research ability.",
 		"reglink":" ",
-		"youtube":" "}
+		"youtube":" "},
 
 		{"name":"LabVIEW",
 		"date":"29-30 August 2020",
 		"poster":"290820",
 		"descr":"Want to add something worthy to your skillset? Well, we got you covered, with a completely online two day certified 𝙬𝙤𝙧𝙠𝙨𝙝𝙤𝙥 𝙤𝙣 𝙇𝙖𝙗𝙑𝙄𝙀𝙒. A software that is capable of any extensive hardware integration and gives you versatility, along with control and measurement, for developing a lot of engineering applications. Thanks to the graphical approach to programming, you don't even need to mug up codes!",
 		"reglink":" ",
-		"youtube":" "}
+		"youtube":" "},
 
 		{"name":"Entangled Chess",
 		"date":"8 February 2020",
