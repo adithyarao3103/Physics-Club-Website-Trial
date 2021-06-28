@@ -8,9 +8,6 @@
     {% for css_name in page.extra_css %}
     <link rel="stylesheet" href="{{ css_name }}">
     {% endfor %}
-    {% if page.xml %}
-    <script id="xml" type="notjs" src="{{ page.xml }}"></script>
-    {% endif %}
 </head>
 <body>
 <div class="loading" id="loading">
