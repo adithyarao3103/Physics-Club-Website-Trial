@@ -5,6 +5,9 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" type="text/css" href="/assets/css/fixed.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% for css_name in page.extra_css %}
+    <link rel="stylesheet" href="{{ css_name }}">
+    {% endfor %}
 </head>
 <body>
 <div class="loading" id="loading">
@@ -66,4 +69,7 @@
 
 </body>
 <script type="text/javascript" src="/assets/js/fixed.js"></script>
+{% for js_name in page.extra_js %}
+    <link rel="stylesheet" href="{{ js_name }}">
+{% endfor %}
 </html>
