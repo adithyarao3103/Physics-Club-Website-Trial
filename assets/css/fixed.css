@@ -301,20 +301,21 @@ body{
 
 #footer{
 	width: inherit;
-	height: 40vh;
+	height: 30vh;
 	width: 104vw;
 	background: black;
 	border-top:  10px solid black;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	position: relative;
-	left: -10px;
+	left: -10px;    
+	transform:scale(1.1);
 }
 
 #social{
 	background-color: black;
 	border-right: 2px solid gray;
-	height: inherit;
+	height: 28vh;
 }
 
 .fa{
