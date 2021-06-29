@@ -7,7 +7,8 @@ body{
   height: 110vh;
   position: relative;
   left:-25vh;
-  top: calc(90px + 2vh);
+  top: calc(60px + 2vh);
+  z-index:99;
 }
 
 ::-webkit-scrollbar {
@@ -16,7 +17,8 @@ body{
 }
 
 .horizontalScroll {
-  border-right:2px solid white;
+  z-index:100;
+  border-right:2px dashed white;
   width: 95vh;
   height: 100vw;
   background: transparent;
@@ -65,7 +67,11 @@ margin-bottom:100px;
   opacity: 1;
 }
 
-.item.dot{
-  position: absolute;
-  top: -20vh;
+.item .dot{
+  position:relative;
+  top:-20px;
+  height:20px;
+  width: 20px;
+  border-radius:50%;
+  background: white;
 }
