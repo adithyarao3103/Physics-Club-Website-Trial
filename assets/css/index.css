@@ -103,10 +103,22 @@
 #upcoming{
 	background: #023373;
 	color: white;
-	width: 101vw;
+	width: 105vw;
 	height: 90vh;
 	position:relative;
-	left: -1vw;
+	left: -2.5vw;
+}
+
+#latest{
+	width: 100%;
+	height: 70%;
+	letter-spacing: 2px;
+	line-height: 1.5;
+}
+
+#latest> h1>{
+	text-transform: capitalize;
+	letter-spacing: 3px;
 }
 
 #pclogo{
