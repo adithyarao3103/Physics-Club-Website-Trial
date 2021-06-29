@@ -94,8 +94,8 @@ document.getElementById('bar3').style.background = "white";
 document.getElementById('title').style.color = "transparent";
 document.getElementById('navbar').style.background = "transparent";
 
-document.getElementById('loadingevents').style.display = "none";
-document.getElementById('loadingevents').style.pointerEvents = "none";
+document.getElementById('loading').style.display = "none";
+document.getElementById('loading').style.pointerEvents = "none";
 document.body.style.overflowY= "auto";
 
 
