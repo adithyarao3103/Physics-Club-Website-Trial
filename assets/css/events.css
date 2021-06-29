@@ -64,3 +64,8 @@ margin-bottom:100px;
   width: 100%;
   opacity: 1;
 }
+
+.item.dot{
+  position: absolute;
+  top: -20vh;
+}
