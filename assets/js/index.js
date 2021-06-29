@@ -10,6 +10,9 @@ initial_height = document.getElementById("tit").getBoundingClientRect().top;
 req_height = document.getElementById("title").getBoundingClientRect().top;
 },1);
 }
+if ('scrollRestoration' in window.history) {
+  window.history.scrollRestoration = 'manual'
+}
 
 initialise();
 
