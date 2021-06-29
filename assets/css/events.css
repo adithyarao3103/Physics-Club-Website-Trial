@@ -36,8 +36,8 @@ body{
 }
 
 .item {
-  width: calc(120vh - 60px);
-  height: calc(110vh - 60px);
+  width: calc(105vh - 60px);
+  height: calc(105vh - 60px);
   background: transparent;
   position: relative;
 }
