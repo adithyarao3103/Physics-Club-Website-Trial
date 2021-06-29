@@ -36,8 +36,8 @@ body{
 }
 
 .item {
-  width: calc(105vh - 60px);
-  height: calc(105vh - 60px);
+  width: calc(80vh - 60px);
+  height: calc(80vh - 60px);
   background: transparent;
   position: relative;
 }
@@ -46,8 +46,12 @@ body{
 }
 .item{
   position:relative;
-  right:-40vh;
-  margin:-150px;
+  right:-20vh;
+  margin: 10px;
+}
+
+.item:last-child {
+margin-bottom:100px;
 }
 
 .item .bg {
