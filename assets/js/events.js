@@ -18,7 +18,7 @@
 function writepage(){
 var inner = '';
 for (var i = 0; i < events.length; i++) {
-inner += '<div class="item"><img class="bg" src="/assets/posters/' + events[i].poster + '.jpg"></img><center><div class="dot"></div></center></div>';
+inner += '<div class="item"><img class="bg" src="/assets/posters/' + events[i].poster + '.jpg"></img><center><div class="dot"></div><p class="info">' + events[i].descr + '</p></center></div>';
 }
 document.getElementById('container').innerHTML = inner;
 }
