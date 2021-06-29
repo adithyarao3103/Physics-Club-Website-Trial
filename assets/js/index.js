@@ -8,8 +8,8 @@ document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 setTimeout(function(){
 initial_height = document.getElementById("tit").getBoundingClientRect().top;
-var req_height = document.getElementById("title").getBoundingClientRect().top;
-},10);
+req_height = document.getElementById("title").getBoundingClientRect().top;
+},1);
 }
 
 initialise();
