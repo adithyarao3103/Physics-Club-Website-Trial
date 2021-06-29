@@ -18,16 +18,26 @@
 function writepage(){
 var inner = '';
 for (var i = 0; i < events.length; i++) {
-inner += '<div class="item"><div class="bg" style="background-image: url(/assets/posters/' + events[i].poster + '.jpg)"></div></div>';
+inner += '<div class="item"><img class="bg" src="/assets/posters/' + events[i].poster + '.jpg"></img></div>';
 }
 document.getElementById('container').innerHTML = inner;
 }
 
+
+
+
 document.getElementById('loading').setAttribute('id', 'loadingevents');
 
-document.getElementsByClassName('bg')[3].addEventListener('load',()=>{
+function removeload() {
+    var image = document.getElementsByClassName('bg')[2];
+    var isLoaded = image.complete && image.naturalHeight !== 0;
+    if(isLoaded){
     document.getElementById('loadingevents').style.display = "none";
     document.getElementById('loadingevents').style.pointerEvents = "none";
     document.body.style.overflowY= "auto";
-});
+    }
+    else{
+        setTimeout(function(){removeload();},10);
+    }
+};
 
