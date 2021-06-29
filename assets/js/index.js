@@ -4,8 +4,7 @@ var initial_height;
 var req_height;
 
 function initialise(){
-document.body.scrollTop = 0; 
-document.documentElement.scrollTop = 0;
+window.scrollTo(0,0);
 setTimeout(function(){
 initial_height = document.getElementById("tit").getBoundingClientRect().top;
 req_height = document.getElementById("title").getBoundingClientRect().top;
