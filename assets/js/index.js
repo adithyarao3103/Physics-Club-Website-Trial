@@ -4,6 +4,7 @@ var initial_height;
 var req_height;
 
 function initialise(){
+window.focus();
 window.scrollTo(0,0);
 setTimeout(function(){
 initial_height = document.getElementById("tit").getBoundingClientRect().top;
@@ -93,6 +94,8 @@ document.getElementById('bar3').style.background = "white";
 document.getElementById('title').style.color = "transparent";
 document.getElementById('navbar').style.background = "transparent";
 
-
+document.getElementById('loadingevents').style.display = "none";
+document.getElementById('loadingevents').style.pointerEvents = "none";
+document.body.style.overflowY= "auto";
 
 
