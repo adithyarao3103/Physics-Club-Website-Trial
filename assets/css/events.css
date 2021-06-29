@@ -1,12 +1,12 @@
 body{
-  background: #292929;
+  background: black;
 }
 
 
 .main-holder{
   height: 110vh;
   position: relative;
- left:-12vw; 
+  left:-25vh;
   top: calc(90px + 2vh);
 }
 
@@ -18,7 +18,7 @@ body{
 .horizontalScroll {
   border-right:2px solid white;
   width: 95vh;
-  height: 110vw;
+  height: 100vw;
   background: transparent;
   overflow-y: auto;
   overflow-x: hidden;
@@ -26,6 +26,7 @@ body{
           transform-origin: right top;
   -webkit-transform: rotate(-90deg) translate3d(0, -70vh, 0);
           transform: rotate(-90deg) translate3d(0, -70vh, 0);
+
 }
 .horizontalScroll > * {
   -webkit-transform-origin: left top;
@@ -45,7 +46,8 @@ body{
 }
 .item{
   position:relative;
-  right:-20vh;
+  right:-40vh;
+  margin:-150px;
 }
 
 .item .bg {
