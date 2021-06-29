@@ -301,12 +301,12 @@ body{
 
 #footer{
 	width: inherit;
-	height: 30vh;
+	height: 15vh;
 	width: 104vw;
 	background: black;
 	border-top:  10px solid black;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 1fr 1.5fr;
 	position: relative;
 	left: -10px;    
 	transform:scale(1.1);
@@ -315,7 +315,8 @@ body{
 #social{
 	background-color: black;
 	border-right: 2px solid gray;
-	height: 28vh;
+	height: 12vh;
+	padding:11px;
 }
 
 .fa{
@@ -345,14 +346,18 @@ body{
 
 #footmenu{
 	background-color: black;
-	height: 28vh;
-	padding: 20px;
+	height: 12vh;
+	padding:11px;
 }
 
 .footermenu{
+	position:relative;
+	left:-50px;
+	top:10px;
 	text-decoration: none;
 	text-transform: capitalize;
-	font-size: calc(20px + 2vw);
+	font-size: 1.65vw;
 	letter-spacing: 2px;
-	line-height: 1.5;
+	color: white;
+	margin-left:20px;
 }
