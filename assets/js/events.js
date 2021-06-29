@@ -23,4 +23,11 @@ inner += '<div class="item"><div class="bg" style="background-image: url(/assets
 document.getElementById('container').innerHTML = inner;
 }
 
+document.getElementById('loading').setAttribute('id', 'loadingevents');
+
+document.getElementsByClassName('bg')[3].addEventListener('load',()=>{
+    document.getElementById('loadingevents').style.display = "none";
+    document.getElementById('loadingevents').style.pointerEvents = "none";
+    document.body.style.overflowY= "auto";
+});
 
