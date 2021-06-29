@@ -342,3 +342,17 @@ body{
   background: black;
   color: white;
 }
+
+#footmenu{
+	background-color: black;
+	height: 28vh;
+	padding: 20px;
+}
+
+.footermenu{
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: calc(20px + 2vw);
+	letter-spacing: 2px;
+	line-height: 1.5;
+}
