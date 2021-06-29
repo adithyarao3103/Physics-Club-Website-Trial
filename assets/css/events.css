@@ -4,7 +4,7 @@ body{
 
 
 .main-holder{
-  height: 110vh;
+  height: calc(97vh - 60px);
   position: relative;
   left:-25vh;
   top: calc(60px + 2vh);
@@ -19,8 +19,8 @@ body{
 .horizontalScroll {
   z-index:100;
   border-right:2px solid white;
-  width: 95vh;
-  height: 100vw;
+  width: calc(97vh - 60px);
+  height: 110vw;
   background: transparent;
   overflow-y: auto;
   overflow-x: hidden;
@@ -48,7 +48,7 @@ body{
 }
 .item{
   position:relative;
-  right:-20vh;
+  right:-10vh;
   margin: 10px;
     overflow-x: clip;
     background: black;
@@ -73,7 +73,7 @@ margin-bottom:100px;
 
 .item .dot{
   position:relative;
-  top:-35px;
+  top:-45px;
   height:20px;
   width: 20px;
   transform: rotate(45deg);
@@ -107,4 +107,8 @@ opacity:0.2;
 .item:hover .info{
   pointer-events: all;
   opacity: 1;
+}
+
+#footer{
+display:none;
 }
