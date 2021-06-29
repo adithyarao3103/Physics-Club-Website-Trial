@@ -1,7 +1,18 @@
 var bg = '/assets/images/bg.jpg';
 
-var initial_height = document.getElementById("tit").getBoundingClientRect().top;
+var initial_height;
+var req_height;
+
+function initialise(){
+document.body.scrollTop = 0; 
+document.documentElement.scrollTop = 0;
+setTimeout(function(){
+initial_height = document.getElementById("tit").getBoundingClientRect().top;
 var req_height = document.getElementById("title").getBoundingClientRect().top;
+},10);
+}
+
+initialise();
 
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
@@ -79,4 +90,7 @@ document.getElementById('bar2').style.background = "white";
 document.getElementById('bar3').style.background = "white";
 document.getElementById('title').style.color = "transparent";
 document.getElementById('navbar').style.background = "transparent";
+
+
+
 
