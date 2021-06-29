@@ -4,19 +4,21 @@ body{
 
 
 .main-holder{
-  height: 70vh;
-  position: absolute;
-  left: 0;
+  height: 110vh;
+  position: relative;
+ left:-12vw; 
+  top: calc(90px + 2vh);
 }
 
 ::-webkit-scrollbar {
-  width: 1px;
+  width: 0px;
   z-index: 9000;
 }
 
 .horizontalScroll {
-  width: 70vh;
-  height: 100vw;
+  border-right:2px solid white;
+  width: 95vh;
+  height: 110vw;
   background: transparent;
   overflow-y: auto;
   overflow-x: hidden;
@@ -33,13 +35,17 @@ body{
 }
 
 .item {
-  width: calc(70vh - 60px);
-  height: calc(70vh - 60px);
+  width: calc(120vh - 60px);
+  height: calc(110vh - 60px);
   background: transparent;
   position: relative;
 }
-.item:not(:first-child) {
-  margin-top: 30px;
+.item:first-child {
+  margin-top: 50px;
+}
+.item{
+  position:relative;
+  right:-20vh;
 }
 
 .item .bg {
