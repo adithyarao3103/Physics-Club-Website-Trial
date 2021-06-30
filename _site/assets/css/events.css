@@ -164,6 +164,7 @@ display:none;
   grid-template-columns: 1fr 1.5fr;
   box-shadow: 0px 0px 10px white;
   border: 2px solid white;
+  overflow: clip;
 }
 
 #popup-poster{
