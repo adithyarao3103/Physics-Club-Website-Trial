@@ -43,6 +43,7 @@ function popupclose(){
 
 function popupopen(i){
     document.getElementById('popup-title').innerHTML = events[i].name.toUpperCase();
+    document.getElementById('popup-date').innerHTML = events[i].date;
     document.getElementById('popup-info').innerHTML = events[i].descr;
     document.getElementById('popup-reg').innerHTML = events[i].reglink == ' '? 'Registerations Closed' : "<a href = '" + events[i].reglink + "'>Register Now</a>";
     document.getElementById('popup-yt').innerHTML = events[i].youtube == ' '? ' ' : "<a href = '" + events[i].youtube + "'>Youtube link for recording</a>";
