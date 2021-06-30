@@ -361,3 +361,13 @@ body{
 	color: white;
 	margin-left:20px;
 }
+
+/*For Mobile*/
+#hamcont-mobile{
+	display: none;
+	position: fixed;
+	top: 5vh;
+	right: 5vh;
+	border-radius: 50%;
+	background: white;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Events | Physics Club NIT Surat</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/fixed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="/assets/css/events.css">
+    
+</head>
+<body>
+<div class="loading" id="loading">
+  <div class="loadholder">
+<div class="sk-folding-cube">
+  <div class="sk-cube1 sk-cube"></div>
+  <div class="sk-cube2 sk-cube"></div>
+  <div class="sk-cube4 sk-cube"></div>
+  <div class="sk-cube3 sk-cube"></div>
+</div>
+</div>
+</div>
+
+
+    <div id="fullscreen" class="hover">
+        <div id="menuholder">
+                <button class="close" onclick=closemenu()>&#10005;</button><br>
+                <button class = "mb" onclick="location.href='/index.html';">HOME</button><br>
+                <button class = "mb" onclick="location.href='/team.html';">TEAM</button><br>
+                <button class = "mb" onclick="location.href='/events.html';">EVENTS</button><br>
+                <button class = "mb" onclick="location.href='/contact.html';">CONTACT</button>
+        </div>
+    </div>
+
+    <div id="navbar">
+        <div id="logos">
+            <img class="pc" src="/assets/images/pc.png" alt="Physics Club logo" onclick="location.href='/index.html'">
+        </div>
+        <div id="title"><center>Events</center></div>
+        <div id="hamcont">
+            <button onclick=showmenu()>
+            <div id="ham">
+            <div id="bar1"></div>
+            <div id="bar2"></div>
+            <div id="bar3"></div>
+            </div>
+            </button>
+        </div>
+    </div>
+
+    <div id="hamcont-mobile">
+            <button onclick=showmenu()>
+            <div id="ham">
+            <div id="bar1"></div>
+            <div id="bar2"></div>
+            <div id="bar3"></div>
+            </div>
+            </button>
+        </div>
+
+
+    <div class="main-holder">
+<div class="horizontalScroll" id="container"> 
+</div>
+</div>
+
+<div id="popup">
+    <div id="popup-content">
+        <div id="popup-close" onclick="popupclose()"></div> 
+    <img id="popup-poster"></img>
+    <div>
+        <div id="popup-title"></div>
+        <div id="popup-info"></div>
+        <div id="popup-reg"></div>
+        <div id="popup-yt"></div>
+    </div>
+    </div>
+</div>
+
+    <div id="footer">
+        <center>
+        <div id="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+        </center>
+        <center>
+        <div id="footmenu">
+            <a class="footermenu" href="/index.html">HOME</a>
+            <a class="footermenu" href="/team.html">TEAM</a>
+            <a class="footermenu" href="/events.html">EVENTS</a>
+            <a class="footermenu" href="/contact.html">CONTACT</a>
+        </div>
+        </center>
+    </div>
+
+</body>
+<script type="text/javascript" src="/assets/js/fixed.js"></script>
+
+    <script type="text/javascript" src="/assets/js/events.js"></script>
+
+</html>
