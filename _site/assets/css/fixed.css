@@ -145,13 +145,10 @@ body{
 }
 
 .hover{
-	box-shadow: none;
-	transition: all;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+	box-shadow: 2px 2px 5px rgba( 255, 255, 255, 0.18 );
 }
 
-.hover:hover{
-	box-shadow: 4px 4px 6px black;
-}
 
 #menuholder{
 	background-color: transparent;
@@ -212,27 +209,27 @@ body{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	height: calc(50px + 2vh);
-	width: 101vw;
+	width: calc(100vw + 7px);
 	position: fixed;
 	top: -7px;
 	left: -7px;
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.25);
 	z-index: 100;
 	transition: all 0.5s;
 }
 
 #logos{
-	height: inherit;
+	height: 100%;
+	width: 33%;
 	display: flex;
 	justify-content: flex-start;
 	background-color: transparent;
-	position: relative;
-	left: 15%;
-	padding: 3%;
+	position: absolute;
+	left: 7px;
+	top: 7px;
 }
 
 .pc{
-	position: relative;
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
@@ -240,7 +237,7 @@ body{
 }
 
 #title{
-	font-family: BioRhyme;
+	font-family: Montserrat;
 	font-weight: bold;
 	font-size: calc(10px + 4.5vw);
 	white-space: nowrap;
@@ -248,9 +245,12 @@ body{
 	color: black;
 	height: inherit;
 	background-color: transparent;
-	position: relative;
-	top: -7%;
+	position: absolute;
+	top: -7%;	
+	left: 29%;
+	width: 33%;
 	pointer-events: none;
+	width: 33%;
 }
 
 #hamcont{
@@ -258,14 +258,15 @@ body{
 	justify-content: flex-end;
 	height: inherit;
 	background-color: transparent;
+	width: 33%;
+	position: absolute;
+	right: 28px;
+	top: 7px;
 }
 
 #hamcont> button{
 	border: 0px;
 	background-color: transparent;
-	position: relative;
-	right: 30%;
-	top: 7%;
 	cursor: pointer;
 }
 

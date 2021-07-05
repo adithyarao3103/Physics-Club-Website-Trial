@@ -6,21 +6,11 @@ extra_js:
     - /assets/js/contact.js
 ---
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<script>
-	submitted = false;
-
-$('#contact').on('submit', function(e) {
-  $('#contact *').fadeOut(2000);
-  $('#contact').prepend('Your submission has been processed...');
-  });
-</script>
 
 <br><br><br><br>
 <!entry.1632216977=Your+Name&entry.961639452=Your+Email+ID&entry.1805491781=NIT+Surat&entry.168591354=Physics&entry.1769439812=Your+Message>
-
-<form name="contact" id="contact" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScwCeroPTTrLFnFXQ80D5CAKSixVvPLANc7FeNhlVbg-pqD9w/formResponse?" target="hidden_iframe" onsubmit="submitted = true;">
+<div id="formdiv">
+<form name="contact" id="contact" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScwCeroPTTrLFnFXQ80D5CAKSixVvPLANc7FeNhlVbg-pqD9w/formResponse?" target="hidden_iframe" onsubmit="submitsuccess();">
 <label>Name</label> <input type="text" name="entry.1632216977" id="entry.1632216977">
 <label>Email</label> <input type="text" name="entry.961639452" id="entry.961639452">
 <label>Institute</label><select name="entry.1805491781" id="entry.1805491781" size="1">
@@ -31,5 +21,6 @@ $('#contact').on('submit', function(e) {
 <label>Message</label><textarea name="entry.1769439812" id="entry.1769439812" rows="6" cols="25"></textarea><br />
 <input type="submit" value="Submit">
 </form>
+</div>
 
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){}"></iframe>

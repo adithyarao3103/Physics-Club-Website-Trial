@@ -19,7 +19,7 @@
 function writepage(){
 var inner = '';
 for (var i = 0; i < events.length; i++) {
-inner += '<div class="item"><img class="bg" src="/assets/posters/' + events[i].poster + '.jpg"></img><center><div class="dot"></div><p class="info">' + events[i].name.toUpperCase() + '</p><div id="clickhere'+ i + '">CLICK HERE</div></center></div>';
+inner += '<div class="item"><img class="bg" src="/assets/posters/' + events[i].poster + '.png"></img><center><div class="dot"></div><p class="info">' + events[i].name.toUpperCase() + '</p><div id="clickhere'+ i + '">CLICK HERE</div></center></div>';
 }
 document.getElementById('container').innerHTML = inner;
 for(i = 0; i < events.length; i++){
@@ -47,7 +47,7 @@ function popupopen(i){
     document.getElementById('popup-info').innerHTML = events[i].descr;
     document.getElementById('popup-reg').innerHTML = events[i].reglink == ' '? 'Registerations Closed' : "<a href = '" + events[i].reglink + "'>Register Now</a>";
     document.getElementById('popup-yt').innerHTML = events[i].youtube == ' '? ' ' : "<a href = '" + events[i].youtube + "'>Youtube link for recording</a>";
-    document.getElementById('popup-poster').setAttribute('src', '/assets/posters/' + events[i].poster + '.jpg');
+    document.getElementById('popup-poster').setAttribute('src', '/assets/posters/' + events[i].poster + '.png');
     setTimeout(function(){    document.getElementById('navbar').setAttribute('class', 'blur');
         document.getElementById('container').setAttribute('class', 'horizontalScroll blur');
         document.getElementById('popup').setAttribute('class', 'open');}, 20);
