@@ -84,6 +84,10 @@ for (var i = 0; i<content.length; i++) {
 }
 
 
+if (id('new').getBoundingClientRect().top <=0.65*screen.height) {
+	id('noti').setAttribute('class','noticlose');
+}
+
 
 });
 
