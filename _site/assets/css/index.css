@@ -68,7 +68,7 @@ body{
 
 .offsetdown{
 	opacity: 0;
-	transform: translateY(30%);
+	transform: translateY(100px);
 	transition: all 1.5s;
 }
 
@@ -83,7 +83,7 @@ body{
 	border-left: 4px solid white;
 	position: relative;
 	left: 5%;
-	margin-bottom: calc(100px);
+	margin-bottom: calc(35vh);
 	margin-top: calc(35vh + 150px);
 }
 
