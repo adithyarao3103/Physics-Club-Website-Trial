@@ -12,7 +12,6 @@
             eventsdata = this.responseText;
             events = JSON.parse(eventsdata).events;
             writepage();
-            lazy();
         }
     }
 
@@ -21,34 +20,34 @@ var inner = '';
 for (var i = 0; i < events.length; i++) {
 inner += '<div class="item"><img class="bg" src="/assets/posters/' + events[i].poster + '.png"></img><center><div class="dot"></div><p class="info">' + events[i].name.toUpperCase() + '</p><div id="clickhere'+ i + '">CLICK HERE</div></center></div>';
 }
-document.getElementById('container').innerHTML = inner;
+id('container').innerHTML = inner;
 for(i = 0; i < events.length; i++){
     fun = 'javascript:popupopen(';
     end = ')';
     string = fun + i + end;
-    document.getElementById('clickhere'+i).setAttribute('onclick', string);
+    id('clickhere'+i).setAttribute('onclick', string);
 }
 }
 
 function popupclose(){
-    document.getElementById('popup-title').innerHTML = '';
-    document.getElementById('popup-info').innerHTML = '';
-    document.getElementById('popup-reg').innerHTML = '';
-    document.getElementById('popup-reg').innerHTML = '';
-    document.getElementById('popup-poster').setAttribute('src', '');
-    document.getElementById('container').setAttribute('class', 'horizontalScroll');
-    document.getElementById('popup').setAttribute('class', '');
-    document.getElementById('navbar').setAttribute('class', '');
+    id('popup-title').innerHTML = '';
+    id('popup-info').innerHTML = '';
+    id('popup-reg').innerHTML = '';
+    id('popup-reg').innerHTML = '';
+    id('popup-poster').setAttribute('src', '');
+    id('container').setAttribute('class', 'horizontalScroll');
+    id('popup').setAttribute('class', '');
+    id('navbar').setAttribute('class', '');
 }
 
 function popupopen(i){
-    document.getElementById('popup-title').innerHTML = events[i].name.toUpperCase();
-    document.getElementById('popup-date').innerHTML = events[i].date;
-    document.getElementById('popup-info').innerHTML = events[i].descr;
-    document.getElementById('popup-reg').innerHTML = events[i].reglink == ' '? 'Registerations Closed' : "<a href = '" + events[i].reglink + "'>Register Now</a>";
-    document.getElementById('popup-yt').innerHTML = events[i].youtube == ' '? ' ' : "<a href = '" + events[i].youtube + "'>Youtube link for recording</a>";
-    document.getElementById('popup-poster').setAttribute('src', '/assets/posters/' + events[i].poster + '.png');
-    setTimeout(function(){    document.getElementById('navbar').setAttribute('class', 'blur');
-        document.getElementById('container').setAttribute('class', 'horizontalScroll blur');
-        document.getElementById('popup').setAttribute('class', 'open');}, 20);
+    id('popup-title').innerHTML = events[i].name.toUpperCase();
+    id('popup-date').innerHTML = events[i].date;
+    id('popup-info').innerHTML = events[i].descr;
+    id('popup-reg').innerHTML = events[i].reglink == ' '? 'Registerations Closed' : "<a href = '" + events[i].reglink + "'>Register Now</a>";
+    id('popup-yt').innerHTML = events[i].youtube == ' '? ' ' : "<a href = '" + events[i].youtube + "'>Youtube link for recording</a>";
+    id('popup-poster').setAttribute('src', '/assets/posters/' + events[i].poster + '.png');
+    setTimeout(function(){    id('navbar').setAttribute('class', 'blur');
+        id('container').setAttribute('class', 'horizontalScroll blur');
+        id('popup').setAttribute('class', 'open');}, 20);
 }

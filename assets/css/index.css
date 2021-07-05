@@ -3,6 +3,10 @@ body{
 	padding: 0;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 #topcontent{
 	height: calc(100vh + 10px);
 	width: calc(100vw + 10px);
@@ -56,13 +60,15 @@ body{
 	width: calc(100vw + 10px);
 	position: relative;
 	left: -10px;
-	height: 200vh;
 	position: relative;
 	background-image: linear-gradient(67.5deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(120, 120, 120) 93%, rgb(120, 120, 120) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(124deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(120, 120, 120) 93%, rgb(120, 120, 120) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(169deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(120, 120, 120) 93%, rgb(120, 120, 120) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(34deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(120, 120, 120) 93%, rgb(120, 120, 120) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(124deg, rgb(8, 8, 8),rgb(221, 221, 221)); background-blend-mode:overlay,overlay,overlay,overlay,normal;
 	background-image: linear-gradient(90deg, rgb(46, 46, 46) 0%, rgb(46, 46, 46) 7%,rgb(55, 55, 55) 7%, rgb(55, 55, 55) 17%,rgb(63, 63, 63) 17%, rgb(63, 63, 63) 40%,rgb(72, 72, 72) 40%, rgb(72, 72, 72) 42%,rgb(80, 80, 80) 42%, rgb(80, 80, 80) 56%,rgb(89, 89, 89) 56%, rgb(89, 89, 89) 63%,rgb(97, 97, 97) 63%, rgb(97, 97, 97) 100%),linear-gradient(180deg, rgb(46, 46, 46) 0%, rgb(46, 46, 46) 7%,rgb(55, 55, 55) 7%, rgb(55, 55, 55) 17%,rgb(63, 63, 63) 17%, rgb(63, 63, 63) 40%,rgb(72, 72, 72) 40%, rgb(72, 72, 72) 42%,rgb(80, 80, 80) 42%, rgb(80, 80, 80) 56%,rgb(89, 89, 89) 56%, rgb(89, 89, 89) 63%,rgb(97, 97, 97) 63%, rgb(97, 97, 97) 100%),linear-gradient(22.5deg, rgb(46, 46, 46) 0%, rgb(46, 46, 46) 7%,rgb(55, 55, 55) 7%, rgb(55, 55, 55) 17%,rgb(63, 63, 63) 17%, rgb(63, 63, 63) 40%,rgb(72, 72, 72) 40%, rgb(72, 72, 72) 42%,rgb(80, 80, 80) 42%, rgb(80, 80, 80) 56%,rgb(89, 89, 89) 56%, rgb(89, 89, 89) 63%,rgb(97, 97, 97) 63%, rgb(97, 97, 97) 100%),linear-gradient(180deg, rgb(93, 93, 93),rgb(177, 177, 177)); background-blend-mode:overlay,overlay,overlay,normal;
 	background-image: linear-gradient(90deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%,rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%,rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%,rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%,rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%,rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%),linear-gradient(67.5deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%,rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%,rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%,rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%,rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%,rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%),linear-gradient(112.5deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%,rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%,rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%,rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%,rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%,rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%),linear-gradient(45deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%,rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%,rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%,rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%,rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%,rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%),linear-gradient(90deg, rgb(95, 3, 74),rgb(35, 65, 96)); background-blend-mode:overlay,overlay,overlay,overlay,normal;
 	background-image: linear-gradient(90deg, rgb(15, 15, 15),rgb(119, 119, 119)),linear-gradient(67.5deg, rgb(61, 40, 216) 0%, rgb(61, 40, 216) 19%,rgb(55, 42, 182) 19%, rgb(55, 42, 182) 27%,rgb(49, 44, 147) 27%, rgb(49, 44, 147) 37%,rgb(42, 46, 113) 37%, rgb(42, 46, 113) 48%,rgb(36, 48, 78) 48%, rgb(36, 48, 78) 73%,rgb(30, 50, 44) 73%, rgb(30, 50, 44) 100%),linear-gradient(0deg, rgb(61, 40, 216) 0%, rgb(61, 40, 216) 19%,rgb(55, 42, 182) 19%, rgb(55, 42, 182) 27%,rgb(49, 44, 147) 27%, rgb(49, 44, 147) 37%,rgb(42, 46, 113) 37%, rgb(42, 46, 113) 48%,rgb(36, 48, 78) 48%, rgb(36, 48, 78) 73%,rgb(30, 50, 44) 73%, rgb(30, 50, 44) 100%),linear-gradient(22.5deg, rgb(61, 40, 216) 0%, rgb(61, 40, 216) 19%,rgb(55, 42, 182) 19%, rgb(55, 42, 182) 27%,rgb(49, 44, 147) 27%, rgb(49, 44, 147) 37%,rgb(42, 46, 113) 37%, rgb(42, 46, 113) 48%,rgb(36, 48, 78) 48%, rgb(36, 48, 78) 73%,rgb(30, 50, 44) 73%, rgb(30, 50, 44) 100%); background-blend-mode:overlay, overlay, overlay, normal;
 	padding-bottom: 150px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	
 }
 
@@ -83,8 +89,8 @@ body{
 	border-left: 4px solid white;
 	position: relative;
 	left: 5%;
-	margin-bottom: calc(35vh);
-	margin-top: calc(35vh + 150px);
+	margin-bottom: calc(25vh);
+	margin-top: calc(25vh);
 }
 
 #pclogo{
@@ -94,24 +100,37 @@ body{
     border: 2px solid white;
 }
 
+#hod {
+	 padding: 20px;
+	 margin-left: 7.5vw;
+	 margin-right: 7.5vw;
+	 margin-bottom: 20vh;
+}
+
+#fac {
+	 padding: 20px;
+	 margin-right: 7.5vw;
+	 margin-left: 7.5vw;
+	 margin-bottom: 20vh;
+}
+
+@media screen and (min-width: 901px){
 
 #statements{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 }
-
 #hod {
-	 padding: 20px;
-	 margin-left: 15vw;
 	 margin-right: 7.5vw;
+	 margin-left: 15vw;
 }
 
 #fac {
-	 padding: 20px;
 	 margin-right: 15vw;
 	 margin-left: 7.5vw;
 }
 
+}
 
 .prof{
 	width: calc(80px + 5vw);
@@ -147,4 +166,142 @@ body{
 .state{
 	letter-spacing: 2px;
 	line-height: 1.75;
+}
+
+#l-holder{
+	background: transparent;
+	margin: 30px;
+	width: 80vw;
+	position: relative;
+	left: -2vw;
+}
+
+@media screen and (max-width: 900px) {
+  #l-holder{ display: block; } 
+}
+@media screen and (min-width: 901px){
+  #l-holder{ 
+  	display: grid;
+	grid-template-columns: repeat(2, 1fr);	
+   } 
+}
+
+#l-image{
+	width: 32vw;
+	filter:  drop-shadow(0px 0px 20px rgba(255,255,255,0.5));
+}
+
+#l-title{
+	font-family: Lato;
+	font-size: calc(15px + 3.5vw);
+	color: white;
+	letter-spacing: 4px;
+}
+
+#l-date{
+	font-size: calc(10px + 1.25vw);
+	color: white;
+	letter-spacing: 2px;
+	padding: 20px;
+}
+
+#l-descr{
+	font-size: calc(6px + 1vw);
+	color: white;
+	letter-spacing: 2px;
+	line-height: 1.75;
+}
+
+#l-reg{
+	font-size: calc(6px + 1vw);
+	color: white;
+	letter-spacing: 2px;
+	line-height: 1.75;
+	margin-top: 20px;
+	padding: 10px;
+	text-decoration: none;
+	background: linear-gradient(#03042b, #03042b);
+	background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  transition: all 0.5s;
+}
+
+#l-reg:hover {
+  background-size: 4px 50px;
+}
+
+
+#noti{
+	width: 35vw;
+	height: 7vh;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	background: #f5f5f5;
+	z-index: 999;
+	border-radius: 20px;
+	font-size: calc(6px + 0.45vw);
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.noticlose{
+	opacity: 0;
+	transform: scale(0);
+	display: none;
+	pointer-events: none;
+	animation: close 0.25s;
+}
+
+.notiopen{
+	opacity: 1;
+	transform: scale(1);
+	display: block;
+	pointer-events: auto;
+	animation: open 0.25s ;
+}
+
+@keyframes open {
+	from{
+		transform: scale(0);
+	}
+	to{
+		transform: scale(1.0);
+	}
+}
+
+@keyframes close {
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(0);
+	}
+}
+
+#innoti{
+	position: absolute;
+	width: 90%;
+	height: 45%;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-43%) translateX(-52%);
+	justify-content: center;
+	text-align: center;
+	align-content: center;
+	cursor: context-menu;
+}
+
+#noticlose{
+	width: 30px;
+	height: 30px;
+	border: 0px solid black;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background: transparent;
+	cursor: pointer;
+	font-weight: bold;
+	z-index: 1000;
 }

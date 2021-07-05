@@ -1,42 +1,47 @@
+function id(elemid){
+	return document.getElementById(elemid);
+}
+
+
 function removemenu(){
-    document.getElementById("fullscreen").style.display = "none";	
+    id("fullscreen").style.display = "none";	
 }
 
 function closemenu(){
 	console.log("close");
-    document.getElementById("fullscreen").style.opacity = 0;
-	document.getElementById('fullscreen').style.pointerEvents = 'none';
-	document.getElementById('bar1').style.transform = 'translateX(0px)';
-	document.getElementById('bar2').style.transform = 'translateX(0px)';
-	document.getElementById('bar3').style.transform = 'translateX(0px)';
+    id("fullscreen").style.opacity = 0;
+	id('fullscreen').style.pointerEvents = 'none';
+	id('bar1').style.transform = 'translateX(0px)';
+	id('bar2').style.transform = 'translateX(0px)';
+	id('bar3').style.transform = 'translateX(0px)';
     setTimeout(function(){removemenu();}, 500);
 }
 
 function addmenu(){
-    document.getElementById("fullscreen").style.opacity = 1;	
+    id("fullscreen").style.opacity = 1;	
 }
 
 function showmenu(){
 	console.log('menu');
-	document.getElementById('bar1').style.transform = 'translateX(100px)';
-	document.getElementById('bar2').style.transform = 'translateX(100px)';
-	document.getElementById('bar3').style.transform = 'translateX(100px)';
-	document.getElementById('fullscreen').style.display = "block";
+	id('bar1').style.transform = 'translateX(100px)';
+	id('bar2').style.transform = 'translateX(100px)';
+	id('bar3').style.transform = 'translateX(100px)';
+	id('fullscreen').style.display = "block";
 	setTimeout(function(){addmenu();}, 250);
-	document.getElementById('fullscreen').style.pointerEvents = 'auto';
+	id('fullscreen').style.pointerEvents = 'auto';
 }
 
 
 window.addEventListener('load',() =>{
-    document.getElementById('loading').style.display = "none";
-    document.getElementById('loading').style.pointerEvents = "none";
+    id('loading').style.display = "none";
+    id('loading').style.pointerEvents = "none";
     document.body.style.overflowY= "auto";
 });
 
 
 if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    document.getElementById('navbar').style.display = "none";
-    document.getElementById('hamcont-mobile').style.display = "block";
-    document.getElementById('footer').style.width = "120vw";
-    document.getElementById('footer').style.width = "5vh";
+    id('navbar').style.display = "none";
+    id('hamcont-mobile').style.display = "block";
+    id('footer').style.width = "120vw";
+    id('footer').style.width = "5vh";
 }
