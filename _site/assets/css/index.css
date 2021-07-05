@@ -68,7 +68,7 @@ body{
 
 .offsetdown{
 	opacity: 0;
-	transform: translateY(100px);
+	transform: translateY(50px);
 	transition: all 1.5s;
 }
 
