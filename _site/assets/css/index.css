@@ -41,8 +41,14 @@ html{
 	font-weight: bolder;
 }
 
-.tit>font{
+.of{
 	font-size: calc(5px + 1vw)!important;
+}
+
+.of-mobile{
+		font-size: 15px!important;
+		position: relative;
+		top: -15px;
 }
 
 #gradient{
@@ -188,7 +194,7 @@ html{
 }
 
 #l-image{
-	width: 32vw;
+	width: calc(300px + 12vw);
 	filter:  drop-shadow(0px 0px 20px rgba(255,255,255,0.5));
 }
 

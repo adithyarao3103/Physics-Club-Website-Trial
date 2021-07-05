@@ -379,8 +379,21 @@ body{
 #hamcont-mobile{
 	display: none;
 	position: fixed;
-	top: 5vh;
-	right: 5vh;
+	width: 50px;
+	height: 50px;
+	top: 3vh;
+	right: 3vh;
 	border-radius: 50%;
 	background: white;
+	width: ;
+	z-index: 199;
+}
+
+#hamcont-mobile> button{
+	position: relative;
+	right: 8px;
+	top: 1px;
+	border: 0px;
+	background-color: transparent;
+	cursor: pointer;
 }
