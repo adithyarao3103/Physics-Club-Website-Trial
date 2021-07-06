@@ -4,6 +4,10 @@ body> *:focus{
 	outline: none;
 }
 
+body> *{
+	outline: none;
+}
+
 .loading{
 	z-index: 10000;
 	height: 105vh;
