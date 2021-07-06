@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|BioRhyme|Lato');
 
+body> *:focus{
+	outline: none;
+}
+
 .loading{
 	z-index: 10000;
 	height: 105vh;
