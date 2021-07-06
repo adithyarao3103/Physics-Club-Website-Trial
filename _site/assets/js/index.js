@@ -12,6 +12,9 @@ id('of').innerHTML = '<br>of<br>';
 id('of').setAttribute('class','of-mobile');
 id('content').style.width = 'calc(102vw + 10px)';
 id('topcontent').style.width = 'calc(102vw + 10px)';
+id('fullscreen').style.width = screen.width + 'px';
+id('fullscreen').style.height = screen.height + 'px';
+id('line').style.fontSize = 'calc(10px + 1.5vw)';
 
 //Scrollevent
 	document.addEventListener('scroll', (event) => {

@@ -104,20 +104,19 @@ html{
 	height: calc(80px + 5vw);
     border-radius: 50%;
     border: 2px solid white;
+    margin-bottom: 30px;
 }
 
 #hod {
 	 padding: 20px;
 	 margin-left: 7.5vw;
 	 margin-right: 7.5vw;
-	 margin-bottom: 20vh;
 }
 
 #fac {
 	 padding: 20px;
 	 margin-right: 7.5vw;
 	 margin-left: 7.5vw;
-	 margin-bottom: 20vh;
 }
 
 @media screen and (min-width: 901px){
@@ -177,10 +176,7 @@ html{
 
 #l-holder{
 	background: transparent;
-	margin: 30px;
 	width: 80vw;
-	position: relative;
-	left: -2vw;
 }
 
 @media screen and (max-width: 900px) {

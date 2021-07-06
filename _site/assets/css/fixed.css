@@ -288,6 +288,10 @@ body{
 	display: inline-block;
 }
 
+#ham:focus{
+	outline:  none;
+}
+
 [id*=bar]{
 	width: 30px;
 	height: 4px;
