@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|BioRhyme|Lato');
 
-body> *:focus{
-	outline: none;
-}
-
-body> *{
-	outline: none;
-}
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+    outline: none !important;
+} 
 
 .loading{
 	z-index: 10000;
@@ -323,8 +321,7 @@ body{
 }
 
 #footer{
-	width: inherit;
-	height: 15vh;
+	height: 12vh;
 	width: 104vw;
 	background: black;
 	border-top:  10px solid black;
@@ -332,26 +329,24 @@ body{
 	grid-template-columns: 1fr 1.5fr;
 	position: relative;
 	left: -10px;    
-	transform:scale(1.1);
 }
 
-#social{
+#social, #social-mob{
 	background-color: black;
 	border-right: 2px solid gray;
 	height: 12vh;
-	padding:11px;
 }
 
 .fa{
 	margin: 20px;
 	text-decoration: none;
-	transform: scale(0.7);
+	transform: scale(0.9);
 	transition: all 0.5s;
 }
 
 .fa:hover {
   opacity: 0.7;
-  transform: scale(0.9);
+  transform: scale(1);
 }
 
 .fa-facebook {
@@ -369,7 +364,7 @@ body{
   color: white;
 }
 
-#footmenu{
+#footmenu, #footmenu-mob{
 	background-color: black;
 	height: 12vh;
 	padding:11px;
@@ -377,14 +372,19 @@ body{
 
 .footermenu{
 	position:relative;
-	left:-50px;
-	top:10px;
 	text-decoration: none;
 	text-transform: capitalize;
-	font-size: 1vw;
-	letter-spacing: 2px;
+	font-size: calc(5px + 1vw);
+	letter-spacing: 2.5px;
 	color: white;
 	margin-left:20px;
+}
+
+@media screen and (max-width: 901px){
+
+#footer{
+	display: inline-block;
+}
 }
 
 /*For Mobile*/
@@ -408,4 +408,14 @@ body{
 	border: 0px;
 	background-color: transparent;
 	cursor: pointer;
+}
+
+#footer-mob{
+	height: 12vh;
+	width: calc(100vw + 10px);
+	background: black;
+	border-top:  10px solid black;
+	position: relative;
+	left: -10px;    
+	display: none;
 }

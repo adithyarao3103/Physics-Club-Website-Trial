@@ -152,6 +152,7 @@ html{
 	font-size: calc(6px + 0.75vw);
 	padding: 20px;
 	overflow: clip;
+	margin:  30px;
 }
 
 .designation{
@@ -192,6 +193,8 @@ html{
 #l-image{
 	width: calc(300px + 12vw);
 	filter:  drop-shadow(0px 0px 20px rgba(255,255,255,0.5));
+	position: relative;
+	margin-top: 20px;
 }
 
 #l-title{
@@ -257,6 +260,7 @@ html{
 	display: none;
 	pointer-events: none;
 	animation: close 0.25s;
+	transition: opacity 0.25s;
 	color: white;
 }
 

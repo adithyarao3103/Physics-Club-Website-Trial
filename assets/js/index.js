@@ -15,6 +15,26 @@ id('topcontent').style.width = 'calc(102vw + 10px)';
 id('fullscreen').style.width = screen.width + 'px';
 id('fullscreen').style.height = screen.height + 'px';
 id('line').style.fontSize = 'calc(10px + 1.5vw)';
+id('pclogo').style.height = 'calc(100px + 5vw)';
+id('pclogo').style.width = 'calc(100px + 5vw)';
+id('name-hod').style.fontSize = 'calc(15px + 1.5vw)';
+id('name-fac').style.fontSize = 'calc(15px + 1.5vw)';
+id('posit-hod').style.fontSize = 'calc(10px + 1.25vw)';
+id('posit-fac').style.fontSize = 'calc(10px + 1.25vw)';
+id('state-hod').style.fontSize = 'calc(10px + 1vw)';
+id('state-fac').style.fontSize = 'calc(10px + 1vw)';
+id('l-image').style.left = '-10%';
+id('l-title').style.fontSize = 'calc(20px + 4vw)';
+id('l-date').style.fontSize = 'calc(13px + 1.25vw)';
+id('l-descr').style.fontSize = 'calc(10px + 1.25vw)';
+id('l-reg').style.fontSize = 'calc(10px + 1.25vw)';
+id('footer').style.display = "none";
+id('footer-mob').style.display = 'inline-block';
+id('noti').style.width = 'calc(100vw)';
+id('noti').style.borderRadius = '0';
+id('noti').style.bottom = '0';
+id('noti').style.left = '0';
+id('innoti').style.fontSize = 'calc(7px + 0.6vw)'
 
 //Scrollevent
 	document.addEventListener('scroll', (event) => {
