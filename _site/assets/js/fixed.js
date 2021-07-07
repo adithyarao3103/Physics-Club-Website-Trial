@@ -14,6 +14,9 @@ function closemenu(){
 	id('bar1').style.transform = 'translateX(0px)';
 	id('bar2').style.transform = 'translateX(0px)';
 	id('bar3').style.transform = 'translateX(0px)';
+	id('bar1-mob').style.transform = 'translateX(0px)';
+	id('bar2-mob').style.transform = 'translateX(0px)';
+	id('bar3-mob').style.transform = 'translateX(0px)';
     setTimeout(function(){removemenu();}, 500);
 }
 
@@ -26,6 +29,9 @@ function showmenu(){
 	id('bar1').style.transform = 'translateX(100px)';
 	id('bar2').style.transform = 'translateX(100px)';
 	id('bar3').style.transform = 'translateX(100px)';
+	id('bar1-mob').style.transform = 'translateX(100px)';
+	id('bar2-mob').style.transform = 'translateX(100px)';
+	id('bar3-mob').style.transform = 'translateX(100px)';
 	id('fullscreen').style.display = "block";
 	setTimeout(function(){addmenu();}, 250);
 	id('fullscreen').style.pointerEvents = 'auto';
@@ -42,6 +48,9 @@ window.addEventListener('load',() =>{
 if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     id('navbar').style.display = "none";
     id('hamcont-mobile').style.display = "block";
-    id('footer').style.width = "120vw";
-    id('footer').style.width = "5vh";
+    id('footer').style.display = "none";
+	id('footer-mob').style.display = 'inline-block';
+	id('bar1-mob').style.background = 'black';
+	id('bar2-mob').style.background = 'black';
+	id('bar3-mob').style.background = 'black';
 }

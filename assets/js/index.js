@@ -30,8 +30,6 @@ id('l-date').style.fontSize = 'calc(13px + 1.25vw)';
 id('l-descr').style.fontSize = 'calc(10px + 1.25vw)';
 try{id('l-reg').style.fontSize = 'calc(10px + 1.25vw)';}catch(err){};
 try{id('l-reg-unlinked').style.fontSize = 'calc(10px + 1.25vw)';} catch(err){};
-id('footer').style.display = "none";
-id('footer-mob').style.display = 'inline-block';
 id('noti').style.width = 'calc(100vw)';
 id('noti').style.borderRadius = '0';
 id('noti').style.bottom = '0';
@@ -152,9 +150,6 @@ if (id('new').getBoundingClientRect().top <=0.65*screen.height) {
 
 //initialise navbar properties
 
-id('bar1').style.background = "white";
-id('bar2').style.background = "white";
-id('bar3').style.background = "white";
 id('title').style.color = "transparent";
 id('navbar').style.background = "transparent";
 id('navbar').style.backdropFilter = "";

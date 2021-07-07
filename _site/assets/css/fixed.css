@@ -132,13 +132,13 @@ body{
 }
 
 ::-moz-selection { /* Code for Firefox */
-  color: black;
-  background: white;
+  color: #0502f8;
+  background: black;
 }
 
 ::selection {
-  color: black;
-  background: white;
+  color: #0502f8;
+  background: black;
 }
 
 
@@ -303,24 +303,24 @@ body{
 	outline:  none;
 }
 
-[id*=bar]{
+.bar{
 	width: 30px;
 	height: 4px;
 	margin: 4px;
-	background-color: white;
+	background: white;
 }
 
-#bar1{
+#bar1, #bar1-mob{
 	transform: translateX(0px);
 	transition: all 0.1s;
 }
 
-#bar2{
+#bar2, #bar2-mob{
 	transform: translateX(0px);
 	transition: all 0.5s;
 }
 
-#bar3{
+#bar3, #bar3-mob{
 	transform: translateX(0px);
 	transition: all 1s;
 }
@@ -404,6 +404,7 @@ body{
 	background: white;
 	width: ;
 	z-index: 199;
+	overflow: clip;
 }
 
 #hamcont-mobile> button{
@@ -413,6 +414,7 @@ body{
 	border: 0px;
 	background-color: transparent;
 	cursor: pointer;
+	overflow: clip;
 }
 
 #footer-mob{
