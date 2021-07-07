@@ -1,6 +1,6 @@
 $('#contact').on('submit', function(e) {
-  $('#formdiv *').fadeOut(1000);
-  $('#sent').fadeIn(1000);
+  $('#formdiv *').fadeOut(10);
+  $('#sent').fadeIn(500);
   });
 
 $('#sent').fadeOut(10);
