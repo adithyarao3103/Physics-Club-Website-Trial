@@ -18,7 +18,7 @@ body{
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #480b0b;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -62,7 +62,7 @@ background-image: linear-gradient(66deg, rgba(37, 37, 37, 0.05) 0%, rgba(37, 37,
 }
 
 #container{
-  width: 90%;
+  width: 95%;
   border-left: 4px solid rgba(255, 255, 255, 1);
 }
 
@@ -81,7 +81,7 @@ background-image: linear-gradient(66deg, rgba(37, 37, 37, 0.05) 0%, rgba(37, 37,
   display: grid;
   grid-template-columns: 1fr 1.35fr;
   transition: all 0.5s;
-  filter: blur(5px);
+  filter: blur(3px);
   transform: scale(0.8);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
@@ -152,4 +152,73 @@ clip-path: polygon(0 0, 100% 0, 100% 100%);
 
 .link:not(div):hover{
   background-size: 4px 50px;
+}
+
+
+.dotted{
+  height: 20vh;
+  width: 95%; 
+  border-left: 5px dashed white; 
+  background: transparent; 
+  position: relative; 
+  left: 4.72%;
+}
+
+@media screen and (min-width: 400px) and (max-width: 901px){
+
+  .event{
+    position: relative;
+    left: 15px;
+    width: 88%;
+    display: block;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 75px;
+  }
+
+  .date{
+    top: 0;
+    left: 25px;
+    width: inherit;
+    text-align: center;
+  }
+
+}
+
+
+@media screen and (max-width: 401px){
+
+#container{
+  border-left: none;
+  width: 100%;
+}
+
+
+  .event{
+    position: relative;
+    height: 90vh;
+    width: 95vw;
+    display: block;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 75px;
+  }
+
+  .item{
+    display: block;
+    height: 90vh;
+  }
+
+  .date{
+    width: 70vw;
+    top: 0;
+    left: 25px;
+    width: inherit;
+    text-align: center;
+  }
+
+  .poster{
+  height: 45vh;
+  margin-top: 5vh;
+  margin-left: 10px;
+}
+
 }

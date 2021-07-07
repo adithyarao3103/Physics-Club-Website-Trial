@@ -15,10 +15,15 @@
         }
     }
 
+
+var blurred = [];
+var notblurred = [];
+
+
 function writepage(){
 var inner = '';
 for (var i = 0; i < events.length; i++) {
-inner+='<div class="event"><div class="pointer"></div><div class="date" id="' + events[i].poster + '">' + events[i].date + '</div><div class="item"  id="' + events[i].poster + 'item"><img class="poster" src="/assets/posters/' + events[i].poster + '.png"></img><div class="info"><center><div class="name">' + events[i].name.toUpperCase() + '</div><div class="descr">' + events[i].descr;
+inner+='<div class="event"><div class="pointer"></div><div class="date" id="elemid' + events[i].poster + '">' + events[i].date + '</div><div class="item"  id="' + events[i].poster + 'item"><img class="poster" src="/assets/posters/' + events[i].poster + '.png"></img><div class="info"><center><div class="name">' + events[i].name.toUpperCase() + '</div><div class="descr">' + events[i].descr;
 if (events[i].reglink != " ") {
     inner+='<br><br><a class = "link" href = "' + events[i].reglink + '">Register here!!</a><br><br>';
 }
@@ -41,23 +46,23 @@ function init(){
 
 for(i=0; i < events.length; i++){
 
-    if(id(events[i].poster).getBoundingClientRect().top <0.65*screen.height && id(events[i].poster).getBoundingClientRect().top >0.1*screen.height){
+    if(id('elemid' + events[i].poster).getBoundingClientRect().top <0.65*screen.height && id('elemid' + events[i].poster).getBoundingClientRect().top >0.1*screen.height){
             id(events[i].poster + 'item').style.transform = 'scale(1)';
             id(events[i].poster + 'item').style.filter = 'blur(0px)';
+            notblurred.push('elemid' + events[i].poster);
         }
         else{
-            id(events[i].poster + 'item').style.transform = 'scale(0.8)';
-            id(events[i].poster + 'item').style.filter = 'blur(3px)';
+            blurred.push('elemid' + events[i].poster);
+        }
         }
 
 }
 
-}
 
 
 document.addEventListener('scroll', (event)=>{
 
-    for(i = 0; i < events.length; i++){
+    /*for(i = 0; i < events.length; i++){
 
         if(id(events[i].poster).getBoundingClientRect().top <0.65*screen.height && id(events[i].poster).getBoundingClientRect().top >0.1*screen.height){
             id(events[i].poster + 'item').style.transform = 'scale(1)';
@@ -67,6 +72,46 @@ document.addEventListener('scroll', (event)=>{
             id(events[i].poster + 'item').style.transform = 'scale(0.8)';
             id(events[i].poster + 'item').style.filter = 'blur(5px)';
         }
-    }
+    }*/
+
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(({ target, isIntersecting }) => {
+    if(isIntersecting) {
+        if(notblurred.includes(target.getAttribute("id"))){ }
+            else{
+    id(target.getAttribute("id").substring(6) + 'item').style.transform = 'scale(1)';
+    id(target.getAttribute("id").substring(6) + 'item').style.filter= 'blur(0px)';
+   
+    notblurred.push(target.getAttribute("id"));
+   
+    blurred = blurred.filter(function(item) {
+    return item !== target.getAttribute("id");
+    })
+  }
+}
+
+  else{
+    if(blurred.includes(target.getAttribute("id"))) { }
+        else{
+    id(target.getAttribute("id").substring(6) + 'item').style.transform = 'scale(0.8)';
+    id(target.getAttribute("id").substring(6) + 'item').style.filter= 'blur(5px)';
+
+    blurred.push(target.getAttribute("id"));
+   
+    notblurred = notblurred.filter(function(item) {
+    return item !== target.getAttribute("id");
+    })
+
+}
+}
+});
+});
+
+// Observe all elements with IDs
+const elemsWithIds = document.querySelectorAll('[id^="elemid"]');;
+elemsWithIds.forEach(elem => observer.observe(elem));
 
 });
+
+

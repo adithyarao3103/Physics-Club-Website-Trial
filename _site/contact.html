@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/fixed.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    <link rel="stylesheet" href="/assets/css/contact.css">
+    
 </head>
 <body>
 <div class="loading" id="loading">
@@ -57,23 +59,34 @@
             </button>
         </div>
 
-    <br><br><br><br>
-<!entry.1632216977=Your+Name&entry.961639452=Your+Email+ID&entry.1805491781=NIT+Surat&entry.168591354=Physics&entry.1769439812=Your+Message>
+    <div id="main-container">
+
+<div style="width: 100%; height: 15vh;"></div>
+<div class="horizontal">SEND US A MESSAGE</div>
 <div id="formdiv">
-<form name="contact" id="contact" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScwCeroPTTrLFnFXQ80D5CAKSixVvPLANc7FeNhlVbg-pqD9w/formResponse?" target="hidden_iframe" onsubmit="submitsuccess();">
-<label>Name</label> <input type="text" name="entry.1632216977" id="entry.1632216977">
-<label>Email</label> <input type="text" name="entry.961639452" id="entry.961639452">
-<label>Institute</label><select name="entry.1805491781" id="entry.1805491781" size="1">
+   <center> <div id="necessary">( All fields are necessary )</div> </center>
+<form name="contact" id="contact" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScwCeroPTTrLFnFXQ80D5CAKSixVvPLANc7FeNhlVbg-pqD9w/formResponse?" target="hidden_iframe" onsubmit="submitted = true;">
+<div class="labelholder"><label>Name</label> </div> <div class="inputholder"><input type="text" name="entry.1632216977" id="entry.1632216977" required></div>
+<div class="labelholder"><label>Email</label> </div>  <div class="inputholder"> <input type="text" name="entry.961639452" id="entry.961639452" required></div>
+<div class="labelholder"><label>Institute</label> </div>  <div class="inputholder"> <select class="custom-select" name="entry.1805491781" id="entry.1805491781" size="1" required>
 <option value="NIT Surat">NIT Surat</option>
 <option value="Outside NIT Surat">Outside NIT Surat</option>
-</select><br>
-<label>Department</label><input type="text" name="entry.168591354" id="entry.168591354">
-<label>Message</label><textarea name="entry.1769439812" id="entry.1769439812" rows="6" cols="25"></textarea><br />
-<input type="submit" value="Submit">
+</select></div>
+<div class="labelholder"><label>Department</label> </div>  <div class="inputholder"> <input type="text" name="entry.168591354" id="entry.168591354" required></div>
+<div class="labelholder"><label>Message</label> </div>  <div class="inputholder"> <textarea name="entry.1769439812" id="entry.1769439812" rows="10" cols="25" required></textarea></div>
+ <div class="submitbutton"><input class="submit-button" type="submit" value="Submit"></div>
 </form>
 </div>
 
+<div id="sent">
+    Your message has been sent...
+</div>
+
+<div style="width: 100%; height: 5vh;"></div>
+
+
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){}"></iframe>
+</div>
 
     <div id="footer">
         <div id="social">
@@ -113,6 +126,8 @@
 
 </body>
 <script type="text/javascript" src="/assets/js/fixed.js"></script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script type="text/javascript" src="/assets/js/contact.js"></script>
 
