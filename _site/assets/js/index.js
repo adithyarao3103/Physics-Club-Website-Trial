@@ -15,6 +15,7 @@ id('topcontent').style.width = 'calc(102vw + 10px)';
 id('fullscreen').style.width = screen.width + 'px';
 id('fullscreen').style.height = screen.height + 'px';
 id('line').style.fontSize = 'calc(10px + 1.5vw)';
+id('line').style.left = '-5%';
 id('pclogo').style.height = 'calc(100px + 5vw)';
 id('pclogo').style.width = 'calc(100px + 5vw)';
 id('name-hod').style.fontSize = 'calc(15px + 1.5vw)';
@@ -27,7 +28,8 @@ id('l-image').style.left = '-10%';
 id('l-title').style.fontSize = 'calc(20px + 4vw)';
 id('l-date').style.fontSize = 'calc(13px + 1.25vw)';
 id('l-descr').style.fontSize = 'calc(10px + 1.25vw)';
-id('l-reg').style.fontSize = 'calc(10px + 1.25vw)';
+try{id('l-reg').style.fontSize = 'calc(10px + 1.25vw)';}catch(err){};
+try{id('l-reg-unlinked').style.fontSize = 'calc(10px + 1.25vw)';} catch(err){};
 id('footer').style.display = "none";
 id('footer-mob').style.display = 'inline-block';
 id('noti').style.width = 'calc(100vw)';
@@ -155,6 +157,7 @@ id('bar2').style.background = "white";
 id('bar3').style.background = "white";
 id('title').style.color = "transparent";
 id('navbar').style.background = "transparent";
+id('navbar').style.backdropFilter = "";
 
 //update navbar status based on position
 
@@ -202,29 +205,38 @@ image.addEventListener('load', (event)=> {
 //Read from latest.json and write in html entity
 
 var oXHR = new XMLHttpRequest();
-var latest;
+var index;
 
 // Initiate request.
 oXHR.onreadystatechange = reportStatus;
-oXHR.open("GET", "/assets/json/latest.json", true);  // get json file.
+oXHR.open("GET", "/assets/json/index.json", true);  // get json file.
 oXHR.send();
 
 function reportStatus() {
     if (oXHR.readyState == 4) {		// Check if request is complete.
-        latestdata = this.responseText;
-        latest = JSON.parse(latestdata);
+        indexdata = this.responseText;
+        index = JSON.parse(indexdata).index;
         writepage();
     }
 }
 function writepage(){
 
-		id('l-image').setAttribute('src', '/assets/posters/' + latest.poster + '.png');
-		id('l-title').innerHTML = latest.title; 
-		id('l-date').innerHTML = latest.date;
-		id('l-descr').innerHTML = latest.descr;
-		id('l-reg').innerHTML = latest.linktitle;
-		id('l-reg').setAttribute('href',latest.link);
+	if(index[0].title !== " "){
+		id('l-reg-unlinked').setAttribute('id','l-reg');
+		id('l-image').setAttribute('src', '/assets/posters/' + index[0].poster + '.png');
+		id('l-title').innerHTML = index[0].title; 
+		id('l-date').innerHTML = index[0].date;
+		id('l-descr').innerHTML = index[0].descr;
 
+		id('l-reg').innerHTML = index[0].linktitle;
+		id('l-reg').setAttribute('href',index[0].link);
+	}
+
+		id('name-hod').innerHTML = index[1].name;
+		id('state-hod').innerHTML = index[1].message;
+
+		id('name-fac').innerHTML = index[2].name;
+		id('state-fac').innerHTML = index[2].message;
 }
 
 function closenoti(){
@@ -237,7 +249,7 @@ function opennoti(){
 }
 
 window.addEventListener('load',()=>{
-	if(latest.title != " "){
+	if(index[0].title != " "){
 	setTimeout(function(){opennoti();},500);
 }
 });

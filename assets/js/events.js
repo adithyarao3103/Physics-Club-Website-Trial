@@ -18,36 +18,18 @@
 function writepage(){
 var inner = '';
 for (var i = 0; i < events.length; i++) {
-inner += '<div class="item"><img class="bg" src="/assets/posters/' + events[i].poster + '.png"></img><center><div class="dot"></div><p class="info">' + events[i].name.toUpperCase() + '</p><div id="clickhere'+ i + '">CLICK HERE</div></center></div>';
+inner+='<div class="event"><div class="pointer"></div><div class="date">' + events[i].date + '</div><div class="item" id="' + events[i].poster + '"><img class="poster" src="/assets/posters/' + events[i].poster + '.png"></img><div class="info"><center><div class="name">' + events[i].name.toUpperCase() + '</div><div class="descr">' + events[i].descr;
+if (events[i].reglink != " ") {
+    inner+='<br><a class = "link" href = "' + events[i].reglink + '">Register here!!</a><br>';
 }
+else{
+    inner+='<br>Registations Closed<br>';
+}
+if(events[i].youtube!=" "){
+    inner+='<a class = "link" href = "' + events[i].youtube + '">Youtube recording</a>';
+}
+inner += '</center></div></div></div></div>';
+}
+
 id('container').innerHTML = inner;
-for(i = 0; i < events.length; i++){
-    fun = 'javascript:popupopen(';
-    end = ')';
-    string = fun + i + end;
-    id('clickhere'+i).setAttribute('onclick', string);
-}
-}
-
-function popupclose(){
-    id('popup-title').innerHTML = '';
-    id('popup-info').innerHTML = '';
-    id('popup-reg').innerHTML = '';
-    id('popup-reg').innerHTML = '';
-    id('popup-poster').setAttribute('src', '');
-    id('container').setAttribute('class', 'horizontalScroll');
-    id('popup').setAttribute('class', '');
-    id('navbar').setAttribute('class', '');
-}
-
-function popupopen(i){
-    id('popup-title').innerHTML = events[i].name.toUpperCase();
-    id('popup-date').innerHTML = events[i].date;
-    id('popup-info').innerHTML = events[i].descr;
-    id('popup-reg').innerHTML = events[i].reglink == ' '? 'Registerations Closed' : "<a href = '" + events[i].reglink + "'>Register Now</a>";
-    id('popup-yt').innerHTML = events[i].youtube == ' '? ' ' : "<a href = '" + events[i].youtube + "'>Youtube link for recording</a>";
-    id('popup-poster').setAttribute('src', '/assets/posters/' + events[i].poster + '.png');
-    setTimeout(function(){    id('navbar').setAttribute('class', 'blur');
-        id('container').setAttribute('class', 'horizontalScroll blur');
-        id('popup').setAttribute('class', 'open');}, 20);
 }

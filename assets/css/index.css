@@ -92,11 +92,9 @@ html{
 	color: #f5f5f5;
 	width: 70%;
 	padding-left: 35px;
-	border-left: 4px solid white;
-	position: relative;
-	left: 5%;
 	margin-bottom: calc(25vh);
 	margin-top: calc(25vh);
+	position: relative;
 }
 
 #pclogo{
@@ -177,7 +175,8 @@ html{
 
 #l-holder{
 	background: transparent;
-	width: 80vw;
+	width: 80vw; padding-top: 10vh;
+	border-top: 2px solid rgba(255,255,255,0.5);
 }
 
 @media screen and (max-width: 900px) {

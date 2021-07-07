@@ -6,6 +6,10 @@
     outline: none !important;
 } 
 
+body{
+	background: black;
+}
+
 .loading{
 	z-index: 10000;
 	height: 105vh;
@@ -230,6 +234,7 @@ body{
 	top: -7px;
 	left: -7px;
 	background-color: rgba(255, 255, 255, 0.25);
+	backdrop-filter:  blur(4px);
 	z-index: 100;
 	transition: all 0.5s;
 }
@@ -258,7 +263,7 @@ body{
 	font-size: calc(10px + 4.5vw);
 	white-space: nowrap;
 	transform: scale(0.35);
-	color: black;
+	color: white;
 	height: inherit;
 	background-color: transparent;
 	position: absolute;
@@ -302,7 +307,7 @@ body{
 	width: 30px;
 	height: 4px;
 	margin: 4px;
-	background-color: black;
+	background-color: white;
 }
 
 #bar1{
