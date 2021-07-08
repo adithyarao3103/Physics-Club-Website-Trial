@@ -1,14 +1,16 @@
 //Mobile Devices...
 
-if ( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+if ( screen.width <= 451) {
 	
 //Change stuff optimising for mobile screen
 
+/*
 id('we').style.fontSize = '15px';
 id('we').style.position = "relative";
 id('we').style.top = "-10px";
-id('tit').style.fontSize = 'calc(37px + 2vw)';
+id('tit').style.fontSize = 'calc(37px + 2vw)';*/
 id('of').innerHTML = '<br>of<br>';
+/*
 id('of').setAttribute('class','of-mobile');
 id('content').style.width = 'calc(102vw + 10px)';
 id('topcontent').style.width = 'calc(102vw + 10px)';
@@ -36,9 +38,25 @@ id('noti').style.bottom = '0';
 id('noti').style.left = '0';
 id('innoti').style.fontSize = 'calc(7px + 0.6vw)'
 
+*/
+
 //Scrollevent
 	document.addEventListener('scroll', (event) => {
 	scroly = this.scrollY;
+
+	var beg = 'scale(';
+	var val = 1 + scroly/100;
+	var end = ')';
+	var val1 = 1 - scroly/150;
+
+	inner1 = beg + val + end;
+	inner2 = beg + val1 + end;
+
+	if(val <= 4){
+
+	id('topcontent').style.transform = inner1;
+	id('titleholder').style.transform = inner2;
+}
 
 //Bring content in	
 	var content = id("content").querySelectorAll(".offsetdown");

@@ -7,6 +7,8 @@ $('#contact').on('submit', function(e) {
 $('#sent').fadeOut(10);
 
 
+
+if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
 var shouldKeepAnimating = true;
 var addClassTimeouts = [];
 var containers = document.querySelectorAll('.container');
@@ -44,4 +46,32 @@ function clearActiveClasses() {
   containers.forEach(function (container) {
     container.classList.remove('active');
   });
+}
+
+
+elems = document.getElementsByClassName('labelholder');
+for (var i = elems.length - 1; i >= 0; i--) {
+  elems[i].style.display = "none";
+}
+id('contact').style.display = 'block';
+id('contact').style.position = 'relative';
+id('contact').style.left = '10px';
+id('contact').style.justifyContent = 'center';
+id('contact').style.width = '100vw';
+
+id('center-social').style.transformOrigin = 'top center';
+id('center-social').style.transform = 'scale(0.8)';
+
+inputs = document.getElementsByTagName('input')
+
+for(i = 0; i<inputs.length; i++)
+{
+inputs[i].style.position = 'relative';
+inputs[i].style.marginTop = '2vh';
+inputs[i].style.left = '2.5vw';
+inputs[i].style.width = '95vw';
+inputs[i].style.height = '5vh';
+inputs[i].fontSize = '30px';
+}
+
 }

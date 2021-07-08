@@ -8,7 +8,6 @@ function removemenu(){
 }
 
 function closemenu(){
-	console.log("close");
     id("fullscreen").style.opacity = 0;
 	id('fullscreen').style.pointerEvents = 'none';
 	id('bar1').style.transform = 'translateX(0px)';
@@ -25,7 +24,6 @@ function addmenu(){
 }
 
 function showmenu(){
-	console.log('menu');
 	id('bar1').style.transform = 'translateX(100px)';
 	id('bar2').style.transform = 'translateX(100px)';
 	id('bar3').style.transform = 'translateX(100px)';
@@ -43,14 +41,3 @@ window.addEventListener('load',() =>{
     id('loading').style.pointerEvents = "none";
     document.body.style.overflowY= "auto";
 });
-
-
-if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    id('navbar').style.display = "none";
-    id('hamcont-mobile').style.display = "block";
-    id('footer').style.display = "none";
-	id('footer-mob').style.display = 'inline-block';
-	id('bar1-mob').style.background = 'black';
-	id('bar2-mob').style.background = 'black';
-	id('bar3-mob').style.background = 'black';
-}

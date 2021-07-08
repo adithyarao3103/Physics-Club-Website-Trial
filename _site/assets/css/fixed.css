@@ -30,8 +30,7 @@ body{
   width: 40px;
   height: 40px;
   position: relative;
-  -webkit-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
 }
 
 .sk-folding-cube .sk-cube {
@@ -39,9 +38,7 @@ body{
   width: 50%;
   height: 50%;
   position: relative;
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1); 
+  transform: scale(1.1); 
 }
 .sk-folding-cube .sk-cube:before {
   content: '';
@@ -53,21 +50,16 @@ body{
   background-color: #f5f5f5;
   -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
           animation: sk-foldCubeAngle 2.4s infinite linear both;
-  -webkit-transform-origin: 100% 100%;
-      -ms-transform-origin: 100% 100%;
-          transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
 }
 .sk-folding-cube .sk-cube2 {
-  -webkit-transform: scale(1.1) rotateZ(90deg);
-          transform: scale(1.1) rotateZ(90deg);
+  transform: scale(1.1) rotateZ(90deg);
 }
 .sk-folding-cube .sk-cube3 {
-  -webkit-transform: scale(1.1) rotateZ(180deg);
-          transform: scale(1.1) rotateZ(180deg);
+  transform: scale(1.1) rotateZ(180deg);
 }
 .sk-folding-cube .sk-cube4 {
-  -webkit-transform: scale(1.1) rotateZ(270deg);
-          transform: scale(1.1) rotateZ(270deg);
+  transform: scale(1.1) rotateZ(270deg);
 }
 .sk-folding-cube .sk-cube2:before {
   -webkit-animation-delay: 0.3s;
@@ -83,32 +75,26 @@ body{
 }
 @-webkit-keyframes sk-foldCubeAngle {
   0%, 10% {
-    -webkit-transform: perspective(140px) rotateX(-180deg);
-            transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
     opacity: 0; 
   } 25%, 75% {
-    -webkit-transform: perspective(140px) rotateX(0deg);
-            transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
     opacity: 1; 
   } 90%, 100% {
-    -webkit-transform: perspective(140px) rotateY(180deg);
-            transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
     opacity: 0; 
   } 
 }
 
 @keyframes sk-foldCubeAngle {
   0%, 10% {
-    -webkit-transform: perspective(140px) rotateX(-180deg);
-            transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
     opacity: 0; 
   } 25%, 75% {
-    -webkit-transform: perspective(140px) rotateX(0deg);
-            transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
     opacity: 1; 
   } 90%, 100% {
-    -webkit-transform: perspective(140px) rotateY(180deg);
-            transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
     opacity: 0; 
   }
 }
@@ -211,7 +197,19 @@ body{
 }
 
 .close:hover{
-	animation: rotatex 0.1s linear;
+	-webkit-animation: rotatex 0.1s linear;
+	        animation: rotatex 0.1s linear;
+}
+
+@-webkit-keyframes rotatex{
+	from{
+		transform: rotate(0deg);
+		transform-origin: center center;
+	}
+	to{
+		transform: rotate(90deg);
+		transform-origin: center center;
+	}
 }
 
 @keyframes rotatex{
@@ -226,7 +224,9 @@ body{
 }
 
 #navbar{
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: (1fr)[3];
 	grid-template-columns: repeat(3, 1fr);
 	height: calc(50px + 2vh);
 	width: calc(100vw + 7px);
@@ -234,7 +234,8 @@ body{
 	top: -7px;
 	left: -7px;
 	background-color: rgba(255, 255, 255, 0.25);
-	backdrop-filter:  blur(4px);
+	-webkit-backdrop-filter:  blur(4px);
+	        backdrop-filter:  blur(4px);
 	z-index: 100;
 	transition: all 0.5s;
 }
@@ -330,13 +331,15 @@ body{
 	width: 104vw;
 	background: black;
 	border-top:  10px solid black;
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 1fr 1.5fr;
 	grid-template-columns: 1fr 1.5fr;
 	position: relative;
 	left: -10px;    
 }
 
-#social, #social-mob{
+#social{
 	background-color: black;
 	border-right: 2px solid gray;
 	height: 12vh;
@@ -369,7 +372,7 @@ body{
   color: white;
 }
 
-#footmenu, #footmenu-mob{
+#footmenu{
 	background-color: black;
 	height: 12vh;
 	padding:11px;
@@ -417,12 +420,21 @@ body{
 	overflow: clip;
 }
 
-#footer-mob{
-	height: 12vh;
-	width: calc(100vw + 10px);
-	background: black;
-	border-top:  10px solid black;
-	position: relative;
-	left: -10px;    
+@media screen and (max-width: 451px){
+
+#footer{
+	display: inline-block;
+}
+
+#navbar{
 	display: none;
+}
+
+#hamcont-mobile{
+	display: block;
+}
+
+.bar{
+	background-color: black;
+}
 }

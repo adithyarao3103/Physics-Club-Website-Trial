@@ -120,7 +120,9 @@ html{
 @media screen and (min-width: 901px){
 
 #statements{
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: (1fr)[2];
 	grid-template-columns: repeat(2, 1fr);
 }
 #hod {
@@ -184,7 +186,9 @@ html{
 }
 @media screen and (min-width: 901px){
   #l-holder{ 
+  	display: -ms-grid; 
   	display: grid;
+	-ms-grid-columns: (1fr)[2];
 	grid-template-columns: repeat(2, 1fr);	
    } 
 }
@@ -245,7 +249,8 @@ html{
 	right: 10px;
 	background: rgba(255, 255, 255, 0.2);
 	border: 1px solid rgba(255, 255, 255, 0.18);
-	backdrop-filter:  blur(6px);
+	-webkit-backdrop-filter:  blur(6px);
+	        backdrop-filter:  blur(6px);
 	color: white;
 	z-index: 999;
 	border-radius: 20px;
@@ -258,7 +263,8 @@ html{
 	transform: scale(0);
 	display: none;
 	pointer-events: none;
-	animation: close 0.25s;
+	-webkit-animation: close 0.25s;
+	        animation: close 0.25s;
 	transition: opacity 0.25s;
 	color: white;
 }
@@ -268,7 +274,17 @@ html{
 	transform: scale(1);
 	display: block;
 	pointer-events: auto;
-	animation: open 0.25s ;
+	-webkit-animation: open 0.25s ;
+	        animation: open 0.25s ;
+}
+
+@-webkit-keyframes open {
+	from{
+		transform: scale(0);
+	}
+	to{
+		transform: scale(1.0);
+	}
 }
 
 @keyframes open {
@@ -277,6 +293,15 @@ html{
 	}
 	to{
 		transform: scale(1.0);
+	}
+}
+
+@-webkit-keyframes close {
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(0);
 	}
 }
 
@@ -314,4 +339,89 @@ html{
 	font-weight: bold;
 	z-index: 1000;
 	color: white;
+}
+
+@media screen and (max-width: 451px){
+
+	#topcontent{
+		transform-origin: bottom center;
+	}
+
+	#we{
+		font-size: 15px;
+		position: relative;
+		top: -10px;
+	}
+
+	#tit{
+		font-size: calc(37px + 2vw);
+	}
+
+	.of{
+		font-size: 15px!important;
+		position: relative;
+		bottom: 15px;
+	}
+
+	#content, #topcontent{
+		width: calc(102vw + 10px);
+	}
+
+	#fullscreen{
+		height: 100vh;
+		width: 100vw;
+	}
+
+	#line{
+		font-size: calc(10px + 1.5vw);
+		left: -5%;
+	}
+
+	#pclogo{
+		height: calc(100px + 5vw);
+		width: calc(100px + 5vw);
+	}
+
+	[id*=name]{
+		font-size: calc(15px + 1.5vw);
+	}
+
+	[id*=posit]{
+		font-size: calc(10px + 1.52vw);
+	}
+
+	[id*=state]{
+		font-size: calc(10px + 1vw);
+	}
+
+	#l-image{
+	width: calc(250px + 12vw);
+	}
+
+	#l-title{
+		font-size: calc(20px + 4vw);
+	}
+
+	#l-date{
+		font-size: calc(13px + 1.25vw);
+	}
+
+	#l-descr{
+		font-size: calc(10px + 1.25vw);
+	}
+
+	#l-reg{
+		font-size: calc(10px + 1.25vw);
+	}
+
+	#noti{
+		width: 100vw;
+		border-radius: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	#innoti{
+		font-size: calc(7px + 0.6vw);
+	}
 }
