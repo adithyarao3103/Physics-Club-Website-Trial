@@ -116,7 +116,7 @@ clip-path: polygon(0 0, 100% 0, 100% 100%);
 }
 
 .link:not(div){
-  background: linear-gradient(#160047, #160047);
+  background: linear-gradient(#060125, #060125);
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 4px 4px;

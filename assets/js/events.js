@@ -40,6 +40,9 @@ id('container').innerHTML = inner;
 }
 
 init();
+id('changedloading').style.display = "none";
+    id('changedloading').style.pointerEvents = "none";
+    document.body.style.overflowY= "auto";
 }
 
 function init(){
@@ -114,4 +117,5 @@ elemsWithIds.forEach(elem => observer.observe(elem));
 
 });
 
+id('loading').setAttribute('id','changedloading')
 
