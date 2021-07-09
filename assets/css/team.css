@@ -26,29 +26,38 @@
 	width: 200px;
 	height: 220px;
 	overflow: hidden;
-	background-size: 220px;
-	transition: all 1s;
 	border-radius: 15px;
 }
 
-
-.member:hover{
-	background-size: 400px ;
-	background-position: left center;
+.image{
+	width: 200px;
+	height: 220px;
+	border-radius: 15px;
+	background-size: 220px;
+	transition: all 0.7s;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
+
+
+.member:hover .image{
+	background-size: 250px ;
+	background-position: left center;
+	filter: grayscale(100%) brightness(25%) ;
+}
+
 
 .overlay{
 	width: 194px;
 	height: 214px;
 	position: absolute;
-	backdrop-filter:  grayscale(100%);
 	border-radius: 15px;
-	border: 2px solid black;
-	background: rgba(0, 0, 0, 0.5);
-	top: 1px;
-	left: 1px;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	top: 2px;
+	left: 2px;
 	opacity: 0;
-	transition: all 1s;
+	transition: all 0.7s;
 }
 
 .member:hover .overlay{
@@ -57,8 +66,8 @@
 
 .name{
 	position: absolute;
-	top: 0;
-	left: 5px;
+	bottom: 5px;
+	right: 10px;
 	font-size: 25px;
 	letter-spacing: 1px;
 	color: white;
