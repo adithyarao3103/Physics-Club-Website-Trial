@@ -37,7 +37,8 @@ function showmenu(){
 
 
 window.addEventListener('load',() =>{
-    id('loading').style.display = "none";
-    id('loading').style.pointerEvents = "none";
+    try{id('loading').style.display = "none";
+    id('loading').style.pointerEvents = "none";}
+    catch(err){ }
     document.body.style.overflowY= "auto";
 });

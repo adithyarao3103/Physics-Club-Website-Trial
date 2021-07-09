@@ -23,7 +23,7 @@ var notblurred = [];
 function writepage(){
 var inner = '';
 for (var i = 0; i < events.length; i++) {
-inner+='<div class="event"><div class="pointer"></div><div class="date" id="elemid' + events[i].poster + '">' + events[i].date + '</div><div class="item"  id="' + events[i].poster + 'item"><img class="poster" src="/assets/posters/' + events[i].poster + '.png"></img><div class="info"><center><div class="name">' + events[i].name.toUpperCase() + '</div><div class="descr">' + events[i].descr;
+inner+='<div class="event"><div class="pointer"></div><div class="date" id="elemid' + events[i].poster + '">' + events[i].date + '</div><div class="item"  id="' + events[i].poster + 'item"><img class="poster" src="/assets/posters/' + events[i].poster + '.png"></img><div class="info"><center><div class="name" id="nameid' + events[i].poster + '">' + events[i].name.toUpperCase() + '</div><div class="descr">' + events[i].descr;
 if (events[i].reglink != " ") {
     inner+='<br><br><a class = "link" href = "' + events[i].reglink + '">Register here!!</a><br><br>';
 }
@@ -35,14 +35,10 @@ if(events[i].youtube!=" "){
 }
 inner += '</center></div></div></div></div>';
 
-id('container').innerHTML = inner;
-
 }
 
+id('container').innerHTML = inner;
 init();
-id('changedloading').style.display = "none";
-    id('changedloading').style.pointerEvents = "none";
-    document.body.style.overflowY= "auto";
 }
 
 function init(){
@@ -59,10 +55,13 @@ for(i=0; i < events.length; i++){
         }
         }
 
+id('changedloading').style.display = "none";
+    id('changedloading').style.pointerEvents = "none";
+    document.body.style.overflowY= "auto";
 }
 
 
-
+/*
 document.addEventListener('scroll', (event)=>{
 
     /*for(i = 0; i < events.length; i++){
@@ -77,6 +76,9 @@ document.addEventListener('scroll', (event)=>{
         }
     }*/
 
+function blur(){
+
+console.log('blur')
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(({ target, isIntersecting }) => {
@@ -112,10 +114,28 @@ const observer = new IntersectionObserver(entries => {
 });
 
 // Observe all elements with IDs
-const elemsWithIds = document.querySelectorAll('[id^="elemid"]');;
-elemsWithIds.forEach(elem => observer.observe(elem));
 
-});
+if(screen.width > 451){
+const elemsWithIds = document.querySelectorAll('[id^="elemid"]');
+elemsWithIds.forEach(elem => observer.observe(elem));
+}
+else{
+ const elemsWithIds = document.querySelectorAll('[id^="nameid"]');
+elemsWithIds.forEach(elem => observer.observe(elem));   
+}
+
+}
+
+//});
+
+var t;
+
+document.addEventListener('scroll', (event) => {
+
+    clearTimeout(t);
+    t = setTimeout(function(){blur();},500);
+
+})
 
 id('loading').setAttribute('id','changedloading')
 
