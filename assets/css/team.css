@@ -30,6 +30,7 @@
 }
 
 .image{
+	background-image: url('assets/images/ruffalo.jpg');
 	width: 200px;
 	height: 220px;
 	border-radius: 15px;
@@ -83,7 +84,8 @@
 .fa{
 	width: 20px;
 	margin: 5px;
-	height: 20px;
+	height: 18px;
+	margin-top: 3px;
 	color: black;
 	background: white;
 }
