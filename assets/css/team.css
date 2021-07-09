@@ -30,7 +30,7 @@
 }
 
 .image{
-	background-image: url('assets/images/ruffalo.jpg');
+	background-image: url('/assets/images/ruffalo.jpg');
 	width: 200px;
 	height: 220px;
 	border-radius: 15px;
