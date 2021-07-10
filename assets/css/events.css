@@ -52,7 +52,7 @@ background-image: linear-gradient(66deg, rgba(37, 37, 37, 0.05) 0%, rgba(37, 37,
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(3px);
   display: grid;
-  grid-template-columns: 1fr 1.35fr;
+  grid-template-columns: 1fr 1.7fr;
   transition: all 0.6s;
   filter: blur(3px);
   transform: scale(0.8);
@@ -88,7 +88,7 @@ clip-path: polygon(0 0, 100% 0, 100% 100%);
 }
 
 .info{
-  margin: 10px;
+  margin: 15px;
 }
 
 .name{

@@ -132,8 +132,7 @@ document.addEventListener('scroll', (event) => {
 	else{
 		if (current_height < req_height-120) {
 		id('navbar').style.background = "rgba(255,255,255,0.25)";
-		id('navbar').style.backdropFilter = "blur( 4px )";
-		id('navbar').setAttribute('class', 'hover');
+		id('navbar').setAttribute('class', 'blurbg');
 	}
 	else{
 		id('navbar').style.background = "transparent";
@@ -170,7 +169,7 @@ if (id('new').getBoundingClientRect().top <=0.65*screen.height) {
 
 id('title').style.color = "transparent";
 id('navbar').style.background = "transparent";
-id('navbar').style.backdropFilter = "";
+id('navbar').setAttribute('class','nobgblur');
 
 //update navbar status based on position
 
@@ -266,3 +265,9 @@ window.addEventListener('load',()=>{
 	setTimeout(function(){opennoti();},500);
 }
 });
+
+
+
+id('title').style.color = "transparent";
+id('navbar').style.background = "transparent";
+id('navbar').setAttribute('class','noblurbg');

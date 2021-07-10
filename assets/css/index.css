@@ -18,6 +18,14 @@ html{
 	top: -10px;
 }
 
+.blurbg{
+	backdrop-filter: blur(3px)!important;
+}
+
+.noblurbg{
+	backdrop-filter:  blur(0px)!important;
+}
+
 #darken{
 	background: rgba(0, 0, 0, 0.6);
 	width: 100%;
@@ -33,6 +41,7 @@ html{
 	font-family: Montserrat;
 	font-size: calc(5px + 1vw);
 	color: white;
+	z-index: 101;
 }
 
 .tit{
