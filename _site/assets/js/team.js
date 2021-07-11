@@ -33,11 +33,14 @@ function writepage(){
         lazyLoad: 'nearby',
         pagination: false,
    type   : 'loop',
-    perPage: 3,
+    perPage: 4,
     focus  : 'center',
     arrow:true,
     gap: '30px',
     breakpoints: {
+        1000:{
+            perPage: 3,
+        },
         760: {
             perPage: 2,
         },
