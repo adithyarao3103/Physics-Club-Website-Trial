@@ -41,12 +41,20 @@ inner += '</center></div></div></div></div>';
 
 id('container').innerHTML = inner;
 
-if( screen.width > 691){
+if( screen.width >= 691){
 init();
+}
+else{
+    init_phone()
 }
 ScrollReveal({ reset: true, delay: 10 }).reveal('.item')
 }
 
+function init_phone(){
+    id('changedloading').style.display = "none";
+    id('changedloading').style.pointerEvents = "none";
+    document.body.style.overflowY= "auto";
+}
 
 function init(){
 
@@ -153,7 +161,8 @@ document.addEventListener('scroll', (event) => {
 id('loading').setAttribute('id','changedloading')
 
 
-if(screen.width > 691){
+if(screen.width >= 691){
+
 document.addEventListener('scroll', ()=> {
      elem = document.elementFromPoint($(window).width()/2, $(window).height()/2)
      elemid = elem.getAttribute('id');
