@@ -38,7 +38,7 @@ function writepage(){
     arrow:true,
     gap: '30px',
     breakpoints: {
-        640: {
+        760: {
             perPage: 2,
         },
         450: {
