@@ -41,7 +41,7 @@ inner += '</center></div></div></div></div>';
 
 id('container').innerHTML = inner;
 init();
-ScrollReveal({ reset: true }).reveal('.event')
+ScrollReveal({ reset: true, delay: 250 }).reveal('.item')
 }
 
 function init(){
