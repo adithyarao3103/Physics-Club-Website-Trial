@@ -7,36 +7,6 @@ body{
   left: 35%!important;
 }
 
-.horizontal {
-  overflow: hidden;
-  text-align: center;
- 	color: white;
- 	font-family: Lato;
- 	font-size: calc(10px + 1.25vw);
-}
-
-
-.horizontal:before,
-.horizontal:after {
-  background-color: white;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  position: relative;
-  vertical-align: middle;
-  width: 50%;
-}
-
-.horizontal:before {
-  right: 0.5em;
-  margin-left: -50%;
-}
-
-.horizontal:after {
-  left: 0.5em;
-  margin-right: -50%;
-}
-
 #main-container{
 	width: calc(100vw + 10px);
 	position: relative;

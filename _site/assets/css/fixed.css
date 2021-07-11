@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|BioRhyme|Lato');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|BioRhyme|Lato|Yomogi');
 
 * {
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
@@ -336,7 +336,8 @@ body{
 	-ms-grid-columns: 1fr 1.5fr;
 	grid-template-columns: 1fr 1.5fr;
 	position: relative;
-	left: -10px;    
+	left: -10px;  
+	top: 10px;  
 }
 
 #social{
@@ -374,8 +375,9 @@ body{
 
 #footmenu{
 	background-color: black;
-	height: 12vh;
-	padding:11px;
+	height: 11vh;
+	position: relative;
+	top: 1vh;
 }
 
 .footermenu{
@@ -437,4 +439,34 @@ body{
 .bar{
 	background-color: black;
 }
+}
+
+.horizontal {
+  overflow: hidden;
+  text-align: center;
+ 	color: white;
+ 	font-family: Lato;
+ 	font-size: calc(10px + 1.25vw);
+}
+
+
+.horizontal:before,
+.horizontal:after {
+  background-color: white;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.horizontal:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.horizontal:after {
+  left: 0.5em;
+  margin-right: -50%;
 }
