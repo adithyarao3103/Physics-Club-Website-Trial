@@ -40,7 +40,10 @@ inner += '</center></div></div></div></div>';
 }
 
 id('container').innerHTML = inner;
+
+if( screen.width > 691){
 init();
+}
 ScrollReveal({ reset: true, delay: 10 }).reveal('.item')
 }
 
@@ -150,6 +153,7 @@ document.addEventListener('scroll', (event) => {
 id('loading').setAttribute('id','changedloading')
 
 
+if(screen.width > 691){
 document.addEventListener('scroll', ()=> {
      elem = document.elementFromPoint($(window).width()/2, $(window).height()/2)
      elemid = elem.getAttribute('id');
@@ -175,4 +179,5 @@ document.addEventListener('scroll', ()=> {
 }
 }
 )
+}
 
