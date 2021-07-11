@@ -28,8 +28,43 @@ function writepage(){
 
     id('current').innerHTML = inner;
 
-    new Splide( '.splide', {
-        speed: 100,
+    inner = '';
+    alumnus = membersdata.exmembers;
+
+    if(alumnus.length == 0){ id('alumnus').style.display = 'none'; }
+    else{
+        for(i = alumnus.length - 1; i>=0; i--){
+        inner += '<div class="splide__slide"><div class="member"><center><img class="image" data-splide-lazy="/assets/Team/' + alumnus[i].image + '"><div class="name">' + alumnus[i].name + '</div><div class="batch">' + alumnus[i].batch + '</div><div class="soc"><div class="insta"><a class="customico fa fa-instagram" href="' + alumnus[i].insta + '"></a></div><div class="facebook"><a class="customico fa fa-facebook" href = "' + alumnus[i].fb + '"></a></div></div></center></div></div>'
+    }
+    id('ex').innerHTML = inner;
+
+    var exmembers = new Splide( '#splide2', {
+        speed: 10,
+        lazyLoad: 'nearby',
+        pagination: false,
+   type   : 'loop',
+    perPage: 4,
+    focus  : 'center',
+    arrow:true,
+    gap: '30px',
+    breakpoints: {
+        1000:{
+            perPage: 3,
+        },
+        760: {
+            perPage: 2,
+        },
+        450: {
+            perPage: 1,
+        },
+    }} ).mount();
+}
+
+
+    
+
+var currentmembers =  new Splide( '#splide1', {
+        speed: 10,
         lazyLoad: 'nearby',
         pagination: false,
    type   : 'loop',

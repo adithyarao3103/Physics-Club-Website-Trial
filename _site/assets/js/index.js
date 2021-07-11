@@ -234,14 +234,10 @@ function reportStatus() {
 function writepage(){
 
 	if(index[0].title !== " "){
-		id('l-reg-unlinked').setAttribute('id','l-reg');
 		id('l-image').setAttribute('src', '/assets/posters/' + index[0].poster + '.png');
 		id('l-title').innerHTML = index[0].title; 
 		id('l-date').innerHTML = index[0].date;
-		id('l-descr').innerHTML = index[0].descr;
-
-		id('l-reg').innerHTML = index[0].linktitle;
-		id('l-reg').setAttribute('href',index[0].link);
+		id('l-descr').innerHTML = index[0].descr + '<br><br><a id="l-reg" href="' + index[0].link + '">' + index[0].linktitle + '</a>';
 	}
 
 		id('name-hod').innerHTML = index[1].name;
@@ -265,7 +261,6 @@ window.addEventListener('load',()=>{
 	setTimeout(function(){opennoti();},500);
 }
 });
-
 
 
 id('title').style.color = "transparent";
