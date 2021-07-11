@@ -36,26 +36,26 @@
 }
 
 .image{
-	margin-top: 50px;
-	width: 165px;
-	height: 165px;
+	margin-top: 30px;
+	width: 195px;
+	height: 195px;
 	border-radius: 50%;
 }
 
 .name{
 	color: white;
-	font-family: Yomogi;
+	font-family: Roboto Condensed;
 	letter-spacing: 2px;
-	padding-top: 20px;
+	padding-top: 10px;
 	font-size: calc(10px + 1.5vw);
 }
 
 .batch{
 	color: white;
-	font-family: Yomogi;
+	font-family: Roboto Condensed;
 	letter-spacing: 2px;
-	font-size: calc(7px + 1.5vw);
-	padding-top: 10px;
+	font-size: calc(7px + 1.25vw);
+	padding-top: 5px;
 }
 
 .soc{
