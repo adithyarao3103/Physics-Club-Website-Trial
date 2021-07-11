@@ -84,16 +84,18 @@ textarea{
 	font-family: inherit;
 	padding: 5px;
 	color:  white;
-	border:  0px solid white;
 	transition: all 0.5s;
 	background: linear-gradient(#03042b, #03042b);
-	background-position: 0 100%;
+	background-position: 0 125%;
   background-repeat: repeat-x;
-  background-size: 4px 4px;
+  background-size: 4px 0px;
+  border: 4px solid #03042b;
+  border-radius: 15px;
 }
 
 .submit-button:hover {
-  background-size: 4px 50px;
+  background-size: 4px 60px;
+  background-position: 0 100%;
 }
 
 
@@ -170,6 +172,56 @@ a {
   position: relative;
   left: 45%;
   transform: translateX(-50%);
+}
+
+.labelholder{
+  display: none;
+}
+
+#formdiv{
+  width: 95vw;
+}
+
+#contact{
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.inputholder{
+  width: inherit;
+} 
+
+input[type="text"] {
+    width: 99%;
+    margin-top:20px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: calc(13px + 1.5vw);
+}
+
+select{
+  width: 100.5%;
+  margin-top: 20px;
+  height: 45px;
+    font-size: calc(13px + 1.5vw);
+}
+
+textarea{
+  width: 98.5%;
+  margin-top: 20px;
+  height: 180px;
+    font-size: calc(13px + 1.5vw);
+    border-radius: 5px;
+}
+
+.submit-button{
+  border-width: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+    font-size: calc(13px + 1.5vw);
+  margin-bottom: 20px;
 }
 
 }

@@ -48,7 +48,7 @@ function clearActiveClasses() {
   });
 }
 
-
+/*
 elems = document.getElementsByClassName('labelholder');
 for (var i = elems.length - 1; i >= 0; i--) {
   elems[i].style.display = "none";
@@ -72,6 +72,10 @@ inputs[i].style.left = '2.5vw';
 inputs[i].style.width = '95vw';
 inputs[i].style.height = '5vh';
 inputs[i].fontSize = '30px';
-}
+}*/
+
+id('entry.1632216977').setAttribute('placeholder','Your Name');
+id('entry.961639452').setAttribute('placeholder','your@email.id');
+id('entry.1769439812').setAttribute('placeholder','Your Message');
 
 }
