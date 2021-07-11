@@ -44,13 +44,14 @@ init();
 ScrollReveal({ reset: true, delay: 250 }).reveal('.item')
 }
 
+
 function init(){
 
 for(i=0; i < events.length; i++){
 
     if(id(events[i].poster + 'itemidid').getBoundingClientRect().top <0.65*screen.height && id(events[i].poster + 'itemidid').getBoundingClientRect().top >0.1*screen.height){
             id(events[i].poster + 'itemidid').style.transform = 'scale(1)';
-            id(events[i].poster + 'itemidid').style.filter = 'blur(0px)';
+            //id(events[i].poster + 'itemidid').style.filter = 'blur(0px)';
             notblurred.push('elemid' + events[i].poster);
             isnotblur = events[i].poster + 'itemidid';
         }
@@ -63,6 +64,7 @@ id('changedloading').style.display = "none";
     id('changedloading').style.pointerEvents = "none";
     document.body.style.overflowY= "auto";
 }
+
 
 
 /*
