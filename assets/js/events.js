@@ -25,7 +25,7 @@ var isnotblur;
 function writepage(){
 var inner = '';
 for (var i = 0; i < events.length; i++) {
-inner+='<div class="event" id = "' + events[i].poster + 'evntidid"><div class="pointer" id = "' + events[i].poster + 'poinidid"></div><div class="date"" id = "' + events[i].poster + 'dateidid">' + events[i].date + '</div><div class="item"  id="' + events[i].poster + 'itemidid"><img class="poster" src="/assets/posters/' + events[i].poster + '.png"" id = "' + events[i].poster + 'imagidid"></img><div class="info"" id = "' + events[i].poster + 'infoidid"><center " id = "' + events[i].poster + 'cntridid"><div class="name"" id = "' + events[i].poster + 'nameidid">' + events[i].name.toUpperCase() + '</div><div class="descr" id = "' + events[i].poster + 'descidid">' + events[i].descr;
+inner+='<div class="event" id = "' + events[i].poster + 'evntidid" data-snap-point><div class="pointer" id = "' + events[i].poster + 'poinidid"></div><div class="date"" id = "' + events[i].poster + 'dateidid">' + events[i].date + '</div><div class="item"  id="' + events[i].poster + 'itemidid"><img class="poster" src="/assets/posters/' + events[i].poster + '.png"" id = "' + events[i].poster + 'imagidid"></img><div class="info"" id = "' + events[i].poster + 'infoidid"><center " id = "' + events[i].poster + 'cntridid"><div class="name"" id = "' + events[i].poster + 'nameidid">' + events[i].name.toUpperCase() + '</div><div class="descr" id = "' + events[i].poster + 'descidid">' + events[i].descr;
 if (events[i].reglink != " ") {
     inner+='<br><br><a class = "link" href = "' + events[i].reglink + '"" id = "' + events[i].poster + 'reglidid">Register here!!</a><br><br>';
 }
@@ -41,6 +41,7 @@ inner += '</center></div></div></div></div>';
 
 id('container').innerHTML = inner;
 init();
+ScrollReveal({ reset: true }).reveal('.event')
 }
 
 function init(){
@@ -161,7 +162,7 @@ document.addEventListener('scroll', ()=> {
      if(itemid != isnotblur){
             
         id(isnotblur).style.transform = 'scale(0.8)';
-        id(isnotblur).style.filter = 'blur(5px)';
+        //id(isnotblur).style.filter = 'blur(5px)';
         isnotblur = itemid;
      id(itemid).style.transform = 'scale(1)';
      id(itemid).style.filter = 'blur(0)';

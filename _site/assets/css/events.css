@@ -37,6 +37,7 @@ background-image: linear-gradient(66deg, rgba(37, 37, 37, 0.05) 0%, rgba(37, 37,
 #container{
   width: 95%;
   border-left: 4px solid rgba(255, 255, 255, 1);
+  scroll-snap-type: y mandatory;
 }
 
 .event{
@@ -44,17 +45,18 @@ background-image: linear-gradient(66deg, rgba(37, 37, 37, 0.05) 0%, rgba(37, 37,
    width: 90%;
   grid-template-columns: 1fr 5fr 50fr;
   height: 60vh;
+  scroll-snap-align: center;
   margin-top:40px;
 }
 
 .item{
   height: 60vh;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(3px);
   display: grid;
   grid-template-columns: 1fr 1.7fr;
   transition: all 0.6s;
-  filter: blur(3px);
+  /*filter: blur(3px);*/
   transform: scale(0.8);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
