@@ -22,7 +22,7 @@ function writepage(){
 
     for(i = members.length - 1; i>=0; i--){
 
-        inner += '<div class="splide__slide"><div class="member"><center><img class="image" data-splide-lazy="/assets/Team/' + members[i].image + '"><div class="name"><i>' + members[i].name + '</i></div><div class="batch">' + members[i].batch + '</div><div class="soc"><div class="insta"><a class="customico fa fa-instagram" href="' + members[i].insta + '"></a></div><div class="facebook"><a class="customico fa fa-facebook" href = "' + members[i].fb + '"></a></div></div></center></div></div>'
+        inner += '<div class="splide__slide"><div class="member"><center><img class="image" data-splide-lazy="/assets/Team/' + members[i].image + '"><div class="name">' + members[i].name + '</div><div class="batch">' + members[i].batch + '</div><div class="soc"><div class="insta"><a class="customico fa fa-instagram" href="' + members[i].insta + '"></a></div><div class="facebook"><a class="customico fa fa-facebook" href = "' + members[i].fb + '"></a></div></div></center></div></div>'
 
     }
 
