@@ -190,7 +190,6 @@ clip-path: polygon(0 0, 100% 0, 100% 100%);
   .date{
     width: 70vw;
     top: 0;
-    left: 25px;
     width: inherit;
     text-align: center;
   }
