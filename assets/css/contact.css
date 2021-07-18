@@ -46,7 +46,7 @@ label{
 	top: 35%;
 }
 
-input[type="text"]{
+input[type="text"], input[type="email"]{
 	width: 90%;
   font-size: calc(5px + 0.55vw);
 	height: 25px;
@@ -139,11 +139,12 @@ a {
 }
 
 .wrapper {
-  width: 75%;
+  width: 100vw;
   display: flex;
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-52%);
+  text-align: center;
 }
 
 .container {
@@ -192,7 +193,7 @@ a {
   width: inherit;
 } 
 
-input[type="text"] {
+input[type="text"], input[type="email"] {
     width: 99%;
     margin-top:20px;
     height: 45px;

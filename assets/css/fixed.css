@@ -409,7 +409,7 @@ body{
 	background: white;
 	width: ;
 	z-index: 199;
-	overflow: clip;
+	overflow: hidden;
 }
 
 #hamcont-mobile> button{
@@ -419,7 +419,7 @@ body{
 	border: 0px;
 	background-color: transparent;
 	cursor: pointer;
-	overflow: clip;
+	overflow: hidden;
 }
 
 @media screen and (max-width: 451px){

@@ -76,6 +76,6 @@ inputs[i].fontSize = '30px';
 
 id('entry.1632216977').setAttribute('placeholder','Your Name');
 id('entry.961639452').setAttribute('placeholder','your@email.id');
-id('entry.1769439812').setAttribute('placeholder','Your Message');
+id('entry.1769439812').setAttribute('placeholder','Your Message');  
 
 }

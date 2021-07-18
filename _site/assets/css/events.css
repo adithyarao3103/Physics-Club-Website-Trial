@@ -21,7 +21,7 @@ background-image: linear-gradient(66deg, rgba(37, 37, 37, 0.05) 0%, rgba(37, 37,
   background-size: cover;
   background-position: center;
   background-repeat: none;
-  background-attachment: fixed;
+  background-attachment: scroll, fixed;
   width: calc(100vw + 50px);
   position: relative;
   top:  -10px;
@@ -55,11 +55,18 @@ background-image: linear-gradient(66deg, rgba(37, 37, 37, 0.05) 0%, rgba(37, 37,
   backdrop-filter: blur(3px);
   display: grid;
   grid-template-columns: 1fr 1.7fr;
-  transition: all 0.6s;
+  transition: all 0.75s;
   /*filter: blur(3px);*/
-  transform: scale(0.8);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
+}
+
+.zoomout{
+    transform: scale(0.8);
+}
+
+.zoomnorm{
+    transform: scale(1);
 }
 
 .pointer{

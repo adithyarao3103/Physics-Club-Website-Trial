@@ -25,7 +25,7 @@ var isnotblur;
 function writepage(){
 var inner = '';
 for (var i = 0; i < events.length; i++) {
-inner+='<div class="event" id = "' + events[i].poster + 'evntidid"><div class="pointer" id = "' + events[i].poster + 'poinidid"></div><div class="date"" id = "' + events[i].poster + 'dateidid">' + events[i].date + '</div><div class="item"  id="' + events[i].poster + 'itemidid"><center><img class="poster" loading="lazy" src="/assets/posters/' + events[i].poster + '.png"" id = "' + events[i].poster + 'imagidid"></img></center><div class="info"" id = "' + events[i].poster + 'infoidid"><center " id = "' + events[i].poster + 'cntridid"><div class="name"" id = "' + events[i].poster + 'nameidid">' + events[i].name.toUpperCase() + '</div><div class="descr" id = "' + events[i].poster + 'descidid">' + events[i].descr;
+inner+='<div class="event" id = "' + events[i].poster + 'evntidid"><div class="pointer" id = "' + events[i].poster + 'poinidid"></div><div class="date"" id = "' + events[i].poster + 'dateidid">' + events[i].date + '</div><div class="item zoomout"  id="' + events[i].poster + 'itemidid"><center><img class="poster" loading="lazy" src="/assets/posters/' + events[i].poster + '.png"" id = "' + events[i].poster + 'imagidid"></img></center><div class="info"" id = "' + events[i].poster + 'infoidid"><center " id = "' + events[i].poster + 'cntridid"><div class="name"" id = "' + events[i].poster + 'nameidid">' + events[i].name.toUpperCase() + '</div><div class="descr" id = "' + events[i].poster + 'descidid">' + events[i].descr;
 if (events[i].reglink != " ") {
     inner+='<br><br><a class = "link" href = "' + events[i].reglink + '"" id = "' + events[i].poster + 'reglidid">Register here!!</a><br><br>';
 }
@@ -43,11 +43,29 @@ id('container').innerHTML = inner;
 
 if( screen.width >= 691){
 init();
+
+
+ScrollReveal({ reset: true, delay: 0, afterReveal: zoomin, beforeReset: zoomout, viewFactor: 0.75, opacity: 0.4, viewOffset: {
+    top: 50
+} }).reveal('.item');
+
+
+
 }
 else{
     init_phone()
+    ScrollReveal({ reset: true, delay: 100, opacity: 0}).reveal('.item');
 }
-ScrollReveal({ reset: true, delay: 10 }).reveal('.item')
+
+}
+
+function zoomin(el){
+        el.setAttribute('class', 'item zoomnorm')
+}
+
+
+function zoomout(el){
+        el.setAttribute('class', 'item zoomout');
 }
 
 function init_phone(){
@@ -58,18 +76,21 @@ function init_phone(){
 
 function init(){
 
+
 for(i=0; i < events.length; i++){
 
     if(id(events[i].poster + 'itemidid').getBoundingClientRect().top <0.65*screen.height && id(events[i].poster + 'itemidid').getBoundingClientRect().top >0.1*screen.height){
-            id(events[i].poster + 'itemidid').style.transform = 'scale(1)';
+            id(events[i].poster + 'itemidid').setAttribute('class','item zoomnorm');
             //id(events[i].poster + 'itemidid').style.filter = 'blur(0px)';
             notblurred.push('elemid' + events[i].poster);
             isnotblur = events[i].poster + 'itemidid';
+            break;
         }
         else{
             blurred.push('elemid' + events[i].poster);
         }
         }
+
 
 id('changedloading').style.display = "none";
     id('changedloading').style.pointerEvents = "none";
@@ -163,6 +184,8 @@ id('loading').setAttribute('id','changedloading')
 
 if(screen.width >= 691){
 
+
+/*
 document.addEventListener('scroll', ()=> {
      elem = document.elementFromPoint($(window).width()/2, $(window).height()/2)
      elemid = elem.getAttribute('id');
@@ -188,4 +211,9 @@ document.addEventListener('scroll', ()=> {
 }
 }
 )
+*/
+
+}
+
+else {
 }
