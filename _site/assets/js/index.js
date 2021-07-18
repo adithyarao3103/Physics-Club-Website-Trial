@@ -206,7 +206,7 @@ navbarloop();
 
 //choose background
 
-var num = Math.ceil(4*Math.random());
+var num = Math.ceil(14*Math.random());
 var bg = '/assets/images/' + num + '.jpg';
 let image = document.createElement('img');
 image.src = bg;
