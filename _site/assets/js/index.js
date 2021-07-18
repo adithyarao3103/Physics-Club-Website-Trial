@@ -132,7 +132,7 @@ document.addEventListener('scroll', (event) => {
 	else{
 		if (current_height < req_height-120) {
 		id('navbar').style.background = "rgba(255,255,255,0.25)";
-		id('navbar').setAttribute('class', 'blurbg');
+		id('navbar').setAttribute('class', 'blurback');
 	}
 	else{
 		id('navbar').style.background = "transparent";
@@ -169,7 +169,7 @@ if (id('new').getBoundingClientRect().top <=0.65*screen.height) {
 
 id('title').style.color = "transparent";
 id('navbar').style.background = "transparent";
-id('navbar').setAttribute('class','nobgblur');
+id('navbar').setAttribute('class',' ');
 
 //update navbar status based on position
 

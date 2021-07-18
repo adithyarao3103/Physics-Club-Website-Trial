@@ -17,85 +17,57 @@ body{
 	position: fixed;
 	top: -2.5vh;
 	left: -2.5vw;
-	background: black;
+	background-image: radial-gradient(circle at center center, transparent,rgb(0,0,0)),linear-gradient(114deg, rgba(59, 59, 59,0.05) 0%, rgba(59, 59, 59,0.05) 50%,rgba(63, 63, 63,0.05) 50%, rgba(63, 63, 63,0.05) 100%),linear-gradient(186deg, rgba(173, 173, 173,0.05) 0%, rgba(173, 173, 173,0.05) 50%,rgba(237, 237, 237,0.05) 50%, rgba(237, 237, 237,0.05) 100%),linear-gradient(98deg, rgba(191, 191, 191,0.05) 0%, rgba(191, 191, 191,0.05) 50%,rgba(119, 119, 119,0.05) 50%, rgba(119, 119, 119,0.05) 100%),linear-gradient(58deg, rgba(95, 95, 95,0.05) 0%, rgba(95, 95, 95,0.05) 50%,rgba(189, 189, 189,0.05) 50%, rgba(189, 189, 189,0.05) 100%),linear-gradient(259deg, rgba(31, 31, 31,0.05) 0%, rgba(31, 31, 31,0.05) 50%,rgba(110, 110, 110,0.05) 50%, rgba(110, 110, 110,0.05) 100%),linear-gradient(41deg, rgba(142, 142, 142,0.05) 0%, rgba(142, 142, 142,0.05) 50%,rgba(84, 84, 84,0.05) 50%, rgba(84, 84, 84,0.05) 100%),linear-gradient(134deg, rgba(96, 96, 96,0.05) 0%, rgba(96, 96, 96,0.05) 50%,rgba(198, 198, 198,0.05) 50%, rgba(198, 198, 198,0.05) 100%),linear-gradient(46deg, rgba(12, 12, 12,0.05) 0%, rgba(12, 12, 12,0.05) 50%,rgba(71, 71, 71,0.05) 50%, rgba(71, 71, 71,0.05) 100%),radial-gradient(circle at center center, hsl(227,81%,21%),hsl(227,81%,21%));
 }
 
 .loadholder{
-	position: relative;
-	top: 40%;
+	width: 50vw;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
 }
 
-.sk-folding-cube {
-  margin: 20px auto;
+.spinner {
   width: 40px;
   height: 40px;
+
   position: relative;
-  transform: rotateZ(45deg);
+  margin: 100px auto;
+  transform: scale(2);
 }
 
-.sk-folding-cube .sk-cube {
-  float: left;
-  width: 50%;
-  height: 50%;
-  position: relative;
-  transform: scale(1.1); 
-}
-.sk-folding-cube .sk-cube:before {
-  content: '';
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.6;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #f5f5f5;
-  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
-          animation: sk-foldCubeAngle 2.4s infinite linear both;
-  transform-origin: 100% 100%;
-}
-.sk-folding-cube .sk-cube2 {
-  transform: scale(1.1) rotateZ(90deg);
-}
-.sk-folding-cube .sk-cube3 {
-  transform: scale(1.1) rotateZ(180deg);
-}
-.sk-folding-cube .sk-cube4 {
-  transform: scale(1.1) rotateZ(270deg);
-}
-.sk-folding-cube .sk-cube2:before {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-.sk-folding-cube .sk-cube3:before {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s; 
-}
-.sk-folding-cube .sk-cube4:before {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-@-webkit-keyframes sk-foldCubeAngle {
-  0%, 10% {
-    transform: perspective(140px) rotateX(-180deg);
-    opacity: 0; 
-  } 25%, 75% {
-    transform: perspective(140px) rotateX(0deg);
-    opacity: 1; 
-  } 90%, 100% {
-    transform: perspective(140px) rotateY(180deg);
-    opacity: 0; 
-  } 
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
 }
 
-@keyframes sk-foldCubeAngle {
-  0%, 10% {
-    transform: perspective(140px) rotateX(-180deg);
-    opacity: 0; 
-  } 25%, 75% {
-    transform: perspective(140px) rotateX(0deg);
-    opacity: 1; 
-  } 90%, 100% {
-    transform: perspective(140px) rotateY(180deg);
-    opacity: 0; 
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
   }
 }
 
@@ -234,10 +206,13 @@ body{
 	top: -7px;
 	left: -7px;
 	background-color: rgba(255, 255, 255, 0.25);
-	-webkit-backdrop-filter:  blur(4px);
-	        backdrop-filter:  blur(4px);
 	z-index: 100;
 	transition: all 0.5s;
+}
+
+.blurback{
+	-webkit-backdrop-filter:  blur(4px);
+	        backdrop-filter:  blur(4px);
 }
 
 #logos{

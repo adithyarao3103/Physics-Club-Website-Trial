@@ -25,7 +25,7 @@ var isnotblur;
 function writepage(){
 var inner = '';
 for (var i = 0; i < events.length; i++) {
-inner+='<div class="event" id = "' + events[i].poster + 'evntidid"><div class="pointer" id = "' + events[i].poster + 'poinidid"></div><div class="date"" id = "' + events[i].poster + 'dateidid">' + events[i].date + '</div><div class="item zoomout"  id="' + events[i].poster + 'itemidid"><center><img class="poster" loading="lazy" src="/assets/posters/' + events[i].poster + '.png"" id = "' + events[i].poster + 'imagidid"></img></center><div class="info"" id = "' + events[i].poster + 'infoidid"><center " id = "' + events[i].poster + 'cntridid"><div class="name"" id = "' + events[i].poster + 'nameidid">' + events[i].name.toUpperCase() + '</div><div class="descr" id = "' + events[i].poster + 'descidid">' + events[i].descr;
+inner+='<div class="event" id = "' + events[i].poster + 'evntidid"><div class="pointer" id = "' + events[i].poster + 'poinidid"></div><div class="date"" id = "' + events[i].poster + 'dateidid">' + events[i].date + '</div><div class="item zoomout"  id="' + events[i].poster + 'itemidid"><center><img class="poster lozad" data-src="/assets/posters/' + events[i].poster + '.png"" id = "' + events[i].poster + 'imagidid"></img></center><div class="info"" id = "' + events[i].poster + 'infoidid"><center " id = "' + events[i].poster + 'cntridid"><div class="name"" id = "' + events[i].poster + 'nameidid">' + events[i].name.toUpperCase() + '</div><div class="descr" id = "' + events[i].poster + 'descidid">' + events[i].descr;
 if (events[i].reglink != " ") {
     inner+='<br><br><a class = "link" href = "' + events[i].reglink + '"" id = "' + events[i].poster + 'reglidid">Register here!!</a><br><br>';
 }
@@ -57,6 +57,9 @@ else{
     ScrollReveal({ reset: true, delay: 100, opacity: 0}).reveal('.item');
 }
 
+const observer = lozad(); 
+observer.observe();
+
 }
 
 function zoomin(el){
@@ -75,7 +78,6 @@ function init_phone(){
 }
 
 function init(){
-
 
 for(i=0; i < events.length; i++){
 
