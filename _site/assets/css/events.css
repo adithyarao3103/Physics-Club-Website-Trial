@@ -21,7 +21,7 @@ background-image: linear-gradient(66deg, rgba(37, 37, 37, 0.05) 0%, rgba(37, 37,
   background-size: cover;
   background-position: center;
   background-repeat: none;
-  background-attachment: scroll, fixed;
+  background-attachment: fixed, fixed;
   width: calc(100vw + 50px);
   position: relative;
   top:  -10px;
@@ -37,7 +37,6 @@ background-image: linear-gradient(66deg, rgba(37, 37, 37, 0.05) 0%, rgba(37, 37,
 #container{
   width: 95%;
   border-left: 4px solid rgba(255, 255, 255, 1);
-  scroll-snap-type: y mandatory;
 }
 
 .event{
@@ -50,7 +49,7 @@ background-image: linear-gradient(66deg, rgba(37, 37, 37, 0.05) 0%, rgba(37, 37,
 }
 
 .item{
-  height: 60vh;
+  height: 65vh;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(3px);
   display: grid;
@@ -91,15 +90,19 @@ clip-path: polygon(0 0, 100% 0, 100% 100%);
 }
 
 .poster{
-  height: 50vh;
+  height: 55vh;
   margin-top: 5vh;
   margin-left: 10px;
 }
 
 .info{
-  margin: 15px;
-  text-overflow: ellipsis;
-  max-height: 45vh;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-right: 50px;
+  padding-left: 20px;
 }
 
 .name{
@@ -167,6 +170,10 @@ clip-path: polygon(0 0, 100% 0, 100% 100%);
     text-align: center;
   }
 
+  .info{
+    justify-content: flex-start;
+  }
+
 }
 
 
@@ -177,6 +184,13 @@ clip-path: polygon(0 0, 100% 0, 100% 100%);
   width: 100%;
 }
 
+
+  .info{
+    justify-content: flex-start;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+  }
 
   .event{
     position: relative;

@@ -2,43 +2,8 @@
 
 if ( screen.width <= 451) {
 	
-//Change stuff optimising for mobile screen
 
-/*
-id('we').style.fontSize = '15px';
-id('we').style.position = "relative";
-id('we').style.top = "-10px";
-id('tit').style.fontSize = 'calc(37px + 2vw)';*/
 id('of').innerHTML = '<br>of<br>';
-/*
-id('of').setAttribute('class','of-mobile');
-id('content').style.width = 'calc(102vw + 10px)';
-id('topcontent').style.width = 'calc(102vw + 10px)';
-id('fullscreen').style.width = screen.width + 'px';
-id('fullscreen').style.height = screen.height + 'px';
-id('line').style.fontSize = 'calc(10px + 1.5vw)';
-id('line').style.left = '-5%';
-id('pclogo').style.height = 'calc(100px + 5vw)';
-id('pclogo').style.width = 'calc(100px + 5vw)';
-id('name-hod').style.fontSize = 'calc(15px + 1.5vw)';
-id('name-fac').style.fontSize = 'calc(15px + 1.5vw)';
-id('posit-hod').style.fontSize = 'calc(10px + 1.25vw)';
-id('posit-fac').style.fontSize = 'calc(10px + 1.25vw)';
-id('state-hod').style.fontSize = 'calc(10px + 1vw)';
-id('state-fac').style.fontSize = 'calc(10px + 1vw)';
-id('l-image').style.left = '-10%';
-id('l-title').style.fontSize = 'calc(20px + 4vw)';
-id('l-date').style.fontSize = 'calc(13px + 1.25vw)';
-id('l-descr').style.fontSize = 'calc(10px + 1.25vw)';
-try{id('l-reg').style.fontSize = 'calc(10px + 1.25vw)';}catch(err){};
-try{id('l-reg-unlinked').style.fontSize = 'calc(10px + 1.25vw)';} catch(err){};
-id('noti').style.width = 'calc(100vw)';
-id('noti').style.borderRadius = '0';
-id('noti').style.bottom = '0';
-id('noti').style.left = '0';
-id('innoti').style.fontSize = 'calc(7px + 0.6vw)'
-
-*/
 
 //Scrollevent
 	document.addEventListener('scroll', (event) => {
@@ -206,7 +171,7 @@ navbarloop();
 
 //choose background
 
-var num = Math.ceil(14*Math.random());
+var num = Math.ceil(13*Math.random());
 var bg = '/assets/images/' + num + '.jpg';
 let image = document.createElement('img');
 image.src = bg;
@@ -233,11 +198,14 @@ function reportStatus() {
 }
 function writepage(){
 
-	if(index[0].title !== " "){
+	if(index[0].title !== " " && index[0].title !== ''){
 		id('l-image').setAttribute('src', '/assets/posters/' + index[0].poster + '.png');
 		id('l-title').innerHTML = index[0].title; 
 		id('l-date').innerHTML = index[0].date;
 		id('l-descr').innerHTML = index[0].descr + '<br><br><a id="l-reg" href="' + index[0].link + '">' + index[0].linktitle + '</a>';
+	}
+	else{
+		id('newhead').style.display = 'none';
 	}
 
 		id('name-hod').innerHTML = index[1].name;
@@ -266,3 +234,5 @@ window.addEventListener('load',()=>{
 id('title').style.color = "transparent";
 id('navbar').style.background = "transparent";
 id('navbar').setAttribute('class','noblurbg');
+
+ScrollReveal({ reset: true, delay: 100, opacity: 0}).reveal('.offsetdown')
