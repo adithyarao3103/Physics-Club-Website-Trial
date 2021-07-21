@@ -26,6 +26,7 @@ background-image: linear-gradient(66deg, rgba(37, 37, 37, 0.05) 0%, rgba(37, 37,
   position: relative;
   top:  -10px;
   left: -10px;
+  transition:  all 1s;
 }
 
 #main-container{
@@ -35,7 +36,7 @@ background-image: linear-gradient(66deg, rgba(37, 37, 37, 0.05) 0%, rgba(37, 37,
 }
 
 #container{
-  width: 95%;
+  width: 96%;
   border-left: 4px solid rgba(255, 255, 255, 1);
 }
 
@@ -144,11 +145,11 @@ clip-path: polygon(0 0, 100% 0, 100% 100%);
 
 .dotted{
   height: 20vh;
-  width: 95%; 
+  width: 96%; 
   border-left: 5px dashed white; 
   background: transparent; 
   position: relative; 
-  left: 4.72%;
+  left: 3.72%;
   margin-bottom: 5px;
   margin-top: 5px;
 }

@@ -3,49 +3,26 @@
 if ( screen.width <= 451) {
 	
 
-id('of').innerHTML = '<br>of<br>';
+	id('of').innerHTML = '<br>of<br>';
 
 //Scrollevent
-	document.addEventListener('scroll', (event) => {
-	scroly = this.scrollY;
-
-	var beg = 'scale(';
-	var val = 1 + scroly/100;
-	var end = ')';
-	var val1 = 1 - scroly/150;
-
-	inner1 = beg + val + end;
-	inner2 = beg + val1 + end;
-
-	if(val <= 4){
-
-	id('topcontent').style.transform = inner1;
-	id('titleholder').style.transform = inner2;
-}
-
-//Bring content in	
-	var content = id("content").querySelectorAll(".offsetdown");
-for (var i = 0; i<content.length; i++) {
-	if(content[i].getBoundingClientRect().top <=0.85*screen.height){
-		content[i].style.opacity = 1;
-		content[i].style.transform = 'translateY(0)';
-	}
-}
-
+document.addEventListener('scroll', (event) => {
+	
 //Remove noti if already reached new
 
 if (id('new').getBoundingClientRect().top <=0.65*screen.height) {
 	id('noti').setAttribute('class','noticlose');
 }});
 }
-	
+
 //Desktop devices...
 
 else{
 
 //Initialising for scrolling scale options
 
-var initial_height = 0.36*screen.height;
+//var initial_height = 0.36*screen.height;
+var initial_height = 0.45*window.innerHeight;
 var req_height = id("title").getBoundingClientRect().top;
 var current_height = id("tit").getBoundingClientRect().top;
 
@@ -53,28 +30,46 @@ var current_height = id("tit").getBoundingClientRect().top;
 
 if (current_height>0) {
 
-var beg = "scale(";
-var val = 0.32 + 0.68*(current_height - req_height)/(initial_height - req_height);
-var end = ")"
-inner = beg + val + end;
-id('tit').style.transform = inner;
-id("of").style.opacity = (current_height - req_height)/(initial_height - req_height) ;
-id("we").style.opacity = (current_height - req_height)/(initial_height - req_height) ;
-val = (current_height - req_height)/(initial_height - req_height);
-inner = beg + val + end;
-id("of").style.transform = inner;
+	var beg = "scale(";
+	var val = 0.32 + 0.68*(current_height - req_height)/(initial_height - req_height);
+	var end = ")"
+	inner = beg + val + end;
+	id('tit').style.transform = inner;
+	id("of").style.opacity = (current_height - req_height)/(initial_height - req_height) ;
+	id("we").style.opacity = (current_height - req_height)/(initial_height - req_height) ;
+	val = (current_height - req_height)/(initial_height - req_height);
+	inner = beg + val + end;
+	id("of").style.transform = inner;
 }
 
 //ScrollEvent
 
+var spaceship_init = id('spaceship').getBoundingClientRect().top;
+
 document.addEventListener('scroll', (event) => {
 	scroly = this.scrollY;
 
+	//test parallax
 
+	var scrolltotop = document.scrollingElement.scrollTop;
+	var target = id("topcontent");
+	var xvalue = "center";
+	var factor = 0.5;
+	var yvalue = scrolltotop * factor;
+	target.style.backgroundPosition = xvalue + " " + yvalue + "px";
+	if(screen.width>750){
+	var target2 = id("spaceship");
+	var xvalue = "center";
+	var factor = -0.5;
+	var yvalue = (scrolltotop + spaceship_init)* factor;
+	target2.style.backgroundPosition = xvalue + " " + yvalue + "px";
+	}
+
+/*
 	if (scroly<50) {
 		id('navbar').style.background = "transparent";
 	}
-
+	*/
 	var current_height = id("tit").getBoundingClientRect().top;
 
 	//Transform physics club text
@@ -96,23 +91,23 @@ document.addEventListener('scroll', (event) => {
 	}
 	else{
 		if (current_height < req_height-120) {
-		id('navbar').style.background = "rgba(255,255,255,0.25)";
-		id('navbar').setAttribute('class', 'blurback');
+			id('navbar').style.background = "rgba(255,255,255,0.25)";
+			id('navbar').setAttribute('class', 'blurback');
+		}
+		else{
+			id('navbar').style.background = "transparent";
+			id('navbar').style.backdropFilter = "";
+			id('bar1').style.background = "white";
+			id('bar2').style.background = "white";
+			id('bar3').style.background = "white";
+			id('title').style.color = "white";
+			id('tit').style.color = "transparent";
+			id('navbar').setAttribute('class', '');
+		}
 	}
-	else{
-		id('navbar').style.background = "transparent";
-		id('navbar').style.backdropFilter = "";
-		id('bar1').style.background = "white";
-		id('bar2').style.background = "white";
-		id('bar3').style.background = "white";
-		id('title').style.color = "white";
-		id('tit').style.color = "transparent";
-		id('navbar').setAttribute('class', '');
-	}
-}
 
 //Bringe in content
-
+/*
 var content = id("content").querySelectorAll(".offsetdown");
 for (var i = 0; i<content.length; i++) {
 	if(content[i].getBoundingClientRect().top <=0.65*screen.height){
@@ -120,6 +115,7 @@ for (var i = 0; i<content.length; i++) {
 		content[i].style.transform = 'translateY(0)';
 	}
 }
+*/
 
 //Close noti if already seen new
 
@@ -176,7 +172,7 @@ var bg = '/assets/images/' + num + '.jpg';
 let image = document.createElement('img');
 image.src = bg;
 image.addEventListener('load', (event)=> {
-  id('topcontent').style.backgroundImage = `url(${bg})`;
+	id('topcontent').style.backgroundImage = `url(${bg})`;
 });
 
 //Read from latest.json and write in html entity
@@ -189,11 +185,12 @@ oXHR.onreadystatechange = reportStatus;
 oXHR.open("GET", "/assets/json/index.json", true);  // get json file.
 oXHR.send();
 
+
 function reportStatus() {
     if (oXHR.readyState == 4) {		// Check if request is complete.
-        indexdata = this.responseText;
-        index = JSON.parse(indexdata).index;
-        writepage();
+    	indexdata = this.responseText;
+    	index = JSON.parse(indexdata).index;
+    	writepage();
     }
 }
 function writepage(){
@@ -208,11 +205,11 @@ function writepage(){
 		id('newhead').style.display = 'none';
 	}
 
-		id('name-hod').innerHTML = index[1].name;
-		id('state-hod').innerHTML = index[1].message;
+	id('name-hod').innerHTML = index[1].name;
+	id('state-hod').innerHTML = index[1].message;
 
-		id('name-fac').innerHTML = index[2].name;
-		id('state-fac').innerHTML = index[2].message;
+	id('name-fac').innerHTML = index[2].name;
+	id('state-fac').innerHTML = index[2].message;
 }
 
 function closenoti(){
@@ -226,8 +223,8 @@ function opennoti(){
 
 window.addEventListener('load',()=>{
 	if(index[0].title != " "){
-	setTimeout(function(){opennoti();},500);
-}
+		setTimeout(function(){opennoti();},500);
+	}
 });
 
 
@@ -235,4 +232,22 @@ id('title').style.color = "transparent";
 id('navbar').style.background = "transparent";
 id('navbar').setAttribute('class','noblurbg');
 
-ScrollReveal({ reset: true, delay: 100, opacity: 0}).reveal('.offsetdown')
+ScrollReveal({ delay: 100, duration: 2000, distance:'50px', viewFactor: 0.25}).reveal('.offsetdown')
+
+var scrolltotop = document.scrollingElement.scrollTop;
+var target = id("topcontent");
+var xvalue = "center";
+var factor = 0.5;
+var yvalue = scrolltotop * factor;
+target.style.backgroundPosition = xvalue + " " + yvalue + "px";
+
+if(screen.width >= 750){
+
+target.style.backgroundPosition = xvalue + " " + yvalue + "px";
+	var target2 = id("spaceship");
+	var xvalue = "center";
+	var factor = -0.5;
+	var yvalue = (scrolltotop + spaceship_init)* factor;
+	target2.style.backgroundPosition = xvalue + " " + yvalue + "px";
+
+}

@@ -1,5 +1,5 @@
 body{
-	background: black;
+	background: black!important;
 	padding: 0;
 }
 
@@ -56,9 +56,9 @@ html{
 }
 
 .of-mobile{
-		font-size: 15px!important;
-		position: relative;
-		top: -15px;
+	font-size: 15px!important;
+	position: relative;
+	top: -15px;
 }
 
 #gradient{
@@ -77,7 +77,7 @@ html{
 	position: relative;
 	left: -10px;
 	position: relative;
-	background-image: linear-gradient(67.5deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(120, 120, 120) 93%, rgb(120, 120, 120) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(124deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(120, 120, 120) 93%, rgb(120, 120, 120) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(169deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(120, 120, 120) 93%, rgb(120, 120, 120) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(34deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(120, 120, 120) 93%, rgb(120, 120, 120) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(124deg, rgb(8, 8, 8),rgb(221, 221, 221)); background-blend-mode:overlay,overlay,overlay,overlay,normal;
+	/*background-image: linear-gradient(67.5deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(120, 120, 120) 93%, rgb(120, 120, 120) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(124deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(120, 120, 120) 93%, rgb(120, 120, 120) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(169deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(120, 120, 120) 93%, rgb(120, 120, 120) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(34deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(120, 120, 120) 93%, rgb(120, 120, 120) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(124deg, rgb(8, 8, 8),rgb(221, 221, 221)); background-blend-mode:overlay,overlay,overlay,overlay,normal;
 	background-image: linear-gradient(90deg, rgb(46, 46, 46) 0%, rgb(46, 46, 46) 7%,rgb(55, 55, 55) 7%, rgb(55, 55, 55) 17%,rgb(63, 63, 63) 17%, rgb(63, 63, 63) 40%,rgb(72, 72, 72) 40%, rgb(72, 72, 72) 42%,rgb(80, 80, 80) 42%, rgb(80, 80, 80) 56%,rgb(89, 89, 89) 56%, rgb(89, 89, 89) 63%,rgb(97, 97, 97) 63%, rgb(97, 97, 97) 100%),linear-gradient(180deg, rgb(46, 46, 46) 0%, rgb(46, 46, 46) 7%,rgb(55, 55, 55) 7%, rgb(55, 55, 55) 17%,rgb(63, 63, 63) 17%, rgb(63, 63, 63) 40%,rgb(72, 72, 72) 40%, rgb(72, 72, 72) 42%,rgb(80, 80, 80) 42%, rgb(80, 80, 80) 56%,rgb(89, 89, 89) 56%, rgb(89, 89, 89) 63%,rgb(97, 97, 97) 63%, rgb(97, 97, 97) 100%),linear-gradient(22.5deg, rgb(46, 46, 46) 0%, rgb(46, 46, 46) 7%,rgb(55, 55, 55) 7%, rgb(55, 55, 55) 17%,rgb(63, 63, 63) 17%, rgb(63, 63, 63) 40%,rgb(72, 72, 72) 40%, rgb(72, 72, 72) 42%,rgb(80, 80, 80) 42%, rgb(80, 80, 80) 56%,rgb(89, 89, 89) 56%, rgb(89, 89, 89) 63%,rgb(97, 97, 97) 63%, rgb(97, 97, 97) 100%),linear-gradient(180deg, rgb(93, 93, 93),rgb(177, 177, 177)); background-blend-mode:overlay,overlay,overlay,normal;
 	background-image: linear-gradient(90deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%,rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%,rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%,rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%,rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%,rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%),linear-gradient(67.5deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%,rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%,rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%,rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%,rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%,rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%),linear-gradient(112.5deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%,rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%,rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%,rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%,rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%,rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%),linear-gradient(45deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%,rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%,rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%,rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%,rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%,rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%),linear-gradient(90deg, rgb(95, 3, 74),rgb(35, 65, 96)); background-blend-mode:overlay,overlay,overlay,overlay,normal;
 	background-image: linear-gradient(90deg, rgb(15, 15, 15),rgb(119, 119, 119)),linear-gradient(67.5deg, rgb(61, 40, 216) 0%, rgb(61, 40, 216) 19%,rgb(55, 42, 182) 19%, rgb(55, 42, 182) 27%,rgb(49, 44, 147) 27%, rgb(49, 44, 147) 37%,rgb(42, 46, 113) 37%, rgb(42, 46, 113) 48%,rgb(36, 48, 78) 48%, rgb(36, 48, 78) 73%,rgb(30, 50, 44) 73%, rgb(30, 50, 44) 100%),linear-gradient(0deg, rgb(61, 40, 216) 0%, rgb(61, 40, 216) 19%,rgb(55, 42, 182) 19%, rgb(55, 42, 182) 27%,rgb(49, 44, 147) 27%, rgb(49, 44, 147) 37%,rgb(42, 46, 113) 37%, rgb(42, 46, 113) 48%,rgb(36, 48, 78) 48%, rgb(36, 48, 78) 73%,rgb(30, 50, 44) 73%, rgb(30, 50, 44) 100%),linear-gradient(22.5deg, rgb(61, 40, 216) 0%, rgb(61, 40, 216) 19%,rgb(55, 42, 182) 19%, rgb(55, 42, 182) 27%,rgb(49, 44, 147) 27%, rgb(49, 44, 147) 37%,rgb(42, 46, 113) 37%, rgb(42, 46, 113) 48%,rgb(36, 48, 78) 48%, rgb(36, 48, 78) 73%,rgb(30, 50, 44) 73%, rgb(30, 50, 44) 100%); background-blend-mode:overlay, overlay, overlay, normal;
@@ -87,10 +87,11 @@ html{
 	background-image: linear-gradient(258deg, rgb(59, 59, 59),rgb(197, 197, 197)),linear-gradient(303deg, rgb(159, 116, 214) 0%, rgb(159, 116, 214) 25%,rgb(130, 95, 173) 25%, rgb(130, 95, 173) 45%,rgb(101, 74, 132) 45%, rgb(101, 74, 132) 50%,rgb(72, 54, 90) 50%, rgb(72, 54, 90) 52%,rgb(43, 33, 49) 52%, rgb(43, 33, 49) 61%,rgb(14, 12, 8) 61%, rgb(14, 12, 8) 100%),linear-gradient(393deg, rgb(159, 116, 214) 0%, rgb(159, 116, 214) 25%,rgb(130, 95, 173) 25%, rgb(130, 95, 173) 45%,rgb(101, 74, 132) 45%, rgb(101, 74, 132) 50%,rgb(72, 54, 90) 50%, rgb(72, 54, 90) 52%,rgb(43, 33, 49) 52%, rgb(43, 33, 49) 61%,rgb(14, 12, 8) 61%, rgb(14, 12, 8) 100%); background-blend-mode:overlay,overlay,normal;
 	background-image: repeating-linear-gradient(400deg, rgba(178, 178, 178, 0.07) 0px, rgba(178, 178, 178, 0.07) 29px,rgba(5, 5, 5, 0.07) 29px, rgba(5, 5, 5, 0.07) 69px,rgba(146, 146, 146, 0.07) 69px, rgba(146, 146, 146, 0.07) 111px,rgba(141, 141, 141, 0.07) 111px, rgba(141, 141, 141, 0.07) 122px,rgba(86, 86, 86, 0.07) 122px, rgba(86, 86, 86, 0.07) 145px),repeating-linear-gradient(400deg, rgba(57, 57, 57, 0.07) 0px, rgba(57, 57, 57, 0.07) 32px,rgba(249, 249, 249, 0.07) 32px, rgba(249, 249, 249, 0.07) 80px,rgba(47, 47, 47, 0.07) 80px, rgba(47, 47, 47, 0.07) 95px,rgba(95, 95, 95, 0.07) 95px, rgba(95, 95, 95, 0.07) 133px,rgba(34, 34, 34, 0.07) 133px, rgba(34, 34, 34, 0.07) 168px),repeating-linear-gradient(400deg, rgba(22, 22, 22, 0.1) 0px, rgba(22, 22, 22, 0.1) 147px,rgba(12, 12, 12, 0.1) 147px, rgba(12, 12, 12, 0.1) 244px,rgba(22, 22, 22, 0.1) 244px, rgba(22, 22, 22, 0.1) 325px,rgba(46, 46, 46, 0.1) 325px, rgba(46, 46, 46, 0.1) 429px,rgba(179, 179, 179, 0.1) 429px, rgba(179, 179, 179, 0.1) 572px),repeating-linear-gradient(400deg, rgba(126, 126, 126, 0.1) 0px, rgba(126, 126, 126, 0.1) 82px,rgba(22, 22, 22, 0.1) 82px, rgba(22, 22, 22, 0.1) 150px,rgba(0, 0, 0, 0.1) 150px, rgba(0, 0, 0, 0.1) 240px,rgba(124, 124, 124, 0.1) 240px, rgba(124, 124, 124, 0.1) 374px,rgba(2, 2, 2, 0.1) 374px, rgba(2, 2, 2, 0.1) 435px),linear-gradient(400deg, rgb(191, 34, 216),rgb(34, 13, 81));
 	background-image: linear-gradient(195deg, rgb(27, 92, 18) 0%, rgb(27, 92, 18) 2%,rgb(28, 82, 45) 2%, rgb(28, 82, 45) 23%,rgb(29, 72, 72) 23%, rgb(29, 72, 72) 34%,rgb(30, 61, 98) 34%, rgb(30, 61, 98) 96%,rgb(31, 51, 125) 96%, rgb(31, 51, 125) 100%),linear-gradient(150deg, rgb(27, 92, 18) 0%, rgb(27, 92, 18) 2%,rgb(28, 82, 45) 2%, rgb(28, 82, 45) 23%,rgb(29, 72, 72) 23%, rgb(29, 72, 72) 34%,rgb(30, 61, 98) 34%, rgb(30, 61, 98) 96%,rgb(31, 51, 125) 96%, rgb(31, 51, 125) 100%),linear-gradient(285deg, rgb(27, 92, 18) 0%, rgb(27, 92, 18) 2%,rgb(28, 82, 45) 2%, rgb(28, 82, 45) 23%,rgb(29, 72, 72) 23%, rgb(29, 72, 72) 34%,rgb(30, 61, 98) 34%, rgb(30, 61, 98) 96%,rgb(31, 51, 125) 96%, rgb(31, 51, 125) 100%),linear-gradient(240deg, rgb(186, 19, 165),rgb(19, 125, 241)); background-blend-mode:overlay,overlay,overlay,normal;
+	*/
 	background-image: linear-gradient(258deg, rgb(59, 59, 59),rgb(197, 197, 197)),linear-gradient(303deg, rgb(159, 116, 214) 0%, rgb(159, 116, 214) 25%,rgb(130, 95, 173) 25%, rgb(130, 95, 173) 45%,rgb(101, 74, 132) 45%, rgb(101, 74, 132) 50%,rgb(72, 54, 90) 50%, rgb(72, 54, 90) 52%,rgb(43, 33, 49) 52%, rgb(43, 33, 49) 61%,rgb(14, 12, 8) 61%, rgb(14, 12, 8) 100%),linear-gradient(393deg, rgb(159, 116, 214) 0%, rgb(159, 116, 214) 25%,rgb(130, 95, 173) 25%, rgb(130, 95, 173) 45%,rgb(101, 74, 132) 45%, rgb(101, 74, 132) 50%,rgb(72, 54, 90) 50%, rgb(72, 54, 90) 52%,rgb(43, 33, 49) 52%, rgb(43, 33, 49) 61%,rgb(14, 12, 8) 61%, rgb(14, 12, 8) 100%); background-blend-mode:overlay,overlay,normal;
-	
 	background-attachment: scroll, scroll;
 	padding-bottom: 100px;
+	padding-top: 100px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -98,9 +99,6 @@ html{
 }
 
 .offsetdown{
-	opacity: 0;
-	transform: translateY(50px);
-	transition: all 1.5s;
 }
 
 
@@ -110,49 +108,48 @@ html{
 	line-height: 2;
 	color: #f5f5f5;
 	width: 70%;
-	padding-left: 35px;
-	margin-bottom: calc(25vh);
-	margin-top: calc(25vh);
 	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 #pclogo{
 	width: calc(80px + 5vw);
 	height: calc(80px + 5vw);
-    border-radius: 50%;
-    border: 2px solid white;
-    margin-bottom: 30px;
+	border-radius: 50%;
+	border: 2px solid white;
+	margin-bottom: 30px;
 }
 
 #hod {
-	 padding: 20px;
-	 margin-left: 7.5vw;
-	 margin-right: 7.5vw;
+	padding: 20px;
+	margin-left: 7.5vw;
+	margin-right: 7.5vw;
 }
 
 #fac {
-	 padding: 20px;
-	 margin-right: 7.5vw;
-	 margin-left: 7.5vw;
+	padding: 20px;
+	margin-right: 7.5vw;
+	margin-left: 7.5vw;
 }
 
 @media screen and (min-width: 901px){
 
-#statements{
-	display: -ms-grid;
-	display: grid;
-	-ms-grid-columns: (1fr)[2];
-	grid-template-columns: repeat(2, 1fr);
-}
-#hod {
-	 margin-right: 7.5vw;
-	 margin-left: 15vw;
-}
+	#statements{
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-columns: (1fr)[2];
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#hod {
+		margin-right: 7.5vw;
+		margin-left: 15vw;
+	}
 
-#fac {
-	 margin-right: 15vw;
-	 margin-left: 7.5vw;
-}
+	#fac {
+		margin-right: 15vw;
+		margin-left: 7.5vw;
+	}
 
 }
 
@@ -160,7 +157,7 @@ html{
 	width: calc(80px + 5vw);
 	height: calc(80px + 5vw);
 	border-radius: 50%;
-    border: 2px solid white;
+	border: 2px solid white;
 }
 
 .statement{
@@ -201,15 +198,15 @@ html{
 }
 
 @media screen and (max-width: 900px) {
-  #l-holder{ display: block; } 
+	#l-holder{ display: block; } 
 }
 @media screen and (min-width: 901px){
-  #l-holder{ 
-  	display: -ms-grid; 
-  	display: grid;
-	-ms-grid-columns: (1fr)[2];
-	grid-template-columns: repeat(2, 1fr);	
-   } 
+	#l-holder{ 
+		display: -ms-grid; 
+		display: grid;
+		-ms-grid-columns: (1fr)[2];
+		grid-template-columns: repeat(2, 1fr);	
+	} 
 }
 
 #l-image{
@@ -250,13 +247,13 @@ html{
 	text-decoration: none;
 	background: linear-gradient(black, black);
 	background-position: 0 100%;
-  background-repeat: repeat-x;
-  background-size: 4px 4px;
-  transition: all 0.5s;
+	background-repeat: repeat-x;
+	background-size: 4px 4px;
+	transition: all 0.5s;
 }
 
 #l-reg:hover {
-  background-size: 4px 50px;
+	background-size: 4px 50px;
 }
 
 
@@ -269,7 +266,7 @@ html{
 	background: rgba(255, 255, 255, 0.2);
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	-webkit-backdrop-filter:  blur(6px);
-	        backdrop-filter:  blur(6px);
+	backdrop-filter:  blur(6px);
 	color: white;
 	z-index: 999;
 	border-radius: 20px;
@@ -283,7 +280,7 @@ html{
 	display: none;
 	pointer-events: none;
 	-webkit-animation: close 0.25s;
-	        animation: close 0.25s;
+	animation: close 0.25s;
 	transition: opacity 0.25s;
 	color: white;
 }
@@ -294,7 +291,7 @@ html{
 	display: block;
 	pointer-events: auto;
 	-webkit-animation: open 0.25s ;
-	        animation: open 0.25s ;
+	animation: open 0.25s ;
 }
 
 @-webkit-keyframes open {
@@ -414,7 +411,7 @@ html{
 	}
 
 	#l-image{
-	width: calc(250px + 12vw);
+		width: calc(250px + 12vw);
 	}
 
 	#l-title{
@@ -443,4 +440,62 @@ html{
 	#innoti{
 		font-size: calc(7px + 0.6vw);
 	}
+}
+
+.white-hori{
+	display: flex;
+	align-content: center;
+	justify-content:center;
+	height: 30vh;
+	width: calc(100vw + 10px);
+	background-color:  white;
+	font-family: Rubik;
+	overflow:  hidden;
+	position: relative;
+}
+
+.white-hori >div{    
+	font-variant: small-caps;
+	font-size: 15vh;
+	position:  absolute;
+	bottom:  10%;
+	letter-spacing:5px;
+}
+
+.white-hori >div>span{
+	font-size: 3vh; 
+	position: absolute;
+	letter-spacing:2px;
+	bottom:  40%;
+	left: 2%;
+}
+
+#lineholder{
+	background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-image: url('/assets/images/line.jpg');
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+	background-size: cover;
+height: 100vh;
+width: calc(100vw + 10px);
+position:relative;
+}
+
+#darkenline{
+height: 100vh;
+width: calc(100vw + 10px);
+position:relative;
+background: rgba(0, 0, 0, 0.65);
+}
+
+#spaceship{
+	height: 100vh;
+width: calc(100vw + 10px);
+position:relative;
+background-image: url('/assets/images/linebg.png');
+background-position: center;
+background-size: cover;
 }

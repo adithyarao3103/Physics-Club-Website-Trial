@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|BioRhyme|Lato|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|BioRhyme|Lato|Roboto+Condensed|Rubik');
 
 * {
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
@@ -249,6 +249,7 @@ body{
 	width: 33%;
 	pointer-events: none;
 	width: 33%;
+	user-select: none;
 }
 
 #hamcont{

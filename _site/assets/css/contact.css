@@ -146,6 +146,7 @@ a {
   left: 50%;
   transform: translateX(-52%);
   text-align: center;
+  justify-content:center;
 }
 
 .container {
