@@ -344,8 +344,8 @@ particlesJS('stateholder',{
       },
       "bubble": {
         "distance": 400,
-        "size": 4,
-        "duration": 2,
+        "size": 5,
+        "duration": 3,
         "opacity": 8,
         "speed": 3
       },

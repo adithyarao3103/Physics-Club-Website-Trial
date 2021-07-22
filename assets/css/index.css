@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Uni Sans';
+  src: url('/assets/Uni Sans Heavy.otf') format('opentype');
+}
+
 body{
 	background: black!important;
 	padding: 0;
@@ -39,7 +44,7 @@ html{
 #titleholder{
 	position: relative;
 	top: 40vh;
-	font-family: Montserrat;
+	font-family: Montserrat,"Helvetica Neue";
 	font-size: calc(5px + 1vw);
 	color: white;
 	z-index: 101;
@@ -122,6 +127,7 @@ html{
 	border: 2px solid white;
 	position:  absolute;
 	left: 50%;
+	top:  100px;
 	transform: translateX(-50%);
 }
 
@@ -140,6 +146,7 @@ html{
 #statements{
 	position: absolute;
 	top: calc(150px + 8vw) ;
+	height: calc(80px + 10vw);
 }
 
 @media screen and (min-width: 901px){
@@ -150,6 +157,7 @@ html{
 		-ms-grid-columns: (1fr)[2];
 		grid-template-columns: repeat(2, 1fr);
 	}
+
 	#hod {
 		margin-right: 7.5vw;
 		margin-left: 15vw;
@@ -179,6 +187,7 @@ html{
 	padding: 20px;
 	overflow: clip;
 	margin:  30px;
+	height: calc(60vh + 100px);
 }
 
 .designation{
@@ -220,7 +229,7 @@ html{
 
 #l-image{
 	width: calc(300px + 12vw);
-	filter:  drop-shadow(0px 0px 20px rgba(255,255,255,0.5));
+	filter:  drop-shadow(10px 10px 5px rgba(0,0,0,0.75));
 	position: relative;
 	margin-top: 20px;
 }
@@ -230,12 +239,14 @@ html{
 	font-size: calc(15px + 3.5vw);
 	color: white;
 	letter-spacing: 4px;
+	text-shadow: 3px 3px 3px rgba(0,0,0,1) ;
 }
 
 #l-date{
 	font-size: calc(10px + 1.25vw);
 	color: white;
 	letter-spacing: 2px;
+	text-shadow: 3px 3px 3px rgba(0,0,0,1) ;
 	padding: 20px;
 }
 
@@ -243,6 +254,7 @@ html{
 	font-size: calc(6px + 1vw);
 	color: white;
 	letter-spacing: 2px;
+	text-shadow: 3px 3px 3px rgba(0,0,0,1) ;
 	line-height: 1.75;
 }
 
@@ -254,15 +266,20 @@ html{
 	margin-top: 20px;
 	padding: 10px;
 	text-decoration: none;
-	background: linear-gradient(black, black);
+	background: linear-gradient(#2490b6, #2490b6);
 	background-position: 0 100%;
 	background-repeat: repeat-x;
 	background-size: 4px 4px;
+	text-shadow: 3px 3px 3px rgba(0,0,0,1) ;
 	transition: all 0.5s;
 }
 
 #l-reg:hover {
 	background-size: 4px 50px;
+	color:  black;
+	font-weight:  bold;
+	text-shadow: 0 0 0 black;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.75);
 }
 
 
@@ -509,23 +526,24 @@ background-position: center;
 background-size: cover;
 }
 
-#white2, #white3> div{
-	font-size:  11vh!important;
+#white2>div , #white3> div{
+	font-size:  10vh!important;
 	bottom:  25%!important;
-	font-weight: bolder;
+	font-family: Uni Sans!important;
 }
 
 #stateholder{
 	/*background-image: linear-gradient(258deg, rgb(59, 59, 59),rgb(197, 197, 197)),linear-gradient(303deg, rgb(159, 116, 214) 0%, rgb(159, 116, 214) 25%,rgb(130, 95, 173) 25%, rgb(130, 95, 173) 45%,rgb(101, 74, 132) 45%, rgb(101, 74, 132) 50%,rgb(72, 54, 90) 50%, rgb(72, 54, 90) 52%,rgb(43, 33, 49) 52%, rgb(43, 33, 49) 61%,rgb(14, 12, 8) 61%, rgb(14, 12, 8) 100%),linear-gradient(393deg, rgb(159, 116, 214) 0%, rgb(159, 116, 214) 25%,rgb(130, 95, 173) 25%, rgb(130, 95, 173) 45%,rgb(101, 74, 132) 45%, rgb(101, 74, 132) 50%,rgb(72, 54, 90) 50%, rgb(72, 54, 90) 52%,rgb(43, 33, 49) 52%, rgb(43, 33, 49) 61%,rgb(14, 12, 8) 61%, rgb(14, 12, 8) 100%); background-blend-mode:overlay,overlay,normal;
 	*/
 	background-color: black;
-	background-attachment: fixed, scroll;
-	padding-bottom: 100px;
-	padding-top: 100px;
+	background-image: repeating-linear-gradient(180deg, rgb(3, 3, 3) 0px, rgb(3, 3, 3) 18px,rgb(11, 11, 11) 18px, rgb(11, 11, 11) 36px,rgb(0, 0, 0) 36px, rgb(0, 0, 0) 54px,rgb(5, 5, 5) 54px, rgb(5, 5, 5) 72px,rgb(8, 8, 8) 72px, rgb(8, 8, 8) 90px,rgb(14, 14, 14) 90px, rgb(14, 14, 14) 108px,rgb(19, 19, 19) 108px, rgb(19, 19, 19) 126px,rgb(16, 16, 16) 126px, rgb(16, 16, 16) 144px);
+	background-attachment: fixed, fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
+	height: calc(135vh + 100px);
+
 }
 
 #white3{
@@ -538,11 +556,17 @@ background-size: cover;
 	background-image: linear-gradient(225deg, rgb(2, 6, 1) 0%, rgb(2, 6, 1) 14.286%,rgb(8, 29, 31) 14.286%, rgb(8, 29, 31) 28.572%,rgb(13, 52, 61) 28.572%, rgb(13, 52, 61) 42.858%,rgb(19, 75, 92) 42.858%, rgb(19, 75, 92) 57.144%,rgb(25, 98, 122) 57.144%, rgb(25, 98, 122) 71.43%,rgb(30, 121, 152) 71.43%, rgb(30, 121, 152) 85.716%,rgb(36, 144, 182) 85.716%, rgb(36, 144, 182) 100.002%);
 	padding-bottom: 100px;
 	padding-top: 30px;
-	background-attachment: fixed;
+	background-attachment: fixed, fixed;
 	position: relative;
 	top: -65px;
 }
 
 #footer{
 	top: -75px;
+}
+
+@media screen and (max-width: 901px){
+	#stateholder{
+	height: calc(270vh + 100px);
+	}
 }

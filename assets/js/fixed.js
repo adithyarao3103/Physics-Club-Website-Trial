@@ -42,3 +42,13 @@ window.addEventListener('load',() =>{
     catch(err){ }
     document.body.style.overflowY= "auto";
 });
+
+	anime({
+  targets: '.animate path',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine',
+  duration: 1500,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  loop: true
+});
