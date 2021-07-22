@@ -1,4 +1,5 @@
  // Create XMLHttpRequest object.
+/*  
     var oXHR = new XMLHttpRequest();
     var events;
 
@@ -16,10 +17,7 @@
     }
 
 
-var blurred = [];
-var notblurred = [];
 
-var isnotblur;
 
 
 function writepage(){
@@ -40,6 +38,13 @@ inner += '</center></div></div></div></div>';
 }
 
 id('container').innerHTML = inner;
+*/
+
+
+var blurred = [];
+var notblurred = [];
+
+var isnotblur;
 
 if( screen.width >= 691){
 init();
@@ -52,7 +57,7 @@ ScrollReveal({ reset: true, delay: 0, afterReveal: zoomin, beforeReset: zoomout,
 
 }
 else{
-    init_phone()
+    //init_phone()
     ScrollReveal({ reset: true, delay: 100, opacity: 0}).reveal('.item');
 }
 
@@ -61,7 +66,6 @@ observer.observe();
 const coolImage = document.querySelector('.lozad');
 observer.triggerLoad(coolImage);
 
-}
 
 function zoomin(el){
         el.setAttribute('class', 'item zoomnorm')
@@ -72,32 +76,35 @@ function zoomout(el){
         el.setAttribute('class', 'item zoomout');
 }
 
-function init_phone(){
+/*function init_phone(){
     id('changedloading').style.display = "none";
     id('changedloading').style.pointerEvents = "none";
     document.body.style.overflowY= "auto";
-}
+}*/
 
 function init(){
 
-for(i=0; i < events.length; i++){
+items = document.getElementsByClassName('item');
 
-    if(id(events[i].poster + 'itemidid').getBoundingClientRect().top <0.65*screen.height && id(events[i].poster + 'itemidid').getBoundingClientRect().top >0.1*screen.height){
-            id(events[i].poster + 'itemidid').setAttribute('class','item zoomnorm');
+for(i=0; i < items.length; i++){
+
+    if(items[i].getBoundingClientRect().top <0.65*screen.height && items[i].getBoundingClientRect().top >0.1*screen.height){
+            items[i].setAttribute('class','item zoomnorm');
             //id(events[i].poster + 'itemidid').style.filter = 'blur(0px)';
-            notblurred.push('elemid' + events[i].poster);
-            isnotblur = events[i].poster + 'itemidid';
+            //notblurred.push('elemid' + events[i].poster);
+            //isnotblur = events[i].poster + 'itemidid';
             break;
         }
         else{
-            blurred.push('elemid' + events[i].poster);
+            //blurred.push('elemid' + events[i].poster);
         }
         }
 
-
+/*
 id('changedloading').style.display = "none";
     id('changedloading').style.pointerEvents = "none";
     document.body.style.overflowY= "auto";
+    */
 }
 
 
@@ -182,7 +189,7 @@ document.addEventListener('scroll', (event) => {
 
 */
 
-id('loading').setAttribute('id','changedloading')
+//id('loading').setAttribute('id','changedloading')
 
 
 if(screen.width >= 691){

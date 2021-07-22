@@ -60,7 +60,7 @@ document.addEventListener('scroll', (event) => {
 	if(screen.width>750){
 	var target2 = id("spaceship");
 	var xvalue = "center";
-	var factor = -0.5;
+	var factor = -0.6;
 	var yvalue = (scrolltotop + spaceship_init)* factor;
 	target2.style.backgroundPosition = xvalue + " " + yvalue + "px";
 	}
@@ -150,6 +150,7 @@ function navbarloop(){
 		inner = beg + val + end;
 		id("of").style.transform = inner;
 		id('navbar').setAttribute('class', '');
+		id('navbar').style.background = "transparent";
 	}
 	else{
 		id('title').style.color = "white";
@@ -167,7 +168,7 @@ navbarloop();
 
 //choose background
 
-var num = Math.ceil(13*Math.random());
+var num = Math.ceil(12*Math.random());
 var bg = '/assets/images/' + num + '.jpg';
 let image = document.createElement('img');
 image.src = bg;
@@ -176,7 +177,7 @@ image.addEventListener('load', (event)=> {
 });
 
 //Read from latest.json and write in html entity
-
+/*
 var oXHR = new XMLHttpRequest();
 var index;
 
@@ -211,6 +212,7 @@ function writepage(){
 	id('name-fac').innerHTML = index[2].name;
 	id('state-fac').innerHTML = index[2].message;
 }
+*/
 
 function closenoti(){
 	id('noti').setAttribute('class','noticlose');
@@ -222,9 +224,11 @@ function opennoti(){
 }
 
 window.addEventListener('load',()=>{
-	if(index[0].title != " "){
+	try{
+		id('l-holder')
 		setTimeout(function(){opennoti();},500);
 	}
+	catch(e){}
 });
 
 
@@ -232,7 +236,7 @@ id('title').style.color = "transparent";
 id('navbar').style.background = "transparent";
 id('navbar').setAttribute('class','noblurbg');
 
-ScrollReveal({ delay: 100, duration: 2000, distance:'50px', viewFactor: 0.25}).reveal('.offsetdown')
+ScrollReveal({ delay: 100, duration: 1000, distance:'10px', viewFactor: 0.15}).reveal('.offsetdown')
 
 var scrolltotop = document.scrollingElement.scrollTop;
 var target = id("topcontent");
@@ -242,12 +246,120 @@ var yvalue = scrolltotop * factor;
 target.style.backgroundPosition = xvalue + " " + yvalue + "px";
 
 if(screen.width >= 750){
-
-target.style.backgroundPosition = xvalue + " " + yvalue + "px";
 	var target2 = id("spaceship");
-	var xvalue = "center";
-	var factor = -0.5;
+	var factor = -0.6;
 	var yvalue = (scrolltotop + spaceship_init)* factor;
 	target2.style.backgroundPosition = xvalue + " " + yvalue + "px";
 
 }
+
+particlesJS('stateholder',{
+  "particles": {
+    "number": {
+      "value": 100,
+      "density": {
+        "enable": true,
+        "value_area": 1000
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 3
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.7536036686067957,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "window",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 4,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
