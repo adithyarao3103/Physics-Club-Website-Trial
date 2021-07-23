@@ -43,6 +43,8 @@ window.addEventListener('load',() =>{
     document.body.style.overflowY= "auto";
 });
 
+function startanime(){
+	document.getElementsByClassName('animate')[0].style.opacity = 1;
 	anime({
   targets: '.animate path',
   strokeDashoffset: [anime.setDashoffset, 0],
@@ -52,3 +54,7 @@ window.addEventListener('load',() =>{
   direction: 'alternate',
   loop: true
 });
+
+}
+
+startanime()

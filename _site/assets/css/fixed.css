@@ -74,6 +74,7 @@ body{
 
 .animate{
 	width: min(75vw,75vh);
+	opacity: 0;
 }
 
 ::-webkit-scrollbar {

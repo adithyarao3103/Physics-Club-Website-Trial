@@ -526,10 +526,12 @@ background-position: center;
 background-size: cover;
 }
 
-#white2>div , #white3> div{
-	font-size:  10vh!important;
-	bottom:  25%!important;
+
+#white3> div>span{
+	/*font-size:  10vh!important;
 	font-family: Uni Sans!important;
+	bottom:  20%!important;*/
+	white-space: nowrap
 }
 
 #stateholder{

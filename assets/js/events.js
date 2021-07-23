@@ -49,9 +49,9 @@ var isnotblur;
 if( screen.width >= 691){
 init();
 
-ScrollReveal({ reset: true, delay: 0, afterReveal: zoomin, beforeReset: zoomout, viewFactor: 0.75, opacity: 0.4, viewOffset: {
+ScrollReveal({ reset: true, delay: 100, opacity: 0, viewFactor:0.2, viewOffset: {
     top: 50
-} }).reveal('.item');
+} }).reveal('.event');
 
 
 
@@ -226,4 +226,9 @@ document.addEventListener('scroll', ()=> {
 }
 
 else {
+}
+
+
+function totop(){
+    window.scrollTo(0,0)
 }

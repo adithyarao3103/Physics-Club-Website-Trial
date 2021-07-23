@@ -226,7 +226,8 @@ function opennoti(){
 window.addEventListener('load',()=>{
 	try{
 		id('l-holder')
-		setTimeout(function(){opennoti();},500);
+		if (id('new').getBoundingClientRect().top <=0.65*screen.height) {}
+		else{setTimeout(function(){opennoti();},500);}
 	}
 	catch(e){}
 });
@@ -237,6 +238,7 @@ id('navbar').style.background = "transparent";
 id('navbar').setAttribute('class','noblurbg');
 
 ScrollReveal({ delay: 100, duration: 1000, distance:'10px', viewFactor: 0.15}).reveal('.offsetdown')
+ScrollReveal({ delay: 0, duration: 2000, distance:'150px', viewFactor: 0.15}).reveal('.scrollR')
 
 var scrolltotop = document.scrollingElement.scrollTop;
 var target = id("topcontent");
@@ -344,7 +346,7 @@ particlesJS('stateholder',{
       },
       "bubble": {
         "distance": 400,
-        "size": 5,
+        "size": 4,
         "duration": 3,
         "opacity": 8,
         "speed": 3
