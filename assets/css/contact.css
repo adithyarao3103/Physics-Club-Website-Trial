@@ -115,7 +115,7 @@ textarea{
 #sent{
 	width: calc(200px + 3vw);
 	color: white;
-	background: rgba(255, 255, 255, 0.18);
+	background: rgba(0, 0, 0, 0.5);
 	border:  2px solid rgba(255, 255, 255, 0.18);
 	backdrop-filter:  blur(3px);
 	border-radius: 5px;

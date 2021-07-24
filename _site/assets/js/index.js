@@ -161,6 +161,9 @@ if (current_height>0) {
 	inner = beg + val + end;
 	id("of").style.transform = inner;
 }
+else{
+
+}
 
 //ScrollEvent
 
@@ -391,6 +394,7 @@ var current_height = id("tit").getBoundingClientRect().top;
 		if (current_height < req_height-120) {
 			id('navbar').style.background = "rgba(255,255,255,0.25)";
 			id('navbar').setAttribute('class', 'blurback');
+			id('title').style.color = "white";
 		}
 		else{
 			id('navbar').style.background = "transparent";
@@ -420,7 +424,13 @@ for (var i = offset.length - 1; i >= 0; i--) {
 	if(offset[i].getBoundingClientRect().top < window.innerHeight*0.9)
 	{
 	//offset[i].style.opacity = 1;
-	offset[i].style.transform = 'translateY(0)';
+	if(offset[i].getAttribute('id')!='pclogo'){
+	offset[i].style.transform  = 'translateY(0)';
+}
+else{
+	offset[i].style.transform  = 'translateY(0) translateX(-50%)';
+
+}
 	}
 }
 
@@ -457,7 +467,13 @@ offset = document.getElementsByClassName('offsetdown');
 for (var i = offset.length - 1; i >= 0; i--) {
 	offset[i].style.transition = 'all 2s';
 	//offset[i].style.opacity = 0;
-	offset[i].style.transform  = 'translateY(25px)'
+	if(offset[i].getAttribute('id')!='pclogo'){
+	offset[i].style.transform  = 'translateY(25px)';
+}
+else{
+	offset[i].style.transform  = 'translateY(25px) translateX(-50%)';
+
+}
 }
 
 for (var i = whites.length - 1; i >= 0; i--) {

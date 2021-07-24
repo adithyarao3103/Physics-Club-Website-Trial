@@ -11,8 +11,6 @@ extra_js:
 ---
 
 <div id="background">
-<div id="phys">PHYSICS</div>
-<div id="club">CLUB</div>
     <div id="main-container">
         <div id="container" style="scroll-behavior: smooth;">
 
@@ -38,7 +36,7 @@ extra_js:
              {% endif %}
              {% if event.youtube != " " %}
              <div style="height:15px; width: 100%;"></div>
-             <a class = "link" href = "{{ events[i].youtube }}" id = "{{ event.poster }}youtidid">Youtube recording</a>
+             <a class = "link" href = "{{ event.youtube }}" id = "{{ event.poster }}youtidid">Youtube recording</a>
              {% endif %}
             </div>
          </div>
