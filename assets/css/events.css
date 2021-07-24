@@ -20,6 +20,9 @@ body{
   background-image: linear-gradient(90deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%,rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%,rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%,rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%,rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%,rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%),linear-gradient(67.5deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%,rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%,rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%,rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%,rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%,rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%),linear-gradient(112.5deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%,rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%,rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%,rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%,rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%,rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%),linear-gradient(45deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%,rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%,rgb(112, 61, 145) 11%, rgb(112, 61, 145) 20%,rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%,rgb(29, 24, 62) 71%, rgb(29, 24, 62) 72%,rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%),linear-gradient(90deg, rgb(95, 3, 74),rgb(35, 65, 96)); background-blend-mode:overlay,overlay,overlay,overlay,normal;
   */
   background: #353B3F;
+  background: #e6dada; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #e6dada, #274046); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #e6dada, #274046);
   background-size: cover;
   background-position: center;
   background-repeat: none;
@@ -134,7 +137,7 @@ clip-path: polygon(0 0, 100% 0, 100% 100%);
 }
 
 .link:not(div){
-  background: linear-gradient(#280069, #280069);
+  background: linear-gradient(#1f1137, #150c25);
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 4px 4px;
@@ -143,6 +146,8 @@ clip-path: polygon(0 0, 100% 0, 100% 100%);
 
 .link:not(div):hover{
   background-size: 4px 50px;
+  color:  white;
+  box-shadow: 4px 4px 4px black;
 }
 
 
@@ -245,10 +250,10 @@ clip-path: polygon(0 0, 100% 0, 100% 100%);
 .thumbnail {
   float: left;
   position: relative;
-  left: 20px;
-  top: -10vh;
-  height: 70vh;
-  width: 70vh;
+  left: -20px;
+  top: -12.5vh;
+  height: 75vh;
+  width: 75vh;
 }
 
 img.left {
@@ -260,9 +265,10 @@ img.left {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  filter: drop-shadow(6px 6px 10px rgba(0, 0, 0, 0.85));
-
+  filter: drop-shadow(6px 6px 7.5px rgba(0, 0, 0, 0.85));
+  transition: all 0.5s;
 }
+
 
 .right {
   margin-left: calc(70vh + 25px);
@@ -312,13 +318,14 @@ text-align: justify;
 }
 
 #phys, #club{
-  color: #3C4447;
+  color: transparent;
   font-size: calc(50px + 12.5vw);
   position:  fixed;
   font-weight: 800;
   font-family: Roboto Condensed, Rubik;
   z-index: 0;
-  text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  user-select: none;
 }
 #phys{
   top: 5vh;
@@ -339,5 +346,10 @@ text-align: justify;
 #top{
   position: fixed;
   right: 40px;
-  bottom:  25vh;
+  bottom:  7.5vh;
+  border-radius: 50%;
+  border: 0px solid #fff;
+  background: transparent;
+  transition: all 0.5s;
 }
+

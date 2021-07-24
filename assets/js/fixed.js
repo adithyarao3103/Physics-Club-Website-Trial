@@ -41,11 +41,14 @@ window.addEventListener('load',() =>{
     id('loading').style.pointerEvents = "none";}
     catch(err){ }
     document.body.style.overflowY= "auto";
+    animation.pause();
 });
+
+var animation;
 
 function startanime(){
 	document.getElementsByClassName('animate')[0].style.opacity = 1;
-	anime({
+	animation = anime({
   targets: '.animate path',
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutSine',
