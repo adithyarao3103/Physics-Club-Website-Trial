@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body{
+	background: url('/assets/images/unknown.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100vh;
+	font-family: Montserrat;
+	color: white;
+	overflow-x: hidden;
+}
+
+h1{
+	font-variant: small-caps;
+	font-size: calc(15px + 2.5vw);
+}
+
+#buttons{
+	position: absolute;
+	bottom: 5vh;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	height: 15vw;
+}
+
+#buttons>div{
+	background: url('/assets/images/planet.png');
+	background-size: cover;
+	background-position: center -50%;
+	background-repeat: no-repeat;
+}

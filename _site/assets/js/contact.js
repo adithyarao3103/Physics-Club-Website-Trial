@@ -79,3 +79,5 @@ id('entry.961639452').setAttribute('placeholder','your@email.id');
 id('entry.1769439812').setAttribute('placeholder','Your Message');  
 
 }
+
+id('footer').style.visibility = "hidden";

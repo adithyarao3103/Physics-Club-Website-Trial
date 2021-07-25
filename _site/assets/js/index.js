@@ -1,7 +1,7 @@
-/*particlesJS('stateholder',{
+particlesJS('stateholder',{
   "particles": {
     "number": {
-      "value": 100,
+      "value": 70,
       "density": {
         "enable": true,
         "value_area": 1000
@@ -16,9 +16,6 @@
         "width": 0,
         "color": "#000000"
       },
-      "polygon": {
-        "nb_sides": 3
-      },
       "image": {
         "src": "img/github.svg",
         "width": 100,
@@ -29,20 +26,14 @@
       "value": 0.7536036686067957,
       "random": false,
       "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
+        "enable": false
       }
     },
     "size": {
       "value": 3,
       "random": true,
       "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
+        "enable": false
       }
     },
     "line_linked": {
@@ -54,7 +45,7 @@
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 3,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -81,12 +72,6 @@
       "resize": true
     },
     "modes": {
-      "grab": {
-        "distance": 400,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
       "bubble": {
         "distance": 400,
         "size": 4,
@@ -94,22 +79,15 @@
         "opacity": 8,
         "speed": 3
       },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
       "push": {
         "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
       }
     }
   },
   "retina_detect": false
 });
 
-*/
+
 
 
 
@@ -128,6 +106,17 @@ function chnoti(){
 if (id('new').getBoundingClientRect().top <=0.65*screen.height) {
 	id('noti').setAttribute('class','noticlose');
 }
+
+		spaceship = id('spaceship')
+var xvalue = "center";
+
+spaceship_init = spaceship.getBoundingClientRect().top;
+
+var scrolltotop = document.scrollingElement.scrollTop;
+	
+	var factor = -0.2;
+	var yvalue = (scrolltotop - 600)* factor;
+	spaceship.style.backgroundPosition = xvalue + " " + yvalue + "px";
 
 requestAnimationFrame(chnoti);
 };
@@ -172,120 +161,11 @@ var spaceship_init = id('spaceship').getBoundingClientRect().top;
 
 requestAnimationFrame(animationloop)
 
-/*
-document.addEventListener('scroll', (event) => {
-	scroly = this.scrollY;
-
-	//test parallax
-
-	var scrolltotop = document.scrollingElement.scrollTop;
-	var target = id("topcontent");
-	var xvalue = "center";
-	var factor = 0.5;
-	var yvalue = scrolltotop * factor;
-	target.style.backgroundPosition = xvalue + " " + yvalue + "px";
-	if(screen.width>750){
-	var target2 = id("spaceship");
-	var xvalue = "center";
-	var factor = -0.6;
-	var yvalue = (scrolltotop + spaceship_init)* factor;
-	target2.style.backgroundPosition = xvalue + " " + yvalue + "px";
-	} */
-
-/*
-	if (scroly<50) {
-		id('navbar').style.background = "transparent";
-	}
-	*/
-
-	/*
-	var current_height = id("tit").getBoundingClientRect().top;
-
-	//Transform physics club text
-
-	if (current_height > req_height) {	
-		id('tit').style.color = "white";
-		id('title').style.color = "transparent";
-		var beg = "scale(";
-		var val = 0.32 + 0.68*(current_height - req_height)/(initial_height - req_height);
-		var end = ")"
-		inner = beg + val + end;
-		id('tit').style.transform = inner;
-		id("of").style.opacity = (current_height - req_height)/(initial_height - req_height) ;
-		id("we").style.opacity = (current_height - req_height)/(initial_height - req_height) ;
-		val = (current_height - req_height)/(initial_height - req_height);
-		inner = beg + val + end;
-		id("of").style.transform = inner;
-
-	}
-	else{
-		if (current_height < req_height-120) {
-			id('navbar').style.background = "rgba(255,255,255,0.25)";
-			id('navbar').setAttribute('class', 'blurback');
-		}
-		else{
-			id('navbar').style.background = "transparent";
-			id('navbar').style.backdropFilter = "";
-			id('bar1').style.background = "white";
-			id('bar2').style.background = "white";
-			id('bar3').style.background = "white";
-			id('title').style.color = "white";
-			id('tit').style.color = "transparent";
-			id('navbar').setAttribute('class', '');
-		}
-	}
-
-//Bringe in content
-/*
-var content = id("content").querySelectorAll(".offsetdown");
-for (var i = 0; i<content.length; i++) {
-	if(content[i].getBoundingClientRect().top <=0.65*screen.height){
-		content[i].style.opacity = 1;
-		content[i].style.transform = 'translateY(0)';
-	}
-}
-*/
-
-//Close noti if already seen new
-
-/*
-});
-*/
-
-//initialise navbar properties
 
 id('title').style.color = "transparent";
 id('navbar').style.background = "transparent";
 id('navbar').setAttribute('class',' ');
 
-//update navbar status based on position
-/*
-function navbarloop(){
-	var current_height = id('tit').getBoundingClientRect().top;
-	if (current_height >req_height) {
-		id('tit').style.color = "white";
-		id('title').style.color = "transparent";
-		var beg = "scale(";
-		var val = 0.32 + 0.68*(current_height - req_height)/(initial_height - req_height);
-		var end = ")"
-		inner = beg + val + end;
-		id('tit').style.transform = inner;
-		id("of").style.opacity = (current_height - req_height)/(initial_height - req_height) ;
-		id("we").style.opacity = (current_height - req_height)/(initial_height - req_height) ;
-		val = (current_height - req_height)/(initial_height - req_height);
-		inner = beg + val + end;
-		id("of").style.transform = inner;
-		id('navbar').setAttribute('class', '');
-		id('navbar').style.background = "transparent";
-	}
-	else{
-		id('title').style.color = "white";
-		id('tit').style.color = "transparent";
-	}
-	setTimeout(function(){navbarloop();},100);
-}
-navbarloop();
-*/
 
 }
 
@@ -326,17 +206,7 @@ id('title').style.color = "transparent";
 id('navbar').style.background = "transparent";
 id('navbar').setAttribute('class','noblurbg');
 
-//ScrollReveal({ delay: 100, duration: 1000, distance:'10px', viewFactor: 0.15}).reveal('.offsetdown')
-//ScrollReveal({ delay: 0, duration: 2000, distance:'150px', viewFactor: 0.15}).reveal('.scrollR')
-
 var scrolltotop = document.scrollingElement.scrollTop;
-/*var target = id("topcontent");
-var xvalue = "center";
-var factor = 0.5;
-var yvalue = scrolltotop * factor;
-target.style.backgroundPosition = xvalue + " " + yvalue + "px";
-*/
-
 if(screen.width >= 750){
 	var target2 = id("spaceship");
 var xvalue = "center";
@@ -348,6 +218,9 @@ var xvalue = "center";
 
 target = id("topcontent")
 
+
+//animationloop
+
 function animationloop(){
 
 	spaceship = id('spaceship')
@@ -355,21 +228,12 @@ var xvalue = "center";
 
 
 var scrolltotop = document.scrollingElement.scrollTop;
-//var factor = 0.5;
-//var yvalue = scrolltotop * factor;
-//target.style.backgroundPosition = xvalue + " " + yvalue + "px";
-
-
-	/*if(spaceship.getBoundingClientRect().top < window.innerHeight && spaceship.getBoundingClientRect().bottom > 0)
-	{*/
-
-			if(screen.width >= 750){
+	if(screen.width >= 750){
 	var factor = -0.6;
 	var yvalue = (scrolltotop + spaceship_init)* factor;
 	spaceship.style.backgroundPosition = xvalue + " " + yvalue + "px";
 
 	}
-//}
 
 var current_height = id("tit").getBoundingClientRect().top;
 
@@ -388,7 +252,8 @@ var current_height = id("tit").getBoundingClientRect().top;
 		val = (current_height - req_height)/(initial_height - req_height);
 		inner = beg + val + end;
 		id("of").style.transform = inner;
-
+		id('navbar').setAttribute('class', '');
+		id('navbar').style.background = "transparent";
 	}
 	else{
 		if (current_height < req_height-120) {

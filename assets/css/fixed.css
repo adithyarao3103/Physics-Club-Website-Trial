@@ -452,3 +452,14 @@ body{
   left: 0.5em;
   margin-right: -50%;
 }
+
+@media screen and (max-width: 500px){
+	.footermenu{
+		font-size: calc(6px + 1.2vw);
+	}
+
+	.fa{
+		transform: scale(1.5);
+		transform-origin: center center;
+	}
+}
