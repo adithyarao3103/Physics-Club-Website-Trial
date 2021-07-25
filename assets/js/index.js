@@ -116,7 +116,32 @@ var scrolltotop = document.scrollingElement.scrollTop;
 	
 	var factor = -0.2;
 	var yvalue = (scrolltotop - 600)* factor;
-	spaceship.style.backgroundPosition = xvalue + " " + yvalue + "px";
+	//spaceship.style.backgroundPosition = xvalue + " " + yvalue + "px";
+
+
+for(i = 0; i < whites.length; i++ ){
+	if(whites[i].getBoundingClientRect().top < window.innerHeight*0.8)
+	{
+		whites[i].style.opacity = 1;
+		whites[i].style.transform = 'translateY(0)';
+	}  
+}
+
+for (var i = offset.length - 1; i >= 0; i--) {
+	if(offset[i].getBoundingClientRect().top < window.innerHeight*0.8)
+	{
+	//offset[i].style.opacity = 1;
+	if(offset[i].getAttribute('id')!='pclogo'){
+	offset[i].style.transform  = 'translateY(0)';
+}
+else{
+	offset[i].style.transform  = 'translateY(0) translateX(-50%)';
+
+}
+
+offset[i].style.opacity = 1;
+	}
+}
 
 requestAnimationFrame(chnoti);
 };
@@ -212,7 +237,7 @@ if(screen.width >= 750){
 var xvalue = "center";
 	var factor = -0.6;
 	var yvalue = (scrolltotop + spaceship_init)* factor;
-	target2.style.backgroundPosition = xvalue + " " + yvalue + "px";
+	//target2.style.backgroundPosition = xvalue + " " + yvalue + "px";
 
 }
 
@@ -231,7 +256,7 @@ var scrolltotop = document.scrollingElement.scrollTop;
 	if(screen.width >= 750){
 	var factor = -0.6;
 	var yvalue = (scrolltotop + spaceship_init)* factor;
-	spaceship.style.backgroundPosition = xvalue + " " + yvalue + "px";
+	//spaceship.style.backgroundPosition = xvalue + " " + yvalue + "px";
 
 	}
 
@@ -278,15 +303,15 @@ if (id('new').getBoundingClientRect().top <=0.65*screen.height) {
 }
 
 for(i = 0; i < whites.length; i++ ){
-	if(whites[i].getBoundingClientRect().top < window.innerHeight*0.9)
+	if(whites[i].getBoundingClientRect().top < window.innerHeight*0.8)
 	{
-		//whites[i].style.opacity = 1;
+		whites[i].style.opacity = 1;
 		whites[i].style.transform = 'translateY(0)';
 	}  
 }
 
 for (var i = offset.length - 1; i >= 0; i--) {
-	if(offset[i].getBoundingClientRect().top < window.innerHeight*0.9)
+	if(offset[i].getBoundingClientRect().top < window.innerHeight*0.8)
 	{
 	//offset[i].style.opacity = 1;
 	if(offset[i].getAttribute('id')!='pclogo'){
@@ -296,6 +321,8 @@ else{
 	offset[i].style.transform  = 'translateY(0) translateX(-50%)';
 
 }
+
+offset[i].style.opacity = 1;
 	}
 }
 
@@ -331,19 +358,19 @@ offset = document.getElementsByClassName('offsetdown');
 
 for (var i = offset.length - 1; i >= 0; i--) {
 	offset[i].style.transition = 'all 2s';
-	//offset[i].style.opacity = 0;
+	offset[i].style.opacity = 0;
 	if(offset[i].getAttribute('id')!='pclogo'){
-	offset[i].style.transform  = 'translateY(25px)';
+	offset[i].style.transform  = 'translateY(50px)';
 }
 else{
-	offset[i].style.transform  = 'translateY(25px) translateX(-50%)';
+	offset[i].style.transform  = 'translateY(50px) translateX(-50%)';
 
 }
 }
 
 for (var i = whites.length - 1; i >= 0; i--) {
 	whites[i].style.transition = 'all 1s';
-	//whites[i].style.opacity = 0;
+	whites[i].style.opacity = 0;
 	whites[i].style.transform  = 'translateY(75px)';
 }
 

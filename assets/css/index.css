@@ -63,12 +63,12 @@ html{
 	top: -15px;
 }
 
-#gradient{
-	height: 40vh;
+.gradient{
+	height: 20vh;
 	width: 100%;
-	background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0) 100%) ;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)) ;
 	position: absolute;
-	bottom: -20vh;
+	bottom: 0;
 	z-index: 90;
 }
 
@@ -113,7 +113,7 @@ html{
 	color: #f5f5f5;
 	width: 70%;
 	position: relative;
-	top: 50%;
+	top: 30%;
 	transform: translateY(-50%);
 }
 
@@ -423,7 +423,8 @@ html{
 	}
 
 	#line{
-		font-size: calc(10px + 1.5vw);
+		font-size: calc(10px + 1vw);
+		top: 20%;
 	}
 
 	#pclogo{
@@ -521,13 +522,14 @@ height: 100vh;
 width: calc(100vw + 10px);
 position:relative;
 background: rgba(0, 0, 0, 0.65);
+
 }
 
 #spaceship{
 	height: 100vh;
 width: calc(100vw + 10px);
 position:relative;
-background-image: url('/assets/images/linespace.png');
+background-image: transparent;
 background-position: center;
 background-size: cover;
 }
@@ -551,7 +553,7 @@ background-size: cover;
 	background-image: radial-gradient(circle at top center, rgb(143, 39, 176) 0%, rgb(143, 39, 176) 11%,rgb(128, 38, 169) 11%, rgb(128, 38, 169) 13%,rgb(113, 38, 163) 13%, rgb(113, 38, 163) 17%,rgb(98, 37, 156) 17%, rgb(98, 37, 156) 28%,rgb(83, 37, 150) 28%, rgb(83, 37, 150) 40%,rgb(68, 36, 143) 40%, rgb(68, 36, 143) 72%,rgb(53, 36, 137) 72%, rgb(53, 36, 137) 81%,rgb(38, 35, 130) 81%, rgb(38, 35, 130) 100%);
 	*/
 	background-image: radial-gradient(circle at top center, rgb(33, 29, 75) 0%, rgb(33, 29, 75) 4%,rgb(29, 39, 97) 4%, rgb(29, 39, 97) 39%,rgb(24, 49, 120) 39%, rgb(24, 49, 120) 45%,rgb(20, 59, 142) 45%, rgb(20, 59, 142) 69%,rgb(15, 69, 164) 69%, rgb(15, 69, 164) 71%,rgb(11, 79, 186) 71%, rgb(11, 79, 186) 75%,rgb(6, 89, 209) 75%, rgb(6, 89, 209) 79%,rgb(2, 99, 231) 79%, rgb(2, 99, 231) 100%);
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -562,7 +564,7 @@ background-size: cover;
 
 #white3{
 	position: relative;
-	top:-65px!important;
+	top:-67.5px!important;
 }
 
 #newholder{
@@ -612,13 +614,13 @@ background-size: cover;
 	.white-hori>div{
 		font-size: 7.5vh;
 		bottom: auto;
-		top: -2vh!important;
+		top: 2vh!important;
 	}
 	.white-hori>div>span{
 		font-size: 2vh;
 	}
 	#white3>div{
 		font-size: 10vh!important;
-		transform: translateX(-2.5vw)!important;
+		transform: translateX(-2vw) translateY(-2vw)!important;
 
 }}

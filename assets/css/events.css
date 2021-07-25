@@ -50,9 +50,7 @@ body{
 .event{
    display: grid;
    width: 90%;
-  grid-template-columns: 1fr 5fr 50fr;
   height: 60vh;
-  scroll-snap-align: center;
   margin-top:40px;
 }
 
@@ -165,6 +163,8 @@ clip-path: polygon(0 0, 100% 0, 100% 100%);
   margin-top: 5px;
 }
 
+/*
+
 @media screen and (min-width: 690px) and (max-width: 901px){
 
   .event{
@@ -238,6 +238,7 @@ clip-path: polygon(0 0, 100% 0, 100% 100%);
 }
 
 }
+*/
 
 .event{
   width: 80vw;
@@ -293,16 +294,36 @@ img.left {
 .descr{
 text-align: justify;
   padding-top: 10px;
-  font-size: calc(9px + 0.6vw);
+  font-size: calc(2px + 1vw);
   line-height: 150%;
   color: black;
   letter-spacing: auto;
+  height: 48vh;
+  overflow-y: scroll;
+}
+
+.descr::-webkit-scrollbar {
+  width: 7px;
+  z-index: 9000;
+}
+
+.descr::-webkit-scrollbar-track {
+  background: white;
+}
+.descr::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.descr::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .date{
   position: absolute;
   left: 20px;
-  bottom: 20px;
+  bottom: 10px;
   font-weight: bolder;
   font-size: calc(13px + 2.35vw);
   color: #C3C3C3;
@@ -310,13 +331,13 @@ text-align: justify;
 
 .links{
     position:  absolute;
-  bottom: 20px;
+  bottom: 15px;
   right:  20px;
   text-align: right;
 }
 
 .link{
-  font-size: calc(12px + 0.6vw);
+  font-size: calc(2px + 1vw);
   color: black;
 }
 
@@ -357,3 +378,76 @@ text-align: justify;
   filter:  invert(100%);
 }
 
+
+@media screen and (max-width:  901px){
+
+ .event{
+    height: 100vh;
+  }
+
+
+  .thumbnail{
+      height: 65vh;
+      width: 65vh;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -20vh;
+  }
+
+  .right{
+    margin-left: 20px!important;
+    width: 92%;
+    position:  absolute;
+    margin-top: 45vh;
+  }
+
+  .descr{
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 481px){
+
+.thumbnail{
+      height: 100vw;
+      width: 100vw;
+      top: -20vw;
+    }
+
+.event{
+    height: 120vh;
+    width: 112vw;
+    transform-origin: left center;
+
+  }
+
+  #container{
+    width: 95%;
+  }
+
+  .right{
+    margin-top: 80vw;
+    width: 92%;
+  }
+
+  .descr, .link{
+    font-size: calc(2px + 2vw);
+  }
+
+  .descr{
+    height:  calc(110vh - 100vw);
+  }
+
+  #top{
+    filter: invert(0%);
+    right: 10vw;
+    bottom:  10vw;
+    transform-origin: center center;
+    transform: scale(3);
+  }
+
+
+
+
+}

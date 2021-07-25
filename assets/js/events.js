@@ -64,16 +64,29 @@ function totopbutton(){
         id('top').style.pointerEvents = 'none';
     }
 
+if(window.innerWidth > 481){
     if(id('footer').getBoundingClientRect().top < 0.9*window.innerHeight){
-        console.log('hello')
         id('top').style.bottom = '25vh';
     }
     else{
         id('top').style.bottom = '7.5vh';
     }
+}
+else{
+     if(id('footer').getBoundingClientRect().top < 0.9*window.innerHeight){
+        id('top').style.bottom = '33vh';
+    }
+    else{
+        id('top').style.bottom = '10vw';
+    }
+}
 
     requestAnimationFrame(totopbutton)
 }
+
+
+
+
 
 requestAnimationFrame(totopbutton)
 id('top').style.opacity = 0;
