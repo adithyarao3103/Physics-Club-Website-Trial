@@ -376,5 +376,3 @@ for (var i = whites.length - 1; i >= 0; i--) {
 
 const observer = lozad(); 
 observer.observe();
-const coolImage = document.querySelector('.lozad');
-observer.triggerLoad(coolImage);
