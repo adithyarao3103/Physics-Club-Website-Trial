@@ -5,6 +5,8 @@ navtitle: Physics Club &nbsp; NIT Surat
 extra_css:
 - /assets/css/index.css
 extra_js:
+- https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+- https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js
 - /assets/js/particles.min.js
 - /assets/js/index.js
 ---
@@ -80,7 +82,7 @@ extra_js:
                     <div id="newholder">
                             <center>
                         <div id="l-holder" class="offsetdown">
-                            <img src="/assets/posters/{{ site.data.index.new.poster }}.png" id="l-image"  class="offsetdown">
+                            <img data-src="/assets/posters/{{ site.data.index.new.poster }}.png" id="l-image"  class="offsetdown lozad">
                             <div id="l-content" class="offsetdown">
                                 <div id="l-title" class="offsetdown">{{ site.data.index.new.title }}</div>
                                 <div id="l-date" class="offsetdown">{{ site.data.index.new.date }}</div>

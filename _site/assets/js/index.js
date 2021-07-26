@@ -374,3 +374,7 @@ for (var i = whites.length - 1; i >= 0; i--) {
 	whites[i].style.transform  = 'translateY(75px)';
 }
 
+const observer = lozad(); 
+observer.observe();
+const coolImage = document.querySelector('.lozad');
+observer.triggerLoad(coolImage);
