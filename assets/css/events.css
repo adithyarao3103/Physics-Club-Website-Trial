@@ -237,7 +237,7 @@ text-align: justify;
   display: block;
   position: relative;
   left: 50%;
-  transform: translateX(calc(-50% - 10px));
+  transform: translateX(calc(-50% - 5px));
 }
 
 #container{
