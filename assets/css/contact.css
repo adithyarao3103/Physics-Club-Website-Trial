@@ -25,7 +25,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 	width: calc(400px + 10vw);
 	position: relative;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translateX(calc(-50% - 2.5px));
 	margin-top: 2vh;
 }
 
@@ -177,7 +177,7 @@ a {
 }
 }
 
-@media screen and (max-width: 501px){
+@media screen and (max-width: 481px){
 
 .container {
   position: relative;
@@ -204,11 +204,12 @@ a {
 } 
 
 input[type="text"], input[type="email"] {
-    width: 99%;
+    width: 98%;
     margin-top:20px;
     height: 45px;
     border-radius: 5px;
     font-size: calc(13px + 1.5vw);
+    padding: 2px;
 }
 
 select{
@@ -224,6 +225,7 @@ textarea{
   height: 180px;
     font-size: calc(13px + 1.5vw);
     border-radius: 5px;
+    padding: 2px;
 }
 
 .submit-button{
@@ -233,6 +235,10 @@ textarea{
   margin-top: 20px;
     font-size: calc(13px + 1.5vw);
   margin-bottom: 20px;
+}
+
+#necessary{
+  font-size: calc(10px + 1vw);
 }
 
 }
@@ -382,10 +388,11 @@ textarea{
 }
 
 #footmenucont> center{
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   position: relative;
   top: 50%;
   left: 50%;
-  transform:  translateX(-50%) translateY(-50%);
+  transform:  translateX(calc(-50% - 10px)) translateY(-50%);
 }

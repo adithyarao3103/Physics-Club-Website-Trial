@@ -115,6 +115,7 @@ html{
 	position: relative;
 	top: 30%;
 	transform: translateY(-50%);
+	text-align: justify;
 }
 
 #pclogo{
@@ -564,7 +565,7 @@ background-size: cover;
 
 #white3{
 	position: relative;
-	top:-67.5px!important;
+	top:-65px!important;
 }
 
 #newholder{
