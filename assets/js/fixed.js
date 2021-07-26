@@ -38,12 +38,13 @@ function showmenu(){
 
 window.addEventListener('load',() =>{
     try{id('loading').style.display = "none";
-    id('loading').style.pointerEvents = "none";}
+    id('loading').style.pointerEvents = "none";
+	id('loading').remove()}
     catch(err){ }
     document.body.style.overflowY= "auto";
-    animation.pause();
 });
 
+/*
 var animation;
 
 function startanime(){
@@ -61,3 +62,15 @@ function startanime(){
 }
 
 startanime()
+*/
+
+paths = document.querySelectorAll('path');
+for(i=0;i<paths.length;i++){
+
+	length = paths[i].getTotalLength();
+	paths[i].style.strokeDasharray = length;
+	paths[i].style.strokeDashoffset = length;
+	paths[i].style.animation = 'animatepath 5s linear alternate infinite';
+
+}
+	document.getElementsByClassName('animate')[0].style.opacity = 1;

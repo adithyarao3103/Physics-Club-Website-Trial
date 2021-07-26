@@ -6,6 +6,7 @@
     outline: none !important;
 } 
 
+
 body{
 	background: black;
 }
@@ -428,7 +429,8 @@ body{
   text-align: center;
  	color: white;
  	font-family: Lato;
- 	font-size: calc(10px + 1.25vw);
+ 	font-size: calc(15px + 1.25vw);
+ 	z-index: 100;
 }
 
 
@@ -461,5 +463,11 @@ body{
 	.fa{
 		transform: scale(1.5);
 		transform-origin: center center;
+	}
+}
+
+@keyframes animatepath {
+	to{
+    stroke-dashoffset: 0;
 	}
 }
