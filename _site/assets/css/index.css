@@ -610,6 +610,7 @@ background-size: cover;
       display: grid;
       grid-template-columns: 1fr 9.5fr;
       cursor: pointer;
+      transition: all 1s;
     }
 
     #chwd{
@@ -773,6 +774,8 @@ background-size: cover;
       width: 100vw;
       bottom: 0;
       right: 0;
+      background: white;
+      transform: translateY(150%);
     }
 
     #chwd{

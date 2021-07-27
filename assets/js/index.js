@@ -217,16 +217,14 @@ function opennoti(){
 
 }*/
 
-if(screen.width > 451){
 window.addEventListener('load',()=>{
 	try{
 		id('l-holder')
 		if (id('new').getBoundingClientRect().top <=0.65*screen.height) {}
-		else{setTimeout(function(){opennoti();},5000);}
+		else{setTimeout(function(){opennoti();},1500);}
 	}
 	catch(e){}
 });
-}
 
 
 id('title').style.color = "transparent";
@@ -381,12 +379,21 @@ observer.observe();
 
 
 function opennoti(){
+	if(screen.width>451){
       document.getElementById('bell').style.transform = 'translateX(0)';
       document.getElementById('chwd').style.animation = 'clippath forwards 0.8s';
   }
+  else{
+  	document.getElementById('noti').style.transform = 'translateY(0)';
+  }
+}
 
   function closenoti(){
+	if(screen.width>451){
       document.getElementById('bell').style.transform = 'translateX(945%)';
       document.getElementById('chwd').style.animation = 'clippathrem forwards 0.8s'
       setTimeout(function(){document.getElementById('noti').style.visibility="hidden";},1350);
+  }else{
+  	document.getElementById('noti').style.transform = 'translateY(150%)';
   }
+}
