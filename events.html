@@ -24,7 +24,7 @@ extra_js:
                 <div class="right">
                     <div class="name" id = "{{ event.poster }}nameidid">{{ event.name | upcase }}</div>
                     <div class="separator"></div>
-                    <div class="descr" id = "{{ event.poster }}descidid">{{ event.descr }} </div>
+                    <p class="descr" id = "{{ event.poster }}descidid">{{ event.descr }} </p>
                 </div>
              <div class="date" id = "{{ event.poster }}dateidid">{{ event.date | upcase }}</div>
              <div class="links">
@@ -45,7 +45,7 @@ extra_js:
 
 
      </div>
-     <svg id="top" xmlns="http://www.w3.org/2000/svg" width="4vw" height="4vw" viewBox="0 0 24 24"><path onclick="window.scrollTo(0,0)" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.58l5.995 5.988-1.416 1.414-4.579-4.574-4.59 4.574-1.416-1.414 6.006-5.988z"/>
-     </svg>
+     <abbr title="Go To Top"><svg id="top" xmlns="http://www.w3.org/2000/svg" width="4vw" height="4vw" viewBox="0 0 24 24"><path onclick="window.scrollTo(0,0)" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.58l5.995 5.988-1.416 1.414-4.579-4.574-4.59 4.574-1.416-1.414 6.006-5.988z"/>
+     </svg></abbr>
  </div>
 </div>
