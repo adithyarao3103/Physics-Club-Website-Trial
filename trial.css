@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|BioRhyme|Lato|Roboto+Condensed|Rubik');
+
+    body{
+      background-color: black;
+      height: 200vh;
+      padding: 0;
+      margin: 0;
+    }
+
+    #noti{
+      position: fixed;
+      bottom: 3vh;
+      right: 6vh;
+    }
+
+    #bell{
+      border-radius: 50%;
+      background-color: white;
+      padding-left: 12px;
+      padding-right: 4px;
+      padding-top: 12px;
+      padding-bottom: 3px;
+      width: 5vh;
+      height: 5vh;
+      position: relative;
+      left: 3.5vh;
+      z-index: 1;
+      transform: translateX(945%);
+      transition: transform 0.8s;
+    }
+
+    svg{
+      animation: bell 1s alternate infinite;
+      transform-origin: center top;
+    }
+
+    @keyframes bell {
+      30%{
+        transform: rotate(30deg);
+      }
+      60%{
+        transform: rotate(-30deg);
+      }
+      90%{
+        transform: rotate(0);
+      }
+    }
+
+    @keyframes bell2 {
+  0% { transform: rotate(0deg); }
+  8.0% { transform: rotate(0deg); }
+  12.0% { transform: rotate(42deg); }
+  20.0% { transform: rotate(-35deg); }
+  24.0% { transform: rotate(0deg); }
+  28.0% { transform: rotate(28deg); }
+  32.0% { transform: rotate(-20deg); }
+  35.0% { transform: rotate(0deg); }
+  37.0% { transform: rotate(16deg); }
+  40.0% { transform: rotate(-12deg); }
+  42.0% { transform: rotate(0deg); }  
+  45.0% { transform: rotate(-6deg); }
+  50.0% { transform: rotate(0deg); }
+  55.0% { transform: rotate(6deg); }
+  59.0% { transform: rotate(-3deg); }
+  62.0% { transform: rotate(2deg);}
+  67.0% { transform: rotate(0deg); }
+  70.0% { transform: rotate(1deg); }
+  90.0% { transform: rotate(0deg); }  
+}
+
+    #noti{
+      display: grid;
+      grid-template-columns: 1fr 9.5fr;
+      cursor: pointer;
+    }
+
+    #chwd{
+      display: grid;
+      grid-template-columns: 8.5fr 1fr;
+      clip-path: inset(0 0 0 100%);
+
+    }
+
+    #noticont{
+      position: absolute;
+      right: 2.5px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: fit-content;
+      color: black;
+      font-family: Montserrat;
+      font-size: calc(13px);
+      font-weight: bold;
+    }
+
+    #notitext{
+      background-color: white;
+      display: flex;
+      transition: linear width 1s;
+      position: relative;
+    }
+
+    #close{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      background-color: white;
+      color: black;
+      border-radius: 0 50% 50% 0;
+      transition: linear width 1s;
+      font-weight: bold;
+
+    }
+
+    @keyframes clippath {
+      from{
+        clip-path: inset(0 0 0 100%);
+      }
+      to{
+            clip-path: inset(0 0 0 0);
+      }
+      
+    }
+
+    @keyframes clippathrem {
+      from{
+        clip-path: inset(0 0 0 0);
+      }
+      to{
+            clip-path: inset(0 0 0 100%);
+      }
+      
+    }
+
+@media screen and (max-width: 500px) {
+
+    #bell{
+      transform: translateX(0);
+      height: 9.52380952381vw;
+      width: 9.52380952381vw;
+      left: 0;
+      border-radius: 0 0 0 0;
+    }
+
+    #noti{
+      width: 100vw;
+      bottom: 0;
+      right: 0;
+    }
+
+    #chwd{
+      clip-path: inset(0 0 0 0);
+    }
+
+    #close{
+      border-radius: 0 0 0 0;
+    }
+
+    #noticont{
+      font-size: 8px;
+      position: absolute;
+      right: auto;
+      top: 50%;
+    }
+}
+
+
+
