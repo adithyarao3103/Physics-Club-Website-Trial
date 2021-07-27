@@ -396,3 +396,9 @@ textarea{
   left: 50%;
   transform:  translateX(calc(-50% - 10px)) translateY(-50%);
 }
+
+@media screen and (max-width: 500px){
+  #footmenucont>center{
+  transform:  translateX(calc(-50%)) translateY(-50%);
+  }
+}

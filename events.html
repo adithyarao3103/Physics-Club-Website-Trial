@@ -14,8 +14,11 @@ extra_js:
     <div id="main-container">
         <div id="container" style="scroll-behavior: smooth;">
 
+            {% if site.data.events.upcomingevents[0].name != ' ' %}
 
-            {% for event in site.data.events.events %}
+            <div class="horizontal">UPCOMING EVENTS</div>
+
+            {% for event in site.data.events.upcomingevents %}
 
             <div class="event" id = "{{ event.poster }}evntidid">
                 <div class="thumbnail">
@@ -32,8 +35,33 @@ extra_js:
              <a class = "link" href = "{{ event.reglink }}" id = "{{ event.poster }}reglidid">Register here!!</a>
              {% endif %}
              {% if event.reglink == " " %}
-             <div class="link" id = "{{ event.poster }}regcidid">Registations Closed</div>
+             <div class="link" id = "{{ event.poster }}regcidid">Registrations Closed</div>
              {% endif %}
+         </div>
+     </div>
+
+
+             {% endfor %}
+
+            <div class="horizontal">COMPLETED EVENTS</div>
+
+             {% endif %}
+
+
+    
+            {% for event in site.data.events.events %}
+
+            <div class="event" id = "{{ event.poster }}evntidid">
+                <div class="thumbnail">
+                    <img class="left lozad" src="assets/posters/placeholder.jpg" data-src="/assets/posters/{{ event.poster }}.png" />
+                </div>
+                <div class="right">
+                    <div class="name" id = "{{ event.poster }}nameidid">{{ event.name | upcase }}</div>
+                    <div class="separator"></div>
+                    <p class="descr" id = "{{ event.poster }}descidid">{{ event.descr }} </p>
+                </div>
+             <div class="date" id = "{{ event.poster }}dateidid">{{ event.date | upcase }}</div>
+             <div class="links">
              {% if event.youtube != " " %}
              <div style="height:5px; width: 100%;"></div>
              <a class = "link" href = "{{ event.youtube }}" id = "{{ event.poster }}youtidid">Youtube recording</a>
