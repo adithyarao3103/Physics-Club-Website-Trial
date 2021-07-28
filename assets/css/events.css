@@ -285,7 +285,7 @@ img.left{
     }
 
     .descr{
-      font-size: calc(5px + 1vw);
+      font-size: calc(7px + 1vw);
       /*height: 38vh;*/
       margin-bottom: auto;
     }
@@ -303,7 +303,7 @@ img.left{
     left: 15px;
     bottom: 45px;
   text-align: left;
-      font-size: calc(5px + 1vw);
+      font-size: calc(10px + 1vw);
   width: fit-content;
   transform: scale(1.0);
 
