@@ -75,19 +75,16 @@ body{
 
 .soc{
 	width: 100%;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
 	height: 20px;
+	margin-top: 25px;
 }
 
-.insta{
-	display: flex;
-	justify-content: flex-end;
-}
-
-.facebook{
-	display: flex;
-	justify-content: flex-start;
+.fa-linkedin{
+	color: white;
 }
 
 .splide__arrow--next{

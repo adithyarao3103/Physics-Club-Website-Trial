@@ -46,7 +46,8 @@
 						"batch":"2019-24",
 						"insta":"https://www.instagram.com/rao__adithya/",
 						"fb":"https://www.facebook.com/adithyaa.rao",
-						"image":"adithya.jpg"
+						"image":"adithya.jpg",
+						"linked":"link"
 					}
 				]
 			},
@@ -84,7 +85,8 @@
 						"name":"Ramkumar Radhakrishnan",
 						"batch":"2017-22",
 						"fb":"https://www.facebook.com/ramkumar0808",
-						"image":"ram.jpg"
+						"image":"ram.jpg",
+						"linked": "linkedin"
 					},
 
 					{
