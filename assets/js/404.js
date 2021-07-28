@@ -11,7 +11,7 @@ function goback(i){
 window.addEventListener('load',() =>{
 	console.log('start');
     document.getElementById('back').style.opacity = 1;
-    //setTimeout(function(){goback(4);},1000);
+    setTimeout(function(){goback(4);},1000);
 });
 
 
