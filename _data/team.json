@@ -63,6 +63,7 @@
 						"insta":"https://www.instagram.com/_.surya_shankar._/",
 						"image":"surya.jpg"
 					}
+
 				]
 			},
 
@@ -112,6 +113,9 @@
 				]
 			}
 
+
+			
+
 		]
 
 	},
@@ -132,22 +136,20 @@
 				"members":[
 
 					{
-						"name":"Foram fanasia",
+						"name":"Shashank",
 						"batch":"2018-23",
 						"fb":"https://www.facebook.com/",
 						"image":"placeholder.jpg"
 					},
 
 					{
-						"name":"Shashank",
+						"name":"Foram Fanasia",
 						"batch":"2018-23",
 						"fb":"https://www.facebook.com/",
 						"image":"placeholder.jpg"
 					}
 				]
 			}
-
-
 
 		]
 	}
