@@ -1,4 +1,5 @@
  // Create XMLHttpRequest object.
+ /*
     var oXHR = new XMLHttpRequest();
     var events;
 
@@ -60,17 +61,23 @@ function writepage(){
     }} ).mount();
 }
 
+*/
 
-    
+sliders = document.getElementsByClassName('slider')
 
-var currentmembers =  new Splide( '#splide1', {
+
+for(i=0; i< sliders.length; i++){
+new Splide( sliders[i], {
         speed: 10,
         lazyLoad: 'nearby',
         pagination: false,
-   type   : 'loop',
+   type   : 'slide',
+   trimSpace: true,
+   rewind: true,
     perPage: 4,
+    start: 0,
     focus  : 'center',
-    arrow:true,
+    arrow: true,
     gap: '30px',
     breakpoints: {
         1000:{

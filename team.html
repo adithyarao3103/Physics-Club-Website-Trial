@@ -14,39 +14,59 @@ extra_js:
 <div id="phys">PHYSICS</div>
 <div id="club">CLUB</div>
 <div style="width: 100%; height: 1vh;"></div>
-    <div class="horizontal">CURRENT MEMBERS</div>
-<div style="width: 100%; height: 5vh;"></div>
+
+
+{% for category in site.data.team %}
+
+ <div style="z-index: 10;"><div class="whitehori">{{ category.type | upcase }}</div></div>
+
+<div style="width: 100%; height: 1vh;"></div>
+
+{% for batch in category.batches %}
+
+<div class="horizontal">BATCH {{ batch.batch | upcase }}</div>
+
+<div style="width: 100%; height: 1vh;"></div>
 
 <div class="holder">
 
-    <div class="splide" id="splide1">
+    <div class="splide slider">
         <div class="splide__track">
-            <div class="splide__list" id="current">
-                
+            <div class="splide__list">
+                {% for member in batch.members %}
 
+                <div class="splide__slide">
+                    <div class="member">
+                        <center>
+                            <img class="image" data-splide-lazy="/assets/Team/{{ member.image }}">
+                            <div class="name">{{ member.name }}</div>
+                            <div class="soc">
+                                {% if member.insta %}
+                                <div class="insta"><a class="customico fa fa-instagram" href="{{ member.insta }}"></a></div>
+                                {% endif %}
+                                {% if member.fb %}
+                                <div class="facebook"><a class="customico fa fa-facebook" href = "{{ member.fb }}"></a></div>
+                                {% endif %}
+                                {% if member.linked %}
+                                <div class="linkedin"><a class="customico fa fa-linkedin" href = "{{ member.linked }}"></a></div>
+                                {% endif %}
+                            </div>
+                        </center>
+                    </div>
+                </div>
 
+                {% endfor %}                             
 
             </div>
         </div>
     </div>
 </div>
-<div style="width: 100%; height: 5vh;"></div>
 
-    <div class="horizontal" id="alumnus">ALUMNI</div>
-<div style="width: 100%; height:5vh;"></div>
+{% endfor %}
 
-<div class="holder">
-    <div class="splide" id="splide2">
-        <div class="splide__track">
-            <div class="splide__list" id="ex">
-                
+{% endfor %}
 
-
-                
-            </div>
-        </div>
-    </div>
-</div>
 <div style="width: 100%; height: 5vh;"></div>
 
 </div>
+

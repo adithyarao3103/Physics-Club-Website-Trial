@@ -30,7 +30,7 @@
     }
 
     svg{
-      animation: bell 1s alternate infinite;
+      animation: bell2 5s infinite;
       transform-origin: center top;
     }
 
