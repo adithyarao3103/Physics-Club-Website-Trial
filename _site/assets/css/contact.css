@@ -389,7 +389,7 @@ textarea{
 #footmenucont> center{
   width: 100vw;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   position: relative;
   top: 50%;
   left: 50%;

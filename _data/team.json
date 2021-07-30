@@ -151,6 +151,21 @@
 						"image":"placeholder.jpg"
 					}
 				]
+			},
+
+			{
+
+				"batch": "2017-24",
+
+				"members":[
+
+					{
+						"name":"Parth Thakar",
+						"batch":"201-23",
+						"fb":"https://www.facebook.com/",
+						"image":"placeholder.jpg"
+					}
+				]
 			}
 
 		]
