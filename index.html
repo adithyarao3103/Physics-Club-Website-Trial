@@ -74,20 +74,20 @@ extra_js:
             </div>
             </div>
                     <div style="width: 100%; height: 10vh; background: transparent;"></div>
-                {% if site.data.index.new.title != " " %}
-                    {% if site.data.index.new.title != "" %}
+                {% if site.data.events.upcomingevents[0].name != " " %}
+                    {% if site.data.events.upcomingevents[0].name != "" %}
                     <div id="new"></div>
                 <div class="white-hori" id="white3"><div class="scrollR"><span>WE'VE GOT YOU SOMETHING</span><br>&nbsp;NEW!</div></div>
                 <div id="new"></div>
                     <div id="newholder">
                             <center>
                         <div id="l-holder" class="offsetdown">
-                            <img src="/assets/posters/placeholder.jpg" data-src="/assets/posters/{{ site.data.index.new.poster }}.png" id="l-image"  class="offsetdown lozad">
+                            <img src="/assets/posters/placeholder.jpg" data-src="/assets/posters/{{ site.data.events.upcomingevents[0].poster }}.png" id="l-image"  class="offsetdown lozad">
                             <div id="l-content" class="offsetdown">
-                                <div id="l-title" class="offsetdown">{{ site.data.index.new.title }}</div>
-                                <div id="l-date" class="offsetdown">{{ site.data.index.new.date }}</div>
-                                <div id="l-descr" class="offsetdown">{{ site.data.index.new.descr }} <br><br> 
-                                    <a id="l-reg" href="{{ site.data.index.new.link }}"> {{ site.data.index.new.linktitle }}</a>
+                                <div id="l-title" class="offsetdown">{{ site.data.events.upcomingevents[0].name }}</div>
+                                <div id="l-date" class="offsetdown">{{ site.data.events.upcomingevents[0].date }}</div>
+                                <div id="l-descr" class="offsetdown">{{ site.data.events.upcomingevents[0].descr }} <br><br> 
+                                    <a id="l-reg" target="_blank" href="{{ site.data.events.upcomingevents[0].reglink }}">Register Now!!</a>
                                 </div>
                             </div>
                         </div>

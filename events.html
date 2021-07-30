@@ -32,7 +32,7 @@ extra_js:
              <div class="date" id = "{{ event.poster }}dateidid">{{ event.date | upcase }}</div>
              <div class="links">
              {% if event.reglink != " " %}
-             <a class = "link" href = "{{ event.reglink }}" id = "{{ event.poster }}reglidid">Register here!!</a>
+             <a class = "link" target="_blank" href = "{{ event.reglink }}" id = "{{ event.poster }}reglidid">Register here!!</a>
              {% endif %}
              {% if event.reglink == " " %}
              <div class="link" id = "{{ event.poster }}regcidid">Registrations Closed</div>
@@ -43,7 +43,7 @@ extra_js:
 
              {% endfor %}
 
-            <div class="whitehori">COMPLETED EVENTS</div>
+            <div class="whitehori">PAST EVENTS</div>
 
              {% endif %}
 
@@ -64,7 +64,7 @@ extra_js:
              <div class="links">
              {% if event.youtube != " " %}
              <div style="height:5px; width: 100%;"></div>
-             <a class = "link" href = "{{ event.youtube }}" id = "{{ event.poster }}youtidid">Youtube recording</a>
+             <a class = "link" target="_blank" href = "{{ event.youtube }}" id = "{{ event.poster }}youtidid">Youtube recording</a>
              {% endif %}
             </div>
          </div>

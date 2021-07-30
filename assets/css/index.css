@@ -252,7 +252,7 @@ html{
 }
 
 #l-date{
-	font-size: calc(10px + 1.25vw);
+	font-size: calc(10px + 1vw);
 	color: white;
 	letter-spacing: 2px;
 	text-shadow: 3px 3px 3px rgba(0,0,0,1) ;
@@ -260,7 +260,7 @@ html{
 }
 
 #l-descr{
-	font-size: calc(6px + 1vw);
+	font-size: calc(4px + 1vw);
 	color: white;
 	letter-spacing: 2px;
 	text-shadow: 3px 3px 3px rgba(0,0,0,1) ;
